@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 [RequireComponent(typeof(CharacterController))]
@@ -10,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform _cameraTransform;
 
     [SerializeField] private float _speed = 10f;
+    [SerializeField] private InputActionReference _moveAction;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        //float horizontal = Input.GetAxisRaw("Horizontal");
+        //float vertical = Input.GetAxisRaw("Vertical");
+        Vector2 inputDirection = _moveAction.action.ReadValue<Vector2>();
 
         // Calculate the camera's forward direction, ignoring the Y component
         Vector3 forward = _cameraTransform.forward;
@@ -36,10 +39,21 @@ public class PlayerMovement : MonoBehaviour
         right.Normalize();
 
         // Calculate the direction based on camera's forward and right vectors
-        Vector3 direction = forward * vertical + right * horizontal;
+        Vector3 direction = forward * inputDirection.y + right * inputDirection.x;
         direction.Normalize(); // Ensure the direction vector has a magnitude of 1
 
+        // If the direction is not zero, rotate the character
+        if (direction != Vector3.zero)
+        {
+            // Normalize the direction to avoid scaling the movement
+            direction.Normalize();
 
-        _controller.Move(direction * _speed * Time.deltaTime);
+            // Set the rotation of the character to look in the direction of movement
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = targetRotation;
+
+            // Move the character
+            _controller.Move(direction * _speed * Time.deltaTime);
+        }
     }
 }
