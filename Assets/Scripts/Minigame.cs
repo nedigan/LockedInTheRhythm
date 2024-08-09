@@ -44,27 +44,14 @@ public class Minigame : MonoBehaviour
 
     SwipeDirection GetRandomSwipeDirection(SwipeDirection prevDirection) // prev direction to make sure it doesnt do the same direciton
     {
-        int dir = 1;
+        int dir;
 
         do
         {
-            dir = Random.Range(1, 5);
+            dir = Random.Range(0, 4);
         } while (dir == (int)prevDirection);
 
-
-        switch (dir)
-        {
-            case 1:
-                return SwipeDirection.Up;
-            case 2:
-                return SwipeDirection.Right;
-            case 3:
-                return SwipeDirection.Down;
-            case 4:
-                return SwipeDirection.Left;
-        }
-
-        return SwipeDirection.Up; // Shouldnt ever get here.
+        return (SwipeDirection) dir;
     }
 
     void SetSwipeDirectionText(SwipeDirection swipeDirection)

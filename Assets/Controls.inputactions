@@ -44,12 +44,12 @@
                 },
                 {
                     "name": "TouchPress",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "463a8ee9-f1b0-44c8-99d1-d1757347f6cc",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
