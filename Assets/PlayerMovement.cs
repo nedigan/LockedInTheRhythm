@@ -9,9 +9,17 @@ public class PlayerMovement : MonoBehaviour
 {
     private CharacterController _controller;
     private Transform _cameraTransform;
+    private PlayerInput _playerInput;
+    private InputAction _moveAction;
 
     [SerializeField] private float _speed = 10f;
-    [SerializeField] private InputActionReference _moveAction;
+
+    private void Awake()
+    {
+        _playerInput = GetComponent<PlayerInput>();
+        _moveAction = _playerInput.actions["Move"];
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //float horizontal = Input.GetAxisRaw("Horizontal");
         //float vertical = Input.GetAxisRaw("Vertical");
-        Vector2 inputDirection = _moveAction.action.ReadValue<Vector2>();
+        Vector2 inputDirection = _moveAction.ReadValue<Vector2>();
 
         // Calculate the camera's forward direction, ignoring the Y component
         Vector3 forward = _cameraTransform.forward;
