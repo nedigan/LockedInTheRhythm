@@ -26,7 +26,18 @@ public class PlayerInteract : MonoBehaviour
 
     private void TestInteract(InputAction.CallbackContext context)
     {
-        Debug.Log(_touchPosAction.ReadValue<Vector2>());
+        // Create ray from main camera
+        Ray ray = Camera.main.ScreenPointToRay(_touchPosAction.ReadValue<Vector2>());
+
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+
+            if (interactable != null && _currentInteractable == interactable)
+            {
+                interactable.Interact();
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -35,6 +46,7 @@ public class PlayerInteract : MonoBehaviour
         // If the player has entered the trigger of an interactable object
         {
             _currentInteractable = interactable;
+            _currentInteractable.Highlight(true);
 
             Debug.Log($"Player can interact with: {_currentInteractable.name}");
         }
@@ -46,6 +58,7 @@ public class PlayerInteract : MonoBehaviour
         if (_currentInteractable != null && _currentInteractable == other.GetComponent<Interactable>())
         {
             Debug.Log($"Player can no longer interact with: {_currentInteractable.name}");
+            _currentInteractable.Highlight(false);
             _currentInteractable = null;
         }
     }

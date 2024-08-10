@@ -4,8 +4,26 @@ using UnityEngine;
 
 public class MusicalSafe : Interactable
 {
+    [SerializeField] private Material _outlineMaterial;
+    private float _scale;
+    public void Awake()
+    {
+        _scale = _outlineMaterial.GetFloat("_Scale");
+        Highlight(false);
+    }
+    public override void Highlight(bool highlight)
+    {
+        Debug.Log(_outlineMaterial.GetFloat("_Scale"));
+        if (!highlight)
+            _outlineMaterial.SetFloat("_Scale", 0);
+        else
+            _outlineMaterial.SetFloat("_Scale", _scale);
+    }
+
     public override void Interact()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Interacted with musical safe");
     }
+
+    
 }

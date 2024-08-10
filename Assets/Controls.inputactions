@@ -48,7 +48,18 @@
                 {
                     "name": "",
                     "id": "a8c088e4-3f33-4b33-b814-10d841c5712a",
-                    "path": "<Touchscreen>/position",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5b632f8-5063-4585-bd99-e7dfb4d9a002",
+                    "path": "<Touchscreen>/touch1/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
