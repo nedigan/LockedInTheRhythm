@@ -1,75 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public enum SwipeDirection
-{
-    Up,
-    Right,
-    Down,
-    Left
-}
-
-[RequireComponent(typeof(SwipeInput))]
 public class Minigame : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _swipeDirectionText;
-    private SwipeInput _swipeInput;
-    private SwipeDirection _swipeDirection;
+    [SerializeField] private Song _song; // testing - play method will take song from safe
+    [SerializeField] private float _speed = 5f; // testing
+    [SerializeField] private GameObject _notePrefab;
+    [SerializeField] private Transform[] _spawnPoints = new Transform[4];
+    [SerializeField] private Transform[] _targetPoints = new Transform[4];
 
-    private void Awake()
-    {
-        _swipeInput = GetComponent<SwipeInput>();
-    }
+
+    private List<KeyValuePair<Note, float>> _notes;
 
     // Start is called before the first frame update
     void Start()
     {
-        _swipeInput.Swiped.AddListener(CheckSwipe);
-
-        _swipeDirection = GetRandomSwipeDirection(SwipeDirection.Up);
-        SetSwipeDirectionText(_swipeDirection);
+        Play();
     }
 
-    private void CheckSwipe(SwipeDirection direction)
+    public void Play(Song song = null)
     {
-        if (direction == _swipeDirection)
-        {
-            _swipeDirection = GetRandomSwipeDirection(_swipeDirection);
-            SetSwipeDirectionText(_swipeDirection);
-        }
+        if (song == null)
+            song = _song;
+
+        _notes = song.LoadSong();
+
+        StartCoroutine(SpawnNote(0));
     }
 
-
-    SwipeDirection GetRandomSwipeDirection(SwipeDirection prevDirection) // prev direction to make sure it doesnt do the same direciton
+    IEnumerator SpawnNote(int index)
     {
-        int dir;
+        NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
+        note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position);
 
-        do
-        {
-            dir = Random.Range(0, 4);
-        } while (dir == (int)prevDirection);
+        yield return new WaitForSeconds(_notes[index].Value);
 
-        return (SwipeDirection) dir;
-    }
-
-    void SetSwipeDirectionText(SwipeDirection swipeDirection)
-    {
-        switch (swipeDirection)
-        {
-            case (SwipeDirection.Up):
-                _swipeDirectionText.text = "UP";
-                break;
-            case (SwipeDirection.Right):
-                _swipeDirectionText.text = "RIGHT";
-                break;
-            case (SwipeDirection.Down):
-                _swipeDirectionText.text = "DOWN";
-                break;
-            case (SwipeDirection.Left):
-                _swipeDirectionText.text = "LEFT";
-                break;
-        }
+        StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around
     }
 }

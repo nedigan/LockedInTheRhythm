@@ -8,7 +8,7 @@ public class MusicalSafe : Interactable
     private float _scale;
     public void Awake()
     {
-        _scale = _outlineMaterial.GetFloat("_Scale");
+        _scale = 1.1f;
         Highlight(false);
     }
     public override void Highlight(bool highlight)

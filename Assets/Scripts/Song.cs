@@ -52,7 +52,7 @@ public class Song : ScriptableObject
 
             if (currentAmountOfBeatsInBar + noteSize > (float)Numerator)
             {
-                Debug.LogWarning("Invalid beats per bar, adding rest... Consider fixing this.");
+                Debug.LogWarning("Invalid beats per bar... Consider fixing this.");
                 // TODO : add rests if needed - otherwise just make sure you've set the song right!!!
             }
 
@@ -76,6 +76,8 @@ public class Song : ScriptableObject
 public class Note
 {
     public NoteValue Value;
+    [Tooltip("Index on minigame track. 1 = Top, 4 = Bottom")]
+    public int Index;
 }
 
 public enum NoteValue

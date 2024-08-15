@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9e7458b00081548843e02456cd4afe, type: 3}
   m_Name: SongTest
   m_EditorClassIdentifier: 
-  Numerator: 6
-  Denominator: 8
-  BPM: 200
+  Numerator: 4
+  Denominator: 4
+  BPM: 100
   Notes:
-  - Value: 4
-  - Value: 4
-  - Value: 4
-  - Value: 4
-  - Value: 2
-  - Value: 4
-  - Value: 4
-  - Value: 4
-  - Value: 4
-  - Value: 2
+  - Value: 8
+    Index: 0
+  - Value: 8
+    Index: 1
+  - Value: 8
+    Index: 2
+  - Value: 8
+    Index: 3
+  - Value: 8
+    Index: 2
+  - Value: 8
+    Index: 1
