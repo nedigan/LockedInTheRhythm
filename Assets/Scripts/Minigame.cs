@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Minigame : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Minigame : MonoBehaviour
     [SerializeField] private GameObject _notePrefab;
     [SerializeField] private Transform[] _spawnPoints = new Transform[4];
     [SerializeField] private Transform[] _targetPoints = new Transform[4];
+    [SerializeField] private Slider _slider;
+    [SerializeField] private Image[] _trackIndicators = new Image[4];
 
     private List<GameObject> _currentNotes = new List<GameObject>();
 
@@ -24,6 +27,21 @@ public class Minigame : MonoBehaviour
     {
         StopAllCoroutines();
         DestroyNotes();
+    }
+
+    private void Update()
+    {
+        foreach (Image image in  _trackIndicators)
+            image.color = Color.white;
+
+        if (_slider.value >= 0 && _slider.value < 0.25f)
+            _trackIndicators[3].color = Color.black;
+        else if (_slider.value < 0.50f)
+            _trackIndicators[2].color = Color.black;
+        else if ( _slider.value < 0.75f)
+            _trackIndicators[1].color = Color.black;
+        else
+            _trackIndicators[0].color = Color.black;
     }
 
     public void Play(Song song = null)
