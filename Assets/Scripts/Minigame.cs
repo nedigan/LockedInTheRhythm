@@ -2,21 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Minigame : MonoBehaviour
 {
+    [Header("Variables")]
     [SerializeField] private Song _song; // testing - play method will take song from safe
     [SerializeField] private float _speed = 5f; // testing
+    [SerializeField] private float _hitNoteOffset = 10f;
+    private float _hitPositionX;
+    private int _combo = 0;
+
+    [Header("References")]
     [SerializeField] private GameObject _notePrefab;
     [SerializeField] private Transform[] _spawnPoints = new Transform[4];
     [SerializeField] private Transform[] _targetPoints = new Transform[4];
     [SerializeField] private Slider _slider;
+    [SerializeField] private TextMeshProUGUI _comboText;
+
     [SerializeField] private Image[] _trackIndicators = new Image[4];
+    private int _currentTrackIndex = 0;
 
-    private List<GameObject> _currentNotes = new List<GameObject>();
+    [Header("Debugging")]
+    [SerializeField] private Transform _canvasTransform;
 
 
+    private List<NoteMovement> _currentNotes = new List<NoteMovement>();
     private List<KeyValuePair<Note, float>> _notes;
+
+    private void Start()
+    {
+        // testing - just uses the first target points x positions for ease
+        _hitPositionX = _targetPoints[0].position.x +  _hitNoteOffset;
+    }
+
+    private void OnDrawGizmos()
+    {
+        _hitPositionX = _targetPoints[0].position.x + _hitNoteOffset;
+        Gizmos.matrix = _canvasTransform.localToWorldMatrix;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawCube(new Vector3(_hitPositionX, 0), new Vector3(10,500,10));
+    }
 
     private void OnEnable()
     {
@@ -35,13 +61,42 @@ public class Minigame : MonoBehaviour
             image.color = Color.white;
 
         if (_slider.value >= 0 && _slider.value < 0.10f)
-            _trackIndicators[3].color = Color.black;
+            _currentTrackIndex = 3; // player is selecting bottom track
         else if (_slider.value < 0.50f)
-            _trackIndicators[2].color = Color.black;
-        else if ( _slider.value < 0.90f)
-            _trackIndicators[1].color = Color.black;
+            _currentTrackIndex = 2; // player is selecting second from bottom
+        else if (_slider.value < 0.90f)
+            _currentTrackIndex = 1; // player is selecting second from top
         else
-            _trackIndicators[0].color = Color.black;
+            _currentTrackIndex = 0; // player is selecting top track
+
+
+        _trackIndicators[_currentTrackIndex].color = Color.black; // set players track to black - prolly change to something prettier
+
+        CheckCorrectNotes();
+    }
+
+    private void CheckCorrectNotes()
+    {
+        // notes that have been destroyed
+        List<NoteMovement> toRemove = new List<NoteMovement>();
+        foreach (var note in _currentNotes)
+        {
+            if (note.transform.position.x > _hitPositionX && _currentTrackIndex == note.TrackIndex)
+            // Player has correctly positioned the toggle thing
+            {
+                toRemove.Add(note);
+                note.wasHit = true; 
+
+                _combo++;
+                _comboText.text = $"Combo: x{_combo}";
+            }
+        }
+
+        foreach (var note in toRemove)
+        {
+            _currentNotes.Remove(note);
+            Destroy(note.gameObject);
+        }
     }
 
     public void Play(Song song = null)
@@ -59,8 +114,7 @@ public class Minigame : MonoBehaviour
         if ((int)_notes[index].Key.Value > 0) // if note is not a rest
         {
             NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
-            note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position);
-            _currentNotes.Add(note.gameObject);
+            note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position, _notes[index].Key.Index, this);
         }
         
         yield return new WaitForSeconds(_notes[index].Value);
@@ -68,12 +122,25 @@ public class Minigame : MonoBehaviour
         StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around
     }
 
-    private void DestroyNotes()
+    private void DestroyNotes() // used in on disable to remove all notes for reset
     {
-        foreach(GameObject note in _currentNotes)
+        foreach(var note in _currentNotes)
         {
-            Destroy(note);  
+            Destroy(note.gameObject);
         }
-        _currentNotes.Clear();  
+        _currentNotes.Clear(); 
+    }
+
+    public void MissedNote(NoteMovement note)
+    {
+        _currentNotes.Remove(note);
+        _combo = 0;
+        _comboText.text = $"Combo: x{_combo}";
+        Destroy(note.gameObject);
+    }
+
+    public void AddNote(NoteMovement note)
+    {
+        _currentNotes.Add(note);
     }
 }
