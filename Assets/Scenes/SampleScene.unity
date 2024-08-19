@@ -5666,6 +5666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _outlineMaterial: {fileID: 2100000, guid: 23722598c65c0674593c330ae3f10813, type: 2}
+  _minigameUI: {fileID: 1542027282}
 --- !u!1 &1555138644
 GameObject:
   m_ObjectHideFlags: 0

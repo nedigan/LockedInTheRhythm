@@ -10,13 +10,20 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Transform[] _spawnPoints = new Transform[4];
     [SerializeField] private Transform[] _targetPoints = new Transform[4];
 
+    private List<GameObject> _currentNotes = new List<GameObject>();
+
 
     private List<KeyValuePair<Note, float>> _notes;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
         Play();
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        DestroyNotes();
     }
 
     public void Play(Song song = null)
@@ -33,9 +40,19 @@ public class Minigame : MonoBehaviour
     {
         NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
         note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position);
+        _currentNotes.Add(note.gameObject);
 
         yield return new WaitForSeconds(_notes[index].Value);
 
         StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around
+    }
+
+    private void DestroyNotes()
+    {
+        foreach(GameObject note in _currentNotes)
+        {
+            Destroy(note);  
+        }
+        _currentNotes.Clear();  
     }
 }

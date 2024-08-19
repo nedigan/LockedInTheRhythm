@@ -5,11 +5,19 @@ using UnityEngine;
 public class MusicalSafe : Interactable
 {
     [SerializeField] private Material _outlineMaterial;
+    [SerializeField] private GameObject _minigameUI;
     private float _scale;
     public void Awake()
     {
         _scale = 1.1f;
         Highlight(false);
+    }
+
+    private void Update()
+    {
+        // Testing
+        if (Input.GetKeyDown(KeyCode.Escape))
+            _minigameUI.SetActive(false);
     }
     public override void Highlight(bool highlight)
     {
@@ -23,6 +31,7 @@ public class MusicalSafe : Interactable
     public override void Interact()
     {
         Debug.Log("Interacted with musical safe");
+        _minigameUI.SetActive(true); // testing
     }
 
     
