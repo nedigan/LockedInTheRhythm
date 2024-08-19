@@ -34,11 +34,11 @@ public class Minigame : MonoBehaviour
         foreach (Image image in  _trackIndicators)
             image.color = Color.white;
 
-        if (_slider.value >= 0 && _slider.value < 0.25f)
+        if (_slider.value >= 0 && _slider.value < 0.10f)
             _trackIndicators[3].color = Color.black;
         else if (_slider.value < 0.50f)
             _trackIndicators[2].color = Color.black;
-        else if ( _slider.value < 0.75f)
+        else if ( _slider.value < 0.90f)
             _trackIndicators[1].color = Color.black;
         else
             _trackIndicators[0].color = Color.black;
