@@ -56,10 +56,13 @@ public class Minigame : MonoBehaviour
 
     IEnumerator SpawnNote(int index)
     {
-        NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
-        note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position);
-        _currentNotes.Add(note.gameObject);
-
+        if ((int)_notes[index].Key.Value > 0) // if note is not a rest
+        {
+            NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
+            note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position);
+            _currentNotes.Add(note.gameObject);
+        }
+        
         yield return new WaitForSeconds(_notes[index].Value);
 
         StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around

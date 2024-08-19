@@ -76,7 +76,7 @@ public class Song : ScriptableObject
 public class Note
 {
     public NoteValue Value;
-    [Tooltip("Index on minigame track. 1 = Top, 4 = Bottom")]
+    [Tooltip("Index on minigame track. 0 = Top, 3 = Bottom")]
     public int Index;
 }
 

@@ -14,17 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Numerator: 4
   Denominator: 4
-  BPM: 100
+  BPM: 116
   Notes:
-  - Value: 8
+  - Value: 4
+    Index: 2
+  - Value: 4
+    Index: 1
+  - Value: 4
+    Index: 0
+  - Value: 4
+    Index: 2
+  - Value: -4
+    Index: 0
+  - Value: -8
     Index: 0
   - Value: 8
-    Index: 1
-  - Value: 8
-    Index: 2
-  - Value: 8
     Index: 3
-  - Value: 8
+  - Value: 4
     Index: 2
-  - Value: 8
+  - Value: 4
     Index: 1
+  - Value: 4
+    Index: 0
+  - Value: 4
+    Index: 2
+  - Value: -1
+    Index: 2
