@@ -52,7 +52,7 @@ public class VisionCone : MonoBehaviour
             {
                 Vertices[i + 1] = VertForward * VisionRange;
             }
-
+           
 
             Currentangle += angleIcrement;
         }
