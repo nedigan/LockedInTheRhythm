@@ -47,11 +47,13 @@ public class Minigame : MonoBehaviour
 
     private void OnEnable()
     {
+        Time.timeScale = 0.0f;
         Play();
     }
 
     private void OnDisable()
     {
+        Time.timeScale = 1.0f;
         StopAllCoroutines();
         DestroyNotes();
     }
@@ -118,7 +120,7 @@ public class Minigame : MonoBehaviour
             note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position, _notes[index].Key.Index, this);
         }
         
-        yield return new WaitForSeconds(_notes[index].Value);
+        yield return new WaitForSecondsRealtime(_notes[index].Value);
 
         StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around
     }

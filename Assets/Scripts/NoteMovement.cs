@@ -41,7 +41,7 @@ public class NoteMovement : MonoBehaviour
     {
         if (_time < _maxTime)
         {
-            _time += Time.deltaTime;
+            _time += Time.unscaledDeltaTime;
             float percentage = _time / _maxTime;
             transform.position = Vector2.Lerp(_startPos, _targetPos, percentage);
         }

@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class ConeDetection : MonoBehaviour
+public abstract class ConeDetection : MonoBehaviour
 {
     [SerializeField] private VisionCone _visionCone;
     [SerializeField] private LayerMask _detectionMask;
@@ -21,7 +21,7 @@ public class ConeDetection : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         DetectObject();
     }
@@ -41,10 +41,13 @@ public class ConeDetection : MonoBehaviour
 
             if (Physics.Raycast(transform.position, raycastDirection, out RaycastHit hit, _coneRange, _detectionMask))
             {
-                Debug.Log($"Detecting!!!!! {hit.collider.gameObject.name}");
+                //Debug.Log($"Detecting!!!!! {hit.collider.gameObject.name}");
+                PlayerDetected(hit.collider.gameObject.transform);
             }
 
             currentangle += angleIcrement;
         }
     }
+
+    protected abstract void PlayerDetected(Transform playerTransform);
 }
