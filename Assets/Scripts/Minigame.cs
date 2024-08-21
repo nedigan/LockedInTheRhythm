@@ -73,7 +73,7 @@ public class Minigame : MonoBehaviour
             _currentTrackIndex = 0; // player is selecting top track
 
 
-        _trackIndicators[_currentTrackIndex].color = Color.black; // set players track to black - prolly change to something prettier
+        _trackIndicators[_currentTrackIndex].color = Color.gray; // set players track to black - prolly change to something prettier
 
         CheckCorrectNotes();
     }
