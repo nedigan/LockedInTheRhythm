@@ -19,6 +19,7 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Transform[] _targetPoints = new Transform[4];
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _comboText;
+    [SerializeField] private Health _health;
 
     [SerializeField] private Image[] _trackIndicators = new Image[4];
     private int _currentTrackIndex = 0;
@@ -135,6 +136,7 @@ public class Minigame : MonoBehaviour
     {
         _currentNotes.Remove(note);
         _combo = 0;
+        _health.LoseLife();
         _comboText.text = $"Combo: x{_combo}";
         Destroy(note.gameObject);
     }

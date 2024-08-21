@@ -41,7 +41,7 @@ public class ConeDetection : MonoBehaviour
 
             if (Physics.Raycast(transform.position, raycastDirection, out RaycastHit hit, _coneRange, _detectionMask))
             {
-               // Debug.Log($"Detecting!!!!!0 {hit.collider.gameObject.name}");
+                Debug.Log($"Detecting!!!!! {hit.collider.gameObject.name}");
             }
 
             currentangle += angleIcrement;
