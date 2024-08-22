@@ -48,6 +48,7 @@ public class Minigame : MonoBehaviour
     private void OnEnable()
     {
         Time.timeScale = 0.0f;
+        _health.ResetHealth();
         Play();
     }
 
@@ -141,6 +142,18 @@ public class Minigame : MonoBehaviour
         _health.LoseLife();
         _comboText.text = $"Combo: x{_combo}";
         Destroy(note.gameObject);
+
+        if (_health.CurrentHealth == 0)
+        {
+            EndMinigame();
+        }
+    }
+
+    private void EndMinigame()
+    {
+        // DO STUFF
+
+        gameObject.SetActive(false);
     }
 
     public void AddNote(NoteMovement note)

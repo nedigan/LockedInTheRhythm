@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     [SerializeField] private Image[] _images = new Image[3];
     private int _maxHealth = 3;
     [Range(0, 3)][SerializeField] private int _currentHealth;
+    public int CurrentHealth => _currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,10 @@ public class Health : MonoBehaviour
 
         if (_currentHealth < 0 )
             _currentHealth = 0;
+    }
+
+    public void ResetHealth()
+    {
+        _currentHealth = _maxHealth;
     }
 }
