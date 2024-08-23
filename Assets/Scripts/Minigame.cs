@@ -120,6 +120,8 @@ public class Minigame : MonoBehaviour
             NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
             note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position, _notes[index].Key.Index, this);
         }
+
+        Debug.Log($"Note duration: {_notes[index].Value}");
         
         yield return new WaitForSecondsRealtime(_notes[index].Value);
 
@@ -137,6 +139,7 @@ public class Minigame : MonoBehaviour
 
     public void MissedNote(NoteMovement note)
     {
+        Debug.Log(note.ToString());
         _currentNotes.Remove(note);
         _combo = 0;
         _health.LoseLife();

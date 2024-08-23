@@ -7,7 +7,7 @@ using UnityEngine;
 public abstract class ConeDetection : MonoBehaviour
 {
     [SerializeField] private VisionCone _visionCone;
-    [SerializeField] private LayerMask _detectionMask;
+    [SerializeField] private LayerMask _obstructionMask;
 
     private float _coneResolution;
     private float _coneRange;
@@ -39,10 +39,11 @@ public abstract class ConeDetection : MonoBehaviour
             cosine = Mathf.Cos(currentangle);
             Vector3 raycastDirection = (transform.forward * cosine) + (transform.right * sine);
 
-            if (Physics.Raycast(transform.position, raycastDirection, out RaycastHit hit, _coneRange, _detectionMask))
+            if (Physics.Raycast(transform.position, raycastDirection, out RaycastHit hit, _coneRange, _obstructionMask))
             {
                 //Debug.Log($"Detecting!!!!! {hit.collider.gameObject.name}");
-                PlayerDetected(hit.collider.gameObject.transform);
+                if (hit.collider.CompareTag("Player"))
+                    PlayerDetected(hit.collider.gameObject.transform);
             }
 
             currentangle += angleIcrement;

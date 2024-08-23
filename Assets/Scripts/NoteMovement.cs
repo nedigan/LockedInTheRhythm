@@ -14,7 +14,7 @@ public class NoteMovement : MonoBehaviour
     private Vector2 _targetPos;
 
     private float _time = 0f;
-    private float _maxTime = 0f;
+    public float _maxTime = 0f;
 
     private int _trackIndex;
     public int TrackIndex => _trackIndex;

@@ -63,10 +63,10 @@ public class Song : ScriptableObject
                 currentAmountOfBeatsInBar = 0f;
         }
 
-        foreach (var kv in  noteSeconds)
-        {
-            Debug.Log($"Key: {kv.Key.Value} Value: {kv.Value}");
-        }
+        //foreach (var kv in  noteSeconds)
+        //{
+        //    Debug.Log($"Key: {kv.Key.Value} Value: {kv.Value}");
+        //}
 
         return noteSeconds;
     }

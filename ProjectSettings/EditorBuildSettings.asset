@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/HouseLayouts/SquareLayout.unity
+    guid: 6439b359e22e7ec418b198d8594112a6
+  - enabled: 1
+    path: Assets/Scenes/HouseLayouts/CorridorLayout.unity
+    guid: a84b025a32b1bec45aa1bead6646d8ec
+  - enabled: 1
+    path: Assets/Scenes/HouseLayouts/RectangularLayout1.unity
+    guid: 5088dbd02d9a233498a071eda7e30873
+  - enabled: 1
+    path: Assets/Scenes/HouseLayouts/RectangularLayout2.unity
+    guid: 5793b18f70ca1234db1c8981b42de4f8
   m_configObjects: {}
