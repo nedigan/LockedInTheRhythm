@@ -14,7 +14,7 @@ public class PatrolStrategy : IStrategy
     readonly Transform entity;
     readonly NavMeshAgent agent;
     readonly List<Transform> patrolPoints;
-
+    // TODO
     public Node.Status Process()
     {
         throw new NotImplementedException();
