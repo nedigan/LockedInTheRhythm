@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class CameraDetection : ConeDetection
 {
-    protected override void PlayerDetected(Transform playerTransform)
-    {
-        //throw new System.NotImplementedException();
-    }
+   
 }

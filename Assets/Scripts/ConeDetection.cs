@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public abstract class ConeDetection : MonoBehaviour
+public class ConeDetection : MonoBehaviour
 {
     [SerializeField] private VisionCone _visionCone;
     [SerializeField] private LayerMask _obstructionMask;
@@ -12,6 +12,9 @@ public abstract class ConeDetection : MonoBehaviour
     private float _coneResolution;
     private float _coneRange;
     [SerializeField] private float _coneAngle; // should be the same as the vision code most of the time
+
+    public bool DetectingPlayer { get; protected set; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +26,10 @@ public abstract class ConeDetection : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        DetectObject();
+        DetectPlayer();
     }
 
-    private void DetectObject()
+    private void DetectPlayer()
     {
         float currentangle = -_coneAngle / 2;
         float angleIcrement = _coneAngle / (_coneResolution - 1);
@@ -43,12 +46,14 @@ public abstract class ConeDetection : MonoBehaviour
             {
                 //Debug.Log($"Detecting!!!!! {hit.collider.gameObject.name}");
                 if (hit.collider.CompareTag("Player"))
-                    PlayerDetected(hit.collider.gameObject.transform);
+                {
+                    DetectingPlayer = true;
+                    return;
+                }
             }
 
             currentangle += angleIcrement;
         }
+        DetectingPlayer = false;
     }
-
-    protected abstract void PlayerDetected(Transform playerTransform);
 }
