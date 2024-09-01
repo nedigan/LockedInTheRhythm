@@ -19,10 +19,11 @@ public class PatrolStrategy : IStrategy
     protected readonly NavMeshAgent agent;
     protected readonly List<Transform> patrolPoints;
     protected readonly float patrolSpeed;
+    protected readonly OctaviusBehaviour behaviour;
     protected int currentIndex;
     protected bool isPathCalculated;
 
-    public PatrolStrategy(Transform entity, NavMeshAgent agent, List<Transform> patrolPoints,float patrolSpeed = 2f)
+    public PatrolStrategy(Transform entity, NavMeshAgent agent, List<Transform> patrolPoints, float patrolSpeed = 2f)
     {
         this.entity = entity;
         this.agent = agent;
@@ -59,11 +60,12 @@ public class PatrolStrategy : IStrategy
 
 public class RandomPatrolStrategy : PatrolStrategy
 {
-    public RandomPatrolStrategy(Transform entity, NavMeshAgent agent, List<Transform> patrolPoints, float patrolSpeed = 2.0f): base(entity, agent, patrolPoints, patrolSpeed) { }
+    public RandomPatrolStrategy(Transform entity, NavMeshAgent agent, List<Transform> patrolPoints, float patrolSpeed = 2.0f): base(entity, agent, patrolPoints,patrolSpeed) { }
 
     public override Node.Status Process()
     {
         if (currentIndex == patrolPoints.Count) return Node.Status.Success;
+        
 
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);

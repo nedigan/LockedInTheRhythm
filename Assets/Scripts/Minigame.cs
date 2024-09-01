@@ -20,6 +20,7 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _comboText;
     [SerializeField] private Health _health;
+    [SerializeField] private OctaviusBehaviour _octaviusBehaviour;
 
     [SerializeField] private Image[] _trackIndicators = new Image[4];
     private int _currentTrackIndex = 0;
@@ -125,7 +126,11 @@ public class Minigame : MonoBehaviour
         
         yield return new WaitForSecondsRealtime(_notes[index].Value);
 
-        StartCoroutine(SpawnNote((index + 1) % _notes.Count)); // next note and wraps around
+        index++;
+        if (index < _notes.Count)
+            StartCoroutine(SpawnNote(index)); // next note and wraps around
+        else
+            EndMinigame();
     }
 
     private void DestroyNotes() // used in on disable to remove all notes for reset
@@ -155,6 +160,21 @@ public class Minigame : MonoBehaviour
     private void EndMinigame()
     {
         // DO STUFF
+        switch (_health.CurrentHealth)
+        {
+            case 0: // Lost all lives
+                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level3); // set to maximum alertness
+                EnemyAlert.NewAlert.Invoke();
+                break;
+            case 1: // 1 life remaining
+                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level2);
+                EnemyAlert.NewAlert.Invoke();
+                break;
+            case 2:
+                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level1);
+                EnemyAlert.NewAlert.Invoke();
+                break;
+        }
 
         gameObject.SetActive(false);
     }

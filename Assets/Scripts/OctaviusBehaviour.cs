@@ -12,12 +12,17 @@ public class OctaviusBehaviour : MonoBehaviour
     [SerializeField] private List<Transform> _waypoints = new List<Transform>();
     [SerializeField] private TextMeshProUGUI _timeLeftText;
     [SerializeField] private Transform _playerTransform;
+
+    [SerializeField] private float _alertSpeedLevel1 = 2f;
+    [SerializeField] private float _alertSpeedLevel2 = 3f;
+    [SerializeField] private float _alertSpeedLevel3 = 5f; 
+
     [SerializeField] private float _timeUntilPlayerHidden = 5f;
 
     private bool _isChasingPlayer = false;
 
-    private bool _newCameraHasSpotted = false;
-    private bool _goingToCheckCamera = false;
+    private bool _newAlert = false;
+    private bool _investigatingAlert = false;
 
     private float _timeLeftUntilPlayerHidden;
     private ConeDetection _detection;
@@ -27,7 +32,7 @@ public class OctaviusBehaviour : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _detection = GetComponent<ConeDetection>();
-        CameraDetection.NewCameraSpotted.AddListener(NewCameraSpotted);
+        EnemyAlert.NewAlert.AddListener(NewAlertOccurred);
 
         _tree = new BehaviourTree("Octavius");
 
@@ -35,16 +40,19 @@ public class OctaviusBehaviour : MonoBehaviour
         chaseSequence.AddChild(new Leaf("CanSeePlayer", new Condition(() => _detection.DetectingPlayer || _isChasingPlayer)));
         chaseSequence.AddChild(new Leaf("ChasePlayer", new ActionStrategy(() => ChasePlayer())));
 
-        Sequence cameraDetectingPlayer = new Sequence("Camera Detection", 75);
-        cameraDetectingPlayer.AddChild(new Leaf("IsCameraDetecting", new Condition(() => _newCameraHasSpotted || _goingToCheckCamera)));
-        cameraDetectingPlayer.AddChild(new Leaf("GoToCamera", new ActionStrategy(() => CheckCamera())));
+        Sequence alertSequence = new Sequence("Alert", 75);
+        alertSequence.AddChild(new Leaf("IsAlertPresent", new Condition(() => _newAlert || _investigatingAlert)));
+        alertSequence.AddChild(new Leaf("InvestigateAlert", new ActionStrategy(() => GoToAlert())));
 
-        Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints), 50);
+        Sequence patrolSequence = new Sequence("PatrolSequence", 50);
+        Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints));
+        patrolSequence.AddChild(new Leaf("SetAlertLevelLow", new ActionStrategy(() => _agent.speed = _alertSpeedLevel1)));
+        patrolSequence.AddChild(patrol);
 
         PrioritySelector decision = new PrioritySelector("decision");
         decision.AddChild(chaseSequence);
-        decision.AddChild(patrol);
-        decision.AddChild(cameraDetectingPlayer);
+        decision.AddChild(patrolSequence);
+        decision.AddChild(alertSequence);
         
         // Added chase sequence to behaviour tree
         _tree.AddChild(decision);  
@@ -80,24 +88,47 @@ public class OctaviusBehaviour : MonoBehaviour
         }
     }
 
-    void CheckCamera()
+    void GoToAlert()
     {
-        if (!_goingToCheckCamera || _newCameraHasSpotted)
+        if (!_investigatingAlert || _newAlert)
         {
-            _goingToCheckCamera = true;
+            _investigatingAlert = true;
             _agent.SetDestination(_playerTransform.position);
         }
 
         if (_agent.remainingDistance < _agent.stoppingDistance)
         {
-            _goingToCheckCamera = false;
+            _investigatingAlert = false;
         }
 
-        _newCameraHasSpotted = false;
+        _newAlert = false;
     }
 
-    void NewCameraSpotted()
+    void NewAlertOccurred()
     {
-        _newCameraHasSpotted = true;
+        _newAlert = true;
     }
+
+    public void SetAlertLevel(AlertLevel level)
+    {
+        switch (level)
+        {
+            case AlertLevel.Level1:
+                _agent.speed = _alertSpeedLevel1;
+                break;
+            case AlertLevel.Level2:
+                _agent.speed = _alertSpeedLevel2;
+                break;
+            case AlertLevel.Level3:
+                _agent.speed = _alertSpeedLevel3;
+                break;
+        }
+    }
+}
+
+public enum AlertLevel
+{
+    Level1,
+    Level2,
+    Level3
 }
