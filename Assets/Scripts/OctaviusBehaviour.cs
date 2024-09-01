@@ -15,6 +15,10 @@ public class OctaviusBehaviour : MonoBehaviour
     [SerializeField] private float _timeUntilPlayerHidden = 5f;
 
     private bool _isChasingPlayer = false;
+
+    private bool _newCameraHasSpotted = false;
+    private bool _goingToCheckCamera = false;
+
     private float _timeLeftUntilPlayerHidden;
     private ConeDetection _detection;
     private NavMeshAgent _agent;
@@ -23,6 +27,7 @@ public class OctaviusBehaviour : MonoBehaviour
     {
         _agent = GetComponent<NavMeshAgent>();
         _detection = GetComponent<ConeDetection>();
+        CameraDetection.NewCameraSpotted.AddListener(NewCameraSpotted);
 
         _tree = new BehaviourTree("Octavius");
 
@@ -30,14 +35,19 @@ public class OctaviusBehaviour : MonoBehaviour
         chaseSequence.AddChild(new Leaf("CanSeePlayer", new Condition(() => _detection.DetectingPlayer || _isChasingPlayer)));
         chaseSequence.AddChild(new Leaf("ChasePlayer", new ActionStrategy(() => ChasePlayer())));
 
+        Sequence cameraDetectingPlayer = new Sequence("Camera Detection", 75);
+        cameraDetectingPlayer.AddChild(new Leaf("IsCameraDetecting", new Condition(() => _newCameraHasSpotted || _goingToCheckCamera)));
+        cameraDetectingPlayer.AddChild(new Leaf("GoToCamera", new ActionStrategy(() => CheckCamera())));
+
         Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints), 50);
 
-        PrioritySelector chaseOrPatrol = new PrioritySelector("chaseOrPatrol");
-        chaseOrPatrol.AddChild(chaseSequence);
-        chaseOrPatrol.AddChild(patrol);
+        PrioritySelector decision = new PrioritySelector("decision");
+        decision.AddChild(chaseSequence);
+        decision.AddChild(patrol);
+        decision.AddChild(cameraDetectingPlayer);
         
         // Added chase sequence to behaviour tree
-        _tree.AddChild(chaseOrPatrol);  
+        _tree.AddChild(decision);  
     }
 
     void Update()
@@ -68,5 +78,26 @@ public class OctaviusBehaviour : MonoBehaviour
             _timeLeftText.enabled = false; // hides countdown
             _agent.SetDestination(_agent.transform.position);// set path to itself to stop moving
         }
+    }
+
+    void CheckCamera()
+    {
+        if (!_goingToCheckCamera || _newCameraHasSpotted)
+        {
+            _goingToCheckCamera = true;
+            _agent.SetDestination(_playerTransform.position);
+        }
+
+        if (_agent.remainingDistance < _agent.stoppingDistance)
+        {
+            _goingToCheckCamera = false;
+        }
+
+        _newCameraHasSpotted = false;
+    }
+
+    void NewCameraSpotted()
+    {
+        _newCameraHasSpotted = true;
     }
 }

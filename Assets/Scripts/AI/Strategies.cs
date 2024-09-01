@@ -37,7 +37,7 @@ public class PatrolStrategy : IStrategy
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);
         
-        if (isPathCalculated && agent.remainingDistance < 0.5f)
+        if (isPathCalculated && agent.remainingDistance < agent.stoppingDistance)
         {
             currentIndex++;
             isPathCalculated = false;
@@ -68,7 +68,7 @@ public class RandomPatrolStrategy : PatrolStrategy
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);
 
-        if (isPathCalculated && agent.remainingDistance < 0.5f)
+        if (isPathCalculated && agent.remainingDistance < agent.stoppingDistance)
         {
             SetRandomPatrolPoint();
             isPathCalculated = false;
