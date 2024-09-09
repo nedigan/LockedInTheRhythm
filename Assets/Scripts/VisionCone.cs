@@ -12,11 +12,17 @@ public class VisionCone : MonoBehaviour
     public int VisionConeResolution = 120;//the vision cone will be made up of triangles, the higher this value is the pretier the vision cone will be
     Mesh VisionConeMesh;
     MeshFilter MeshFilter_;
+    MeshRenderer VisionConeRenderer;
+
+    public bool ShowVisionCone = true;
+
     //Create all of these variables, most of them are self explanatory, but for the ones that aren't i've added a comment to clue you in on what they do
     //for the ones that you dont understand dont worry, just follow along
     void Start()
     {
-        transform.AddComponent<MeshRenderer>().material = VisionConeMaterial;
+        VisionConeRenderer = transform.AddComponent<MeshRenderer>();
+        VisionConeRenderer.material = VisionConeMaterial;
+
         MeshFilter_ = transform.AddComponent<MeshFilter>();
         VisionConeMesh = new Mesh();
         VisionAngle *= Mathf.Deg2Rad;
@@ -25,7 +31,15 @@ public class VisionCone : MonoBehaviour
 
     void Update()
     {
-        DrawVisionCone();//calling the vision cone function everyframe just so the cone is updated every frame
+        if (ShowVisionCone)
+        {
+            VisionConeRenderer.enabled = true;
+            DrawVisionCone();//calling the vision cone function everyframe just so the cone is updated every frame
+        }
+        else
+        {
+            VisionConeRenderer.enabled = false;
+        }
     }
 
     void DrawVisionCone()//this method creates the vision cone mesh

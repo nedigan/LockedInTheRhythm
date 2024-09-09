@@ -7,23 +7,21 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NeonPink
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Name: NeonPink 1
+  m_Shader: {fileID: 103, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _ALPHAPREMULTIPLY_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _ALPHATEST_ON
   - _EMISSION
   - _SPECULAR_SETUP
   - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2950
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - DepthOnly
   - SHADOWCASTER
@@ -150,14 +148,14 @@ Material:
     - _AlphaToMask: 0
     - _BASE_COLOR_WEIGHT: 0
     - _BUMP_MAP_STRENGTH: 0
-    - _Blend: 0
+    - _Blend: 1
     - _BlendModePreserveSpecular: 1
     - _BlendOp: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
-    - _Cutoff: 0.538
+    - _Cutoff: 0.513
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
@@ -174,7 +172,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
-    - _QueueOffset: -50
+    - _QueueOffset: -3
     - _REFLECTIONS_IOR: 0
     - _REFLECTIONS_ROUGHNESS: 0
     - _REFLECTIONS_WEIGHT: 4
@@ -183,7 +181,7 @@ Material:
     - _SPECULAR_IOR: 0
     - _SPECULAR_ROUGHNESS: 2
     - _Scale: 1.5
-    - _Smoothness: 0.749
+    - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -194,15 +192,15 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BASE_COLOR: {r: 1, g: 0, b: 0.938499, a: 1}
-    - _BaseColor: {r: 0.9433962, g: 0.06674972, b: 0.64086723, a: 1}
-    - _Color: {r: 0.9433962, g: 0.0667497, b: 0.64086723, a: 1}
+    - _BaseColor: {r: 1, g: 0.035848916, b: 0.62093216, a: 1}
+    - _Color: {r: 1, g: 0.035848916, b: 0.6209321, a: 1}
     - _EMISSION_COLOR: {r: 1, g: 0.5641509, b: 0.91915905, a: 0}
-    - _EmissionColor: {r: 5.1139407, g: 0, b: 3.6948895, a: 1}
+    - _EmissionColor: {r: 2.270603, g: 0.32097518, b: 1.7018456, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _REFLECTIONS_COLOR: {r: 1, g: 0, b: 0.697525, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SPECULAR_COLOR: {r: 1, g: 0, b: 0.713027, a: 0}
-    - _SpecColor: {r: 0.9245283, g: 0.38202205, b: 0.5720148, a: 1}
+    - _SpecColor: {r: 0.21037377, g: 0.25545263, b: 0.7584905, a: 1}
     - _Tint: {r: 0.24771976, g: 0, b: 1, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &2238671013972625542

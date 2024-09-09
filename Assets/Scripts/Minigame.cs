@@ -10,8 +10,14 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Song _song; // testing - play method will take song from safe
     [SerializeField] private float _speed = 5f; // testing
     [SerializeField] private float _hitNoteOffset = 10f;
+
     private float _hitPositionX;
     private int _combo = 0;
+    private int _highestCombo = 0;
+
+    // used in calculating stamina
+    private int _amountOfNotes = 0;
+
 
     [Header("References")]
     [SerializeField] private GameObject _notePrefab;
@@ -49,7 +55,7 @@ public class Minigame : MonoBehaviour
     private void OnEnable()
     {
         Time.timeScale = 0.0f;
-        _health.ResetHealth();
+        ResetMinigame();
         Play();
     }
 
@@ -74,6 +80,8 @@ public class Minigame : MonoBehaviour
         else
             _currentTrackIndex = 0; // player is selecting top track
 
+        if (_currentNotes.Count == 0) // TODO: this will be called if there is a long break
+            EndMinigame();
 
         _trackIndicators[_currentTrackIndex].color = Color.gray; // set players track to black - prolly change to something prettier
 
@@ -94,6 +102,9 @@ public class Minigame : MonoBehaviour
 
                 _combo++;
                 _comboText.text = $"Combo: x{_combo}";
+
+                if (_combo > _highestCombo)
+                    _highestCombo = _combo;
             }
         }
 
@@ -120,6 +131,8 @@ public class Minigame : MonoBehaviour
         {
             NoteMovement note = Instantiate(_notePrefab, _spawnPoints[_notes[index].Key.Index].position, _notePrefab.transform.rotation, transform).GetComponent<NoteMovement>();
             note.Setup(_speed, _targetPoints[_notes[index].Key.Index].position, _notes[index].Key.Index, this);
+
+            _amountOfNotes++;
         }
 
         Debug.Log($"Note duration: {_notes[index].Value}");
@@ -129,8 +142,6 @@ public class Minigame : MonoBehaviour
         index++;
         if (index < _notes.Count)
             StartCoroutine(SpawnNote(index)); // next note and wraps around
-        else
-            EndMinigame();
     }
 
     private void DestroyNotes() // used in on disable to remove all notes for reset
@@ -157,9 +168,15 @@ public class Minigame : MonoBehaviour
         }
     }
 
+    private void ResetMinigame()
+    {
+        _health.ResetHealth();
+        _amountOfNotes = 0;
+    }
+
     private void EndMinigame()
     {
-        // DO STUFF
+        // Set alert level of octavius based on lives remaining
         switch (_health.CurrentHealth)
         {
             case 0: // Lost all lives
@@ -175,6 +192,9 @@ public class Minigame : MonoBehaviour
                 EnemyAlert.NewAlert.Invoke();
                 break;
         }
+
+        // Calculate Stamina
+        float stamina = (float)_highestCombo / (float)_amountOfNotes; // stamina in range 0 to 1. For slider
 
         gameObject.SetActive(false);
     }

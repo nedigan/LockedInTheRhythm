@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -12,11 +13,18 @@ public class PlayerMovement : MonoBehaviour
     private InputAction _moveAction;
 
     [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _sprintMultipler = 1.5f;
+    [SerializeField] private float _maxStamina = 10f;
+    [SerializeField] private Slider _sprintMeter;
+
+    private float _stamina;
+    private bool _sprinting = false;
 
     private void Awake()
     {
         _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions["Move"];
+        _stamina = _maxStamina;
     }
 
     // Start is called before the first frame update
@@ -49,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 direction = forward * inputDirection.y + right * inputDirection.x;
         direction.Normalize(); // Ensure the direction vector has a magnitude of 1
 
-        // If the direction is not zero, rotate the character
+        // If the direction is not zero
         if (direction != Vector3.zero)
         {
             // Normalize the direction to avoid scaling the movement
@@ -60,7 +68,28 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = targetRotation;
 
             // Move the character
-            _controller.Move(direction * _speed * Time.deltaTime);
+            float speedMultipler;
+            if (_sprinting && _stamina > 0f)
+            {
+                speedMultipler = _sprintMultipler;
+                _stamina -= _speed * Time.deltaTime; // TODO: Fix this prolly
+            }
+            else
+                speedMultipler = 1f;
+
+            _controller.Move(direction * _speed * speedMultipler * Time.deltaTime);
         }
+
+        _sprintMeter.value = _stamina / _maxStamina;
+    }
+
+    public void SprintButtonDown()
+    {
+        _sprinting = true;
+    }
+
+    public void SprintButtonUp()
+    {
+        _sprinting = false;
     }
 }
