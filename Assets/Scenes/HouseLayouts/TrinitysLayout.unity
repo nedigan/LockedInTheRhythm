@@ -20298,6 +20298,7 @@ MonoBehaviour:
   _comboText: {fileID: 463783209}
   _health: {fileID: 1758265601}
   _octaviusBehaviour: {fileID: 2023228933}
+  _playerMovement: {fileID: 1879699255}
   _trackIndicators:
   - {fileID: 1420091021}
   - {fileID: 1455774694}
@@ -21466,7 +21467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1599201891}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1879699259}
+        m_TargetAssemblyTypeName: PlayerInteract, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1599201891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24496,6 +24509,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c0d6eee72abef3449f47300079933e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1879699259 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6538073992048411851, guid: beecd2971395d42449c7f4757d85a309,
+    type: 3}
+  m_PrefabInstance: {fileID: 5211122976424531890}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9901804617394ab469e2cc025f719cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1896802323

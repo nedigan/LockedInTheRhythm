@@ -83,6 +83,11 @@ public class PlayerMovement : MonoBehaviour
         _sprintMeter.value = _stamina / _maxStamina;
     }
 
+    public void SetStamina(float staminaPercentage)
+    {
+        _stamina = staminaPercentage * _maxStamina;
+    }
+
     public void SprintButtonDown()
     {
         _sprinting = true;

@@ -21,7 +21,7 @@ public class PlayerInteract : MonoBehaviour
     }
     private void OnEnable()
     {
-        _touchPressAction.started += TestInteract;
+        //_touchPressAction.started += TestInteract;
     }
 
     private void TestInteract(InputAction.CallbackContext context)
@@ -37,6 +37,14 @@ public class PlayerInteract : MonoBehaviour
             {
                 interactable.Interact();
             }
+        }
+    }
+
+    public void Interact()
+    {
+        if (_currentInteractable != null)
+        {
+            _currentInteractable.Interact();
         }
     }
     private void OnTriggerEnter(Collider other)

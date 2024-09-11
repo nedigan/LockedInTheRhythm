@@ -26,13 +26,14 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _comboText;
     [SerializeField] private Health _health;
-    [SerializeField] private OctaviusBehaviour _octaviusBehaviour;
+    [SerializeField] private OctaviusBehaviour _octaviusBehaviour; // for setting alert level and alerting him to player location
+    [SerializeField] private PlayerMovement _playerMovement; // for refilling stamina
 
-    [SerializeField] private Image[] _trackIndicators = new Image[4];
+    [SerializeField] private Image[] _trackIndicators = new Image[4]; // lines on the minigame to indicate which track is selected
     private int _currentTrackIndex = 0;
 
     [Header("Debugging")]
-    [SerializeField] private Transform _canvasTransform;
+    [SerializeField] private Transform _canvasTransform; // for showing where a note is marked as correct
 
 
     private List<NoteMovement> _currentNotes = new List<NoteMovement>();
@@ -98,7 +99,7 @@ public class Minigame : MonoBehaviour
             // Player has correctly positioned the toggle thing
             {
                 toRemove.Add(note);
-                note.wasHit = true; 
+                note.wasHit = true; // just for redundancy, makes sure they dont remove themselves
 
                 _combo++;
                 _comboText.text = $"Combo: x{_combo}";
@@ -194,7 +195,8 @@ public class Minigame : MonoBehaviour
         }
 
         // Calculate Stamina
-        float stamina = (float)_highestCombo / (float)_amountOfNotes; // stamina in range 0 to 1. For slider
+        float staminaPercentage = (float)_highestCombo / (float)_amountOfNotes; // stamina in range 0 to 1. For slider
+        _playerMovement.SetStamina(staminaPercentage);
 
         gameObject.SetActive(false);
     }
