@@ -5,13 +5,15 @@ using UnityEngine;
 using UnityEngine.AI;
 using TMPro;
 
-[RequireComponent(typeof(NavMeshAgent))]
+//[RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(ConeDetection))]
 public class OctaviusBehaviour : MonoBehaviour
 {
     [SerializeField] private List<Transform> _waypoints = new List<Transform>();
     [SerializeField] private TextMeshProUGUI _timeLeftText;
     [SerializeField] private Transform _playerTransform;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private NavMeshAgent _agent;
 
     [SerializeField] private float _alertSpeedLevel1 = 2f;
     [SerializeField] private float _alertSpeedLevel2 = 3f;
@@ -26,12 +28,11 @@ public class OctaviusBehaviour : MonoBehaviour
 
     private float _timeLeftUntilPlayerHidden;
     private ConeDetection _detection;
-    private NavMeshAgent _agent;
     private BehaviourTree _tree;
     void Awake()
     {
-        _agent = GetComponent<NavMeshAgent>();
         _detection = GetComponent<ConeDetection>();
+
         EnemyAlert.NewAlert.AddListener(NewAlertOccurred);
 
         _tree = new BehaviourTree("Octavius");
@@ -45,7 +46,7 @@ public class OctaviusBehaviour : MonoBehaviour
         alertSequence.AddChild(new Leaf("InvestigateAlert", new ActionStrategy(() => GoToAlert())));
 
         Sequence patrolSequence = new Sequence("PatrolSequence", 50);
-        Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints));
+        Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints, _animator));
         patrolSequence.AddChild(new Leaf("SetAlertLevelLow", new ActionStrategy(() => _agent.speed = _alertSpeedLevel1)));
         patrolSequence.AddChild(patrol);
 
