@@ -47,8 +47,8 @@
                 },
                 {
                     "name": "",
-                    "id": "a8c088e4-3f33-4b33-b814-10d841c5712a",
-                    "path": "<Touchscreen>/touch0/position",
+                    "id": "3ca56961-e529-4672-93ae-4e50133f8f0e",
+                    "path": "<Touchscreen>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -58,30 +58,8 @@
                 },
                 {
                     "name": "",
-                    "id": "f5b632f8-5063-4585-bd99-e7dfb4d9a002",
-                    "path": "<Touchscreen>/touch1/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TouchPosition",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3ece3666-14cf-4b65-aa03-3768ecfe7b5a",
-                    "path": "<Touchscreen>/touch0/tap",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TouchPress",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d7ae676c-a3d1-4649-b5e9-e49f291f8474",
-                    "path": "<Touchscreen>/touch1/tap",
+                    "id": "f94d6f19-218f-4d26-a530-096049554bc1",
+                    "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
