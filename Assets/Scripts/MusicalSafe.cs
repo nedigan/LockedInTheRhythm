@@ -6,7 +6,9 @@ public class MusicalSafe : Interactable
 {
     [SerializeField] private Material _outlineMaterial;
     [SerializeField] private GameObject _minigameUI;
+    [SerializeField] private Minigame _minigame;
     private float _scale;
+    public bool Locked { get; private set; } = true;
     public void Awake()
     {
         _scale = 1.1f;
@@ -32,7 +34,12 @@ public class MusicalSafe : Interactable
     {
         Debug.Log("Interacted with musical safe");
         _minigameUI.SetActive(true); // testing
+        _minigame.Play(this);
     }
 
-    
+    public void Unlock()
+    {
+        Locked = false;
+        // Change the look of the safe??
+    }
 }
