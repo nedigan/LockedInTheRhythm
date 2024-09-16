@@ -8,6 +8,7 @@ public class InvestigateAnimBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool("Investigating", true);
+        Debug.Log("Started investigation");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
