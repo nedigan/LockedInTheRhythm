@@ -61,7 +61,7 @@ public class PatrolStrategy : IStrategy
 public class RandomPatrolStrategy : PatrolStrategy
 {
     readonly Animator animator;
-    private bool reachedDestination = false;
+    private bool _newDestinationSet = false;
     public RandomPatrolStrategy(Transform entity, NavMeshAgent agent, List<Transform> patrolPoints, Animator animator, float patrolSpeed = 2.0f) : base(entity, agent, patrolPoints, patrolSpeed)
     {
         this.animator = animator;
@@ -71,26 +71,18 @@ public class RandomPatrolStrategy : PatrolStrategy
     {
         if (currentIndex == patrolPoints.Count) return Node.Status.Success;
         
-
         var target = patrolPoints[currentIndex];
         agent.SetDestination(target.position);
 
-        if (reachedDestination || (isPathCalculated && agent.remainingDistance < agent.stoppingDistance))
-        {
-            if (!reachedDestination)
-            {
-                animator.SetTrigger("Investigate");
-                reachedDestination = true;
-            }
-            else if (!animator.GetBool("Investigating"))
-                // If it has started investigating and is no longer investigating
-            {
-                SetRandomPatrolPoint();
-                isPathCalculated = false;
-                reachedDestination = false;
 
-                return Node.Status.Running;
-            }
+        if (!animator.GetBool("Investigating") && isPathCalculated && agent.remainingDistance < agent.stoppingDistance)
+        {
+            animator.SetTrigger("Investigate");
+
+            SetRandomPatrolPoint();
+            isPathCalculated = false;
+
+            return Node.Status.Running;
         }
 
         if (agent.pathPending)

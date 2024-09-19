@@ -37,12 +37,20 @@ public class OctaviusBehaviour : MonoBehaviour
 
         _tree = new BehaviourTree("Octavius");
 
+        Leaf stopInvestigation = new Leaf("StopInvestigation", new ActionStrategy(() =>
+        {
+            if (_animator.GetBool("Investigating"))
+                _animator.SetTrigger("StopInvestigation");
+        }));
+
         Sequence chaseSequence = new Sequence("Chase", 100);
         chaseSequence.AddChild(new Leaf("CanSeePlayer", new Condition(() => _detection.DetectingPlayer || _isChasingPlayer)));
+        chaseSequence.AddChild(stopInvestigation);
         chaseSequence.AddChild(new Leaf("ChasePlayer", new ActionStrategy(() => ChasePlayer())));
 
         Sequence alertSequence = new Sequence("Alert", 75);
         alertSequence.AddChild(new Leaf("IsAlertPresent", new Condition(() => _newAlert || _investigatingAlert)));
+        alertSequence.AddChild(stopInvestigation);
         alertSequence.AddChild(new Leaf("InvestigateAlert", new ActionStrategy(() => GoToAlert())));
 
         Sequence patrolSequence = new Sequence("PatrolSequence", 50);
@@ -62,6 +70,7 @@ public class OctaviusBehaviour : MonoBehaviour
     void Update()
     {
         _tree.Process();
+        _agent.isStopped = _animator.GetBool("Investigating");
     }
 
     void ChasePlayer()

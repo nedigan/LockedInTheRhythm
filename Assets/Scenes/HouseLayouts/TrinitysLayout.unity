@@ -28155,6 +28155,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 531408885}
     m_Modifications:
+    - target: {fileID: 4561399101186527265, guid: e5223c7176e9a064fb53e5464b5d7a98,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4793493871195925102, guid: e5223c7176e9a064fb53e5464b5d7a98,
         type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
@@ -28453,6 +28458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5916897748981879490, guid: beecd2971395d42449c7f4757d85a309,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6076050504159523213, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8801804823663690980}
   - component: {fileID: 7452856695799736816}
   - component: {fileID: 9011717279112032714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VisionCone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
   VisionAngle: 90
   VisionObstructingLayer:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 503
   VisionConeResolution: 60
   ShowVisionCone: 1
 --- !u!114 &7452856695799736816
@@ -145,6 +145,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3704563456361051248, guid: 4844a05aab3d9a346a5a69a8402265fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -2021178655527167927, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -160,10 +165,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 25.361
       objectReference: {fileID: 0}
+    - target: {fileID: 65702495048144492, guid: 4844a05aab3d9a346a5a69a8402265fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
       propertyPath: m_Name
       value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4844a05aab3d9a346a5a69a8402265fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
