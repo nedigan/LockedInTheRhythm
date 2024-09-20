@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Slider _sprintMeter;
 
     private float _stamina;
+    public float StaminaPercentage { get { return _stamina / _maxStamina; }}
     private bool _sprinting = false;
 
     private void Awake()
