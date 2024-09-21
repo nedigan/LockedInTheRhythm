@@ -12,6 +12,11 @@ public class SceneChanger : MonoBehaviour
         StartCoroutine(LoadScene(1));
     }
 
+    public void TryAgain()
+    {
+        StartCoroutine(LoadScene(0));
+    }
+
     IEnumerator LoadScene(int sceneIndex)
     {
         _transition.SetTrigger("Start");
