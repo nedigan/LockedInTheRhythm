@@ -24,6 +24,11 @@ public class AccessibleJoystick : MonoBehaviour
         _touchPressAction.started += PlaceJoystick;
     }
 
+    private void OnDisable()
+    {
+        _touchPressAction.started -= PlaceJoystick;
+    }
+
     public void PlaceJoystick(InputAction.CallbackContext context)
     {
         Vector2 touchViewportPos = _camera.ScreenToViewportPoint(_touchPosAction.ReadValue<Vector2>());
