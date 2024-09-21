@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class AccessibleJoystick : MonoBehaviour
 {
-    private PlayerInput _playerInput;
+    [SerializeField]private PlayerInput _playerInput;
     private InputAction _touchPressAction;
     private InputAction _touchPosAction;
 
@@ -13,7 +13,6 @@ public class AccessibleJoystick : MonoBehaviour
 
     void Awake()
     {
-        _playerInput = GetComponent<PlayerInput>();
         _camera = Camera.main;
 
         _touchPressAction = _playerInput.actions["TouchPress"];

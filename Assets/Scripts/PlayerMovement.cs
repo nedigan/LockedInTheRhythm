@@ -9,9 +9,9 @@ public class PlayerMovement : MonoBehaviour
 {
     private CharacterController _controller;
     private Transform _cameraTransform;
-    private PlayerInput _playerInput;
     private InputAction _moveAction;
 
+    [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private float _speed = 10f;
     [SerializeField] private float _sprintMultipler = 1.5f;
     [SerializeField] private float _maxStamina = 10f;
@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        _playerInput = GetComponent<PlayerInput>();
         _moveAction = _playerInput.actions["Move"];
         _stamina = _maxStamina;
     }
