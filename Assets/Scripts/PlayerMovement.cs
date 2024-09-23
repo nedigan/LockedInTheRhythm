@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _sprintMultipler = 1.5f;
     [SerializeField] private float _maxStamina = 10f;
     [SerializeField] private Slider _sprintMeter;
+    [SerializeField] private GameObject _footprintPrefab;
+
+    public bool BeingTracked = false;
 
     private float _stamina;
     public float StaminaPercentage { get { return _stamina / _maxStamina; }}
@@ -77,10 +80,40 @@ public class PlayerMovement : MonoBehaviour
             else
                 speedMultipler = 1f;
 
+
             _controller.Move(direction * _speed * speedMultipler * Time.deltaTime);
+
+            if (BeingTracked) 
+                ManageFootprints();
         }
 
         _sprintMeter.value = _stamina / _maxStamina;
+    }
+
+    private Transform _lastFootprint;
+    [SerializeField] private LayerMask _groundLayerMask;
+    [SerializeField] private float _footprintStepDistance = 1.5f;
+    private void ManageFootprints()
+    {
+        if (_lastFootprint == null)
+        {
+            PlaceFootprint();
+            return;
+        }
+
+        if (Vector3.Distance(transform.position, _lastFootprint.position) > _footprintStepDistance)
+        {
+            PlaceFootprint();
+        }
+    }
+
+    private void PlaceFootprint()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, _groundLayerMask))
+        {
+            _lastFootprint = Instantiate(_footprintPrefab, hit.point + Vector3.up * 0.01f, transform.rotation).transform;
+        }
     }
 
     public void SetStamina(float staminaPercentage)

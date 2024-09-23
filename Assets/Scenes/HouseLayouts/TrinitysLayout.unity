@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 18458676}
   - component: {fileID: 18458675}
   - component: {fileID: 18458674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 34256838}
   - component: {fileID: 34256837}
   - component: {fileID: 34256836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 76413838}
   - component: {fileID: 76413837}
   - component: {fileID: 76413836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 144458204}
   - component: {fileID: 144458203}
   - component: {fileID: 144458202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2615,7 @@ GameObject:
   - component: {fileID: 147838920}
   - component: {fileID: 147838919}
   - component: {fileID: 147838918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4763,7 +4763,7 @@ GameObject:
   - component: {fileID: 342659071}
   - component: {fileID: 342659070}
   - component: {fileID: 342659069}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5108,7 +5108,7 @@ GameObject:
   - component: {fileID: 356657719}
   - component: {fileID: 356657718}
   - component: {fileID: 356657717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5350,7 +5350,7 @@ GameObject:
   - component: {fileID: 386439510}
   - component: {fileID: 386439509}
   - component: {fileID: 386439508}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11304,7 +11304,7 @@ GameObject:
   - component: {fileID: 896886179}
   - component: {fileID: 896886178}
   - component: {fileID: 896886177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25155,7 +25155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1877487162}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26240,7 +26240,7 @@ GameObject:
   - component: {fileID: 1939825812}
   - component: {fileID: 1939825811}
   - component: {fileID: 1939825810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26706,7 +26706,7 @@ GameObject:
   - component: {fileID: 1983713168}
   - component: {fileID: 1983713167}
   - component: {fileID: 1983713166}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27762,7 +27762,7 @@ GameObject:
   - component: {fileID: 2065672292}
   - component: {fileID: 2065672291}
   - component: {fileID: 2065672290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Lawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28980,11 +28980,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 189731522}
     m_Modifications:
+    - target: {fileID: 1491430306511217998, guid: beecd2971395d42449c7f4757d85a309,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3554365892784744856, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
       value: 
       objectReference: {fileID: 1908895782}
+    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
+        type: 3}
+      propertyPath: BeingTracked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: _playerInput
@@ -28995,6 +29005,17 @@ PrefabInstance:
       propertyPath: _sprintMeter
       value: 
       objectReference: {fileID: 1243972620}
+    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
+        type: 3}
+      propertyPath: _footprintPrefab
+      value: 
+      objectReference: {fileID: 5614142270480584389, guid: 7dc78b2fcf98ea84a9070bd3da070e93,
+        type: 3}
+    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
+        type: 3}
+      propertyPath: _groundLayerMask.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 3831625402689928848, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: m_LocalPosition.x
