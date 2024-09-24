@@ -7,7 +7,7 @@ using TMPro;
 
 //[RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(ConeDetection))]
-public class OctaviusBehaviour : MonoBehaviour
+public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 {
     [SerializeField] private List<Transform> _waypoints = new List<Transform>();
     [SerializeField] private TextMeshProUGUI _timeLeftText;
@@ -25,6 +25,8 @@ public class OctaviusBehaviour : MonoBehaviour
 
     private bool _newAlert = false;
     private bool _investigatingAlert = false;
+    public bool _isTrackingPlayer = false; // TODO : change to private
+    [SerializeField] private float _footprintSearchRange = 10f;
 
     private float _timeLeftUntilPlayerHidden;
     private ConeDetection _detection;
@@ -55,13 +57,19 @@ public class OctaviusBehaviour : MonoBehaviour
 
         Sequence patrolSequence = new Sequence("PatrolSequence", 50);
         Leaf patrol = new Leaf("Patrol", new RandomPatrolStrategy(transform, _agent, _waypoints, _animator));
-        patrolSequence.AddChild(new Leaf("SetAlertLevelLow", new ActionStrategy(() => _agent.speed = _alertSpeedLevel1)));
+        patrolSequence.AddChild(new Leaf("SetAlertLevelLow", new ActionStrategy(() => _agent.speed = _alertSpeedLevel1))); // TODO
         patrolSequence.AddChild(patrol);
+
+        Sequence trackSequence = new Sequence("TrackSequence", 90);
+        trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => _isTrackingPlayer)));
+        trackSequence.AddChild(new Leaf("SetAlertLevelModerate", new ActionStrategy(() => _agent.speed = _alertSpeedLevel2)));// TODO
+        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(transform, _footprintSearchRange, _agent)));
 
         PrioritySelector decision = new PrioritySelector("decision");
         decision.AddChild(chaseSequence);
         decision.AddChild(patrolSequence);
         decision.AddChild(alertSequence);
+        decision.AddChild(trackSequence);
         
         // Added chase sequence to behaviour tree
         _tree.AddChild(decision);  
@@ -132,6 +140,18 @@ public class OctaviusBehaviour : MonoBehaviour
             case AlertLevel.Level3:
                 _agent.speed = _alertSpeedLevel3;
                 break;
+        }
+    }
+
+    public void ChangeState(GameState state)
+    {
+        if (state == GameState.EndState)
+        {
+            _isTrackingPlayer = true;
+        }
+        else if (state == GameState.MainState)
+        {
+            _isTrackingPlayer = false;
         }
     }
 }

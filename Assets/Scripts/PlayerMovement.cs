@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IHandleGameState
 {
     private CharacterController _controller;
     private Transform _cameraTransform;
@@ -129,5 +129,17 @@ public class PlayerMovement : MonoBehaviour
     public void SprintButtonUp()
     {
         _sprinting = false;
+    }
+
+    public void ChangeState(GameState state)
+    {
+        if (state == GameState.EndState)
+        {
+            BeingTracked = true;
+        }
+        else if (state == GameState.MainState)
+        {
+            BeingTracked = false;
+        }
     }
 }
