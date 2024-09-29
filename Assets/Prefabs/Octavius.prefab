@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6866309618420423860}
   - component: {fileID: 5170328465136883274}
   - component: {fileID: 6748125946852003501}
+  - component: {fileID: 1355806568519085939}
   m_Layer: 6
   m_Name: Octavius
   m_TagString: Untagged
@@ -77,6 +78,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   VisionConeResolution: 120
+  ShowVisionCone: 1
 --- !u!114 &5170328465136883274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +111,33 @@ MonoBehaviour:
   _waypoints: []
   _timeLeftText: {fileID: 0}
   _playerTransform: {fileID: 0}
+  _animator: {fileID: 0}
+  _agent: {fileID: 0}
+  _alertSpeedLevel1: 2
+  _alertSpeedLevel2: 3
+  _alertSpeedLevel3: 5
   _timeUntilPlayerHidden: 5
+--- !u!65 &1355806568519085939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6202537023389999223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7333026348739817158
 GameObject:
   m_ObjectHideFlags: 0
