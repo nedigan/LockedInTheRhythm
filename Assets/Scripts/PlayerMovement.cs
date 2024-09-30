@@ -83,7 +83,7 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
 
             _controller.Move(direction * _speed * speedMultipler * Time.deltaTime);
 
-            if (BeingTracked) 
+            if (BeingTracked && !_sprinting) 
                 ManageFootprints();
         }
 
@@ -133,13 +133,13 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
 
     public void ChangeState(GameState state)
     {
-        if (state == GameState.EndState)
-        {
-            BeingTracked = true;
-        }
-        else if (state == GameState.MainState)
-        {
-            BeingTracked = false;
-        }
+        //if (state == GameState.EndState)
+        //{
+        //    BeingTracked = true;
+        //}
+        //else if (state == GameState.MainState)
+        //{
+        //    BeingTracked = false;
+        //}
     }
 }

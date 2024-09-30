@@ -6,12 +6,15 @@ using UnityEngine.AI;
 using TMPro;
 
 //[RequireComponent(typeof(NavMeshAgent))]
-[RequireComponent(typeof(ConeDetection))]
+[RequireComponent(typeof(OctaviusDetection))]
 public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 {
     [SerializeField] private List<Transform> _waypoints = new List<Transform>();
     [SerializeField] private TextMeshProUGUI _timeLeftText;
     [SerializeField] private Transform _playerTransform;
+
+    [SerializeField] private Transform _feetTransform;
+
     [SerializeField] private Animator _animator;
     [SerializeField] private NavMeshAgent _agent;
 
@@ -26,14 +29,13 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
     private bool _newAlert = false;
     private bool _investigatingAlert = false;
     public bool _isTrackingPlayer = false; // TODO : change to private
-    [SerializeField] private float _footprintSearchRange = 10f;
 
     private float _timeLeftUntilPlayerHidden;
-    private ConeDetection _detection;
+    private OctaviusDetection _detection;
     private BehaviourTree _tree;
     void Awake()
     {
-        _detection = GetComponent<ConeDetection>();
+        _detection = GetComponent<OctaviusDetection>();
 
         EnemyAlert.NewAlert.AddListener(NewAlertOccurred);
 
@@ -61,17 +63,17 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
         patrolSequence.AddChild(patrol);
 
         Sequence trackSequence = new Sequence("TrackSequence", 90);
-        trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => _isTrackingPlayer)));
+        trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => _isTrackingPlayer || _detection.DetectingFootprint)));
         trackSequence.AddChild(new Leaf("SetAlertLevelModerate", new ActionStrategy(() => _agent.speed = _alertSpeedLevel2)));// TODO
-        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(transform, _footprintSearchRange, _agent)));
+        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(_feetTransform,_agent, _detection, _isTrackingPlayer)));
 
         PrioritySelector decision = new PrioritySelector("decision");
+        // Added chase sequence to behaviour tree
         decision.AddChild(chaseSequence);
         decision.AddChild(patrolSequence);
         decision.AddChild(alertSequence);
         decision.AddChild(trackSequence);
         
-        // Added chase sequence to behaviour tree
         _tree.AddChild(decision);  
     }
 

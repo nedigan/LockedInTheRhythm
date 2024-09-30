@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3707344842263099870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666794989489813262}
+  m_Layer: 9
+  m_Name: FeetTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1666794989489813262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3707344842263099870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.819, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6127928606288993671}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6202537023389999223
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,11 +40,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6127928606288993671}
-  - component: {fileID: 7106752779329800388}
   - component: {fileID: 6866309618420423860}
-  - component: {fileID: 5170328465136883274}
+  - component: {fileID: 2371512421334385786}
   - component: {fileID: 6748125946852003501}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Octavius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,30 +64,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6194822401162306421}
+  - {fileID: 1666794989489813262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!195 &7106752779329800388
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6202537023389999223}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.77
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 360
-  m_StoppingDistance: 2
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2.28
-  m_BaseOffset: 0.7
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &6866309618420423860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,9 +84,10 @@ MonoBehaviour:
   VisionAngle: 83.1
   VisionObstructingLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 375
   VisionConeResolution: 120
---- !u!114 &5170328465136883274
+  ShowVisionCone: 1
+--- !u!114 &2371512421334385786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6202537023389999223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 565949157360cef44893e6d27f6bf236, type: 3}
+  m_Script: {fileID: 11500000, guid: b948cbcdb93bcb646b43e7e5bb489f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _visionCone: {fileID: 6866309618420423860}
@@ -94,6 +104,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   _coneAngle: 83.1
+  _footprintLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  _footprintSearchRange: 0
 --- !u!114 &6748125946852003501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,10 +120,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd65889cb1b6e884195aed456f0a0ff9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypoints: []
+  _waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _timeLeftText: {fileID: 0}
   _playerTransform: {fileID: 0}
+  _feetTransform: {fileID: 1666794989489813262}
+  _footstepLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  _animator: {fileID: 0}
+  _agent: {fileID: 0}
+  _alertSpeedLevel1: 2
+  _alertSpeedLevel2: 3
+  _alertSpeedLevel3: 5
   _timeUntilPlayerHidden: 5
+  _isTrackingPlayer: 0
+  _footprintSearchRange: 3
 --- !u!1 &7333026348739817158
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +156,7 @@ GameObject:
   - component: {fileID: 4561399101186527265}
   - component: {fileID: 2854597688100371508}
   - component: {fileID: 4793493871195925102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +218,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1352798540, guid: d5445298925eb0c47a29c94e79f0cde2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

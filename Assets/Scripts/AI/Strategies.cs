@@ -107,59 +107,57 @@ public class RandomPatrolStrategy : PatrolStrategy
     }
 }
 
-public class TrackStrategy : MonoBehaviour, IStrategy
+public class TrackStrategy : IStrategy
 {
     readonly Transform octaviusTransform;
-    readonly float searchRange;
     readonly NavMeshAgent agent;
-    public TrackStrategy(Transform octaviusTransform, float searchRange, NavMeshAgent agent)
+    readonly OctaviusDetection detection;
+    readonly bool trackingPlayer;
+
+    private FootprintFade _targetFootprint = null;
+    private bool isPathCalculated = false;
+    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, bool trackingPlayer)
     {
         this.octaviusTransform = octaviusTransform;
-        this.searchRange = searchRange;
-        this.agent = agent; 
+        this.agent = agent;
+        this.detection = detection;
+        this.trackingPlayer = trackingPlayer;
     }
 
     public Node.Status Process()
     {
-        // This be slow : TODO
-        if (FootprintsInRange())
+        // This could be slow : TODO
+        if (detection.DetectingFootprint)
         {
-            agent.SetDestination(_cachedFootprints.Min().transform.position);
+            _targetFootprint = detection.FootprintsInRange.Min();
+            agent.SetDestination(_targetFootprint.transform.position);
         }
-        else // TODO: null reference when there is no footprints at all
+        else if (trackingPlayer) // TODO: null reference when there is no footprints at all
         {
-            agent.SetDestination(GetOldestFootprint().transform.position);
+            _targetFootprint = GetOldestFootprint();
+            agent.SetDestination(_targetFootprint.transform.position);
+        }
+        else
+        {
+            return Node.Status.Success;
+        }
+
+        if (isPathCalculated && agent.remainingDistance < 0.1f) //0.3f for testing
+        {
+            _targetFootprint.Visted();
+            isPathCalculated = false;
+        }
+
+        if (agent.pathPending)
+        {
+            isPathCalculated = true;
         }
 
         return Node.Status.Running;
     }
-
-    private List<FootprintFade> _cachedFootprints = new List<FootprintFade>();
-    public bool FootprintsInRange()
-    {
-        bool foundAtLeastOne = false;
-        _cachedFootprints.Clear();
-
-        // Get all colliders within the radius
-        Collider[] collidersInRange = Physics.OverlapSphere(octaviusTransform.position, searchRange, LayerMask.NameToLayer("Footprint"));
-
-        // Loop through colliders and check for the specific component
-        foreach (Collider collider in collidersInRange)
-        {
-            FootprintFade component = collider.GetComponent<FootprintFade>();
-            if (component != null)
-            {
-                foundAtLeastOne = true;
-                _cachedFootprints.Add(component);
-            }
-        }
-
-        return foundAtLeastOne;
-    }
-
     private FootprintFade GetOldestFootprint()
     {
-        FootprintFade[] footprints = FindObjectsOfType<FootprintFade>();
+        FootprintFade[] footprints = UnityEngine.Object.FindObjectsOfType<FootprintFade>();
         return footprints.Max();
     }
 }
