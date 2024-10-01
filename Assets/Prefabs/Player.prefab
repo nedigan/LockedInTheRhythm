@@ -134,7 +134,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -155,6 +155,13 @@ MonoBehaviour:
   _sprintMultipler: 1.5
   _maxStamina: 10
   _sprintMeter: {fileID: 0}
+  _footprintPrefab: {fileID: 5614142270480584389, guid: 7dc78b2fcf98ea84a9070bd3da070e93,
+    type: 3}
+  BeingTracked: 1
+  _groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  _footprintStepDistance: 1.5
 --- !u!114 &6538073992048411851
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28826,11 +28826,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1974025578475063036, guid: 1337e8d6dc199924f9ad562422c0a11a,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3472753792699465133, guid: 1337e8d6dc199924f9ad562422c0a11a,
         type: 3}
       propertyPath: m_Name
@@ -28992,21 +28987,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 189731522}
     m_Modifications:
-    - target: {fileID: 1491430306511217998, guid: beecd2971395d42449c7f4757d85a309,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3554365892784744856, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
       value: 
       objectReference: {fileID: 1908895782}
-    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
-        type: 3}
-      propertyPath: BeingTracked
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: _playerInput
@@ -29017,17 +29002,6 @@ PrefabInstance:
       propertyPath: _sprintMeter
       value: 
       objectReference: {fileID: 1243972620}
-    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
-        type: 3}
-      propertyPath: _footprintPrefab
-      value: 
-      objectReference: {fileID: 5614142270480584389, guid: 7dc78b2fcf98ea84a9070bd3da070e93,
-        type: 3}
-    - target: {fileID: 3591278647162179891, guid: beecd2971395d42449c7f4757d85a309,
-        type: 3}
-      propertyPath: _groundLayerMask.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
     - target: {fileID: 3831625402689928848, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29082,11 +29056,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763941363093841461, guid: beecd2971395d42449c7f4757d85a309,
-        type: 3}
-      propertyPath: m_StepOffset
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
