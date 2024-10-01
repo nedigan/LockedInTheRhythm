@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public interface IStrategy
 {
@@ -104,6 +106,62 @@ public class RandomPatrolStrategy : PatrolStrategy
         currentIndex = newIndex;
     }
 }
+
+public class TrackStrategy : IStrategy
+{
+    readonly Transform octaviusTransform;
+    readonly NavMeshAgent agent;
+    readonly OctaviusDetection detection;
+    readonly bool trackingPlayer;
+
+    private FootprintFade _targetFootprint = null;
+    private bool isPathCalculated = false;
+    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, bool trackingPlayer)
+    {
+        this.octaviusTransform = octaviusTransform;
+        this.agent = agent;
+        this.detection = detection;
+        this.trackingPlayer = trackingPlayer;
+    }
+
+    public Node.Status Process()
+    {
+        // This could be slow : TODO
+        if (detection.DetectingFootprint)
+        {
+            _targetFootprint = detection.FootprintsInRange.Min();
+            agent.SetDestination(_targetFootprint.transform.position);
+        }
+        else if (trackingPlayer) // TODO: null reference when there is no footprints at all
+        {
+            _targetFootprint = GetOldestFootprint();
+            agent.SetDestination(_targetFootprint.transform.position);
+        }
+        else
+        {
+            return Node.Status.Success;
+        }
+
+        if (isPathCalculated && agent.remainingDistance < 0.1f) //0.3f for testing
+        {
+            _targetFootprint.Visted();
+            isPathCalculated = false;
+        }
+
+        if (agent.pathPending)
+        {
+            isPathCalculated = true;
+        }
+
+        return Node.Status.Running;
+    }
+    private FootprintFade GetOldestFootprint()
+    {
+        FootprintFade[] footprints = UnityEngine.Object.FindObjectsOfType<FootprintFade>();
+        return footprints.Max();
+    }
+}
+
 public class Condition : IStrategy
 {
     readonly Func<bool> predicate;
