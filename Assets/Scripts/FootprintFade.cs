@@ -57,7 +57,6 @@ public class FootprintFade : MonoBehaviour, IComparable<FootprintFade>
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.CompareTag("Octavius"))
         {
             Destroy(gameObject.transform.parent.gameObject);
