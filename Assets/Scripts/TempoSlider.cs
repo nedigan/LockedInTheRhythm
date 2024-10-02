@@ -18,9 +18,11 @@ public class TempoSlider : MonoBehaviour
             Instance = this;
     }
 
+    private float _highLowDiff = 0.5f;
+
     // Update is called once per frame
     void Update()
     {
-        Value = 0.1f + (_slider.value * (1f - 0.1f)); //maps the value to 0.1 to 1 so 0 doesnt stop time
+        Value = _highLowDiff + (_slider.value * (1f - _highLowDiff)); //maps the value to 0.1 to 1 so 0 doesnt stop time
     }
 }
