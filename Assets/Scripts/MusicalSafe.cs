@@ -32,6 +32,7 @@ public class MusicalSafe : Interactable
 
     public override void Interact()
     {
+        if (!Locked) return; // If unlocked dont let the minigame begin
         Debug.Log("Interacted with musical safe");
         _minigameUI.SetActive(true); // testing
         _minigame.Play(this);
