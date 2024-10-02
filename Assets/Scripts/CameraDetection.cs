@@ -15,6 +15,7 @@ public class CameraDetection : ConeDetection
         {
             _cameraDetecting = this;
             EnemyAlert.NewAlert.Invoke();
+            Debug.Log("Camera DETECTING...");
         }
         else if (!DetectingPlayer && _cameraDetecting == this)
             _cameraDetecting = null;

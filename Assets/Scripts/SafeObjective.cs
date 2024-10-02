@@ -4,12 +4,15 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class SafeObjective : MonoBehaviour
+public abstract class Objective : MonoBehaviour
+{
+    [SerializeField] protected TextMeshProUGUI _objectiveText;
+    [SerializeField] protected TextMeshProUGUI _description;
+}
+public class SafeObjective : Objective
 {
     [SerializeField] private List<MusicalSafe> _musicalSafes = new List<MusicalSafe>();
 
-    [SerializeField] private TextMeshProUGUI _objectiveText;
-    [SerializeField] private TextMeshProUGUI _description;
 
     // Update is called once per frame
     void Update()

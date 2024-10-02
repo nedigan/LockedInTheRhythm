@@ -15,6 +15,8 @@ public class Minigame : MonoBehaviour
     private int _combo = 0;
     private int _highestCombo = 0;
 
+    private bool _playing = false;
+
     // used in calculating stamina
     private int _amountOfNotes = 0;
 
@@ -122,11 +124,14 @@ public class Minigame : MonoBehaviour
 
     public void Play(MusicalSafe safe, Song song = null)
     {
+        if (_playing) return;
+
         if (song == null)
             song = _song;
 
         _notes = song.LoadSong();
         _currentSafe = safe;
+        _playing = true;
 
         StartCoroutine(SpawnNote(0));
     }
@@ -180,6 +185,7 @@ public class Minigame : MonoBehaviour
         _highestCombo = 0;
         _amountOfNotes = 0;
         _currentSafe = null;
+        _playing = false;
     }
 
     private void EndMinigame(bool failed)

@@ -14,6 +14,7 @@ public class ConeDetection : MonoBehaviour
 
     public bool DetectingPlayer { get; protected set; }
 
+
     // Start is called before the first frame update
     void Start()
     {
