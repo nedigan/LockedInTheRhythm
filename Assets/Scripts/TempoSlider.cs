@@ -18,7 +18,7 @@ public class TempoSlider : MonoBehaviour
             Instance = this;
     }
 
-    private float _highLowDiff = 0.5f;
+    private float _highLowDiff = 0.40f;
 
     // Update is called once per frame
     void Update()
