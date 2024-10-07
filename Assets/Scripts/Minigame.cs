@@ -189,21 +189,24 @@ public class Minigame : MonoBehaviour
 
     private void EndMinigame(bool failed)
     {
-        // Set alert level of octavius based on lives remaining
-        switch (_health.CurrentHealth)
+        if (_currentSafe is not TutorialSafe)
         {
-            case 0: // Lost all lives
-                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level3); // set to maximum alertness
-                EnemyAlert.NewAlert.Invoke();
-                break;
-            case 1: // 1 life remaining
-                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level2);
-                EnemyAlert.NewAlert.Invoke();
-                break;
-            case 2:
-                _octaviusBehaviour.SetAlertLevel(AlertLevel.Level1);
-                EnemyAlert.NewAlert.Invoke();
-                break;
+            // Set alert level of octavius based on lives remaining
+            switch (_health.CurrentHealth)
+            {
+                case 0: // Lost all lives
+                    _octaviusBehaviour.SetAlertLevel(AlertLevel.Level3); // set to maximum alertness
+                    EnemyAlert.NewAlert.Invoke();
+                    break;
+                case 1: // 1 life remaining
+                    _octaviusBehaviour.SetAlertLevel(AlertLevel.Level2);
+                    EnemyAlert.NewAlert.Invoke();
+                    break;
+                case 2:
+                    _octaviusBehaviour.SetAlertLevel(AlertLevel.Level1);
+                    EnemyAlert.NewAlert.Invoke();
+                    break;
+            }
         }
 
         if (!failed)
