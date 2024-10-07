@@ -113,15 +113,17 @@ public class TrackStrategy : IStrategy
     readonly NavMeshAgent agent;
     readonly OctaviusDetection detection;
     readonly bool trackingPlayer;
+    readonly Transform playerTransform;
 
     private FootprintFade _targetFootprint = null;
     private bool isPathCalculated = false;
-    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, bool trackingPlayer)
+    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, Transform playerTransform, bool trackingPlayer)
     {
         this.octaviusTransform = octaviusTransform;
         this.agent = agent;
         this.detection = detection;
         this.trackingPlayer = trackingPlayer;
+        this.playerTransform = playerTransform;
     }
 
     public Node.Status Process()
@@ -130,12 +132,25 @@ public class TrackStrategy : IStrategy
         if (detection.DetectingFootprint)
         {
             _targetFootprint = detection.FootprintsInRange.Min();
-            agent.SetDestination(_targetFootprint.transform.position);
+            
+            if (_targetFootprint != null)
+            {
+                agent.SetDestination(_targetFootprint.transform.position);
+            }
         }
         else if (trackingPlayer) // TODO: null reference when there is no footprints at all
         {
             _targetFootprint = GetOldestFootprint();
-            agent.SetDestination(_targetFootprint.transform.position);
+
+            if (_targetFootprint != null)
+            {
+                agent.SetDestination(_targetFootprint.transform.position);
+            }
+            else
+            {
+                agent.SetDestination(playerTransform.position);
+            }
+
         }
         else
         {

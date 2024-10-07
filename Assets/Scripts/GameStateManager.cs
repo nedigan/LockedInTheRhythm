@@ -35,6 +35,12 @@ public class GameStateManager : MonoBehaviour
         _changer.GameOver();
     }
 
+    public void GameWin()
+    {
+        Debug.Log("WINNER!");
+        // _changer.GameWin(); TODO
+    }
+
     private void Update()
     {
         if (_currentState == GameState.MainState)

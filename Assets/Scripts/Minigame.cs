@@ -32,7 +32,6 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Health _health;
     [SerializeField] private OctaviusBehaviour _octaviusBehaviour; // for setting alert level and alerting him to player location
     [SerializeField] private PlayerMovement _playerMovement; // for refilling stamina
-    [SerializeField] private TextMeshProUGUI _objectiveText;
 
     [SerializeField] private Image[] _trackIndicators = new Image[4]; // lines on the minigame to indicate which track is selected
     private int _currentTrackIndex = 0;
