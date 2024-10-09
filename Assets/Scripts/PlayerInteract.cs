@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.UI;
 
 public class PlayerInteract : MonoBehaviour
 {
     private Interactable _currentInteractable = null;
+    [SerializeField] private Button _interactButton;
 
+    private void Start()
+    {
+        _interactButton.interactable = false;
+    }
     public void Interact()
     {
         if (_currentInteractable != null)
@@ -23,6 +29,7 @@ public class PlayerInteract : MonoBehaviour
         {
             _currentInteractable = interactable;
             _currentInteractable.Highlight(true);
+            _interactButton.interactable = true;    
 
             Debug.Log($"Player can interact with: {_currentInteractable.name}");
         }
@@ -36,6 +43,7 @@ public class PlayerInteract : MonoBehaviour
             Debug.Log($"Player can no longer interact with: {_currentInteractable.name}");
             _currentInteractable.Highlight(false);
             _currentInteractable = null;
+            _interactButton.interactable = false;
         }
     }
 }
