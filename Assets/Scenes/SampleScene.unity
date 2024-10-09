@@ -434,6 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c1cf9a9cb543445b550548a7d2ca7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _transition: {fileID: 0}
+  _transitionTime: 1
 --- !u!4 &96981785
 Transform:
   m_ObjectHideFlags: 0
@@ -4656,6 +4658,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   VisionConeResolution: 120
+  ShowVisionCone: 1
 --- !u!114 &1267137185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5739,7 +5742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -48.595215, y: 84.99994}
+  m_AnchoredPosition: {x: -48.595154, y: 84.99994}
   m_SizeDelta: {x: -97.1936, y: 545.74854}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1542027284
@@ -5810,6 +5813,8 @@ MonoBehaviour:
   _slider: {fileID: 1441004592}
   _comboText: {fileID: 463783209}
   _health: {fileID: 1758265601}
+  _octaviusBehaviour: {fileID: 0}
+  _playerMovement: {fileID: 0}
   _trackIndicators:
   - {fileID: 1420091021}
   - {fileID: 1455774694}
@@ -5959,6 +5964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _outlineMaterial: {fileID: 2100000, guid: 23722598c65c0674593c330ae3f10813, type: 2}
   _minigameUI: {fileID: 1542027282}
+  _minigame: {fileID: 0}
 --- !u!1 &1555138644
 GameObject:
   m_ObjectHideFlags: 0
@@ -7148,12 +7154,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807894511}
   m_CullTransparentMesh: 1
---- !u!195 &1831474664 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 7106752779329800388, guid: e5223c7176e9a064fb53e5464b5d7a98,
-    type: 3}
-  m_PrefabInstance: {fileID: 3995379365497412484}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1877487161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8420,7 +8420,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _ai
       value: 
-      objectReference: {fileID: 1831474664}
+      objectReference: {fileID: 0}
     - target: {fileID: 8029411090498277345, guid: beecd2971395d42449c7f4757d85a309,
         type: 3}
       propertyPath: m_Layer

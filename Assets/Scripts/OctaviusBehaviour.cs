@@ -65,7 +65,7 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
         Sequence trackSequence = new Sequence("TrackSequence", 90);
         trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => _isTrackingPlayer || _detection.DetectingFootprint)));
         trackSequence.AddChild(new Leaf("SetAlertLevelModerate", new ActionStrategy(() => _agent.speed = _alertSpeedLevel2)));// TODO
-        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(_feetTransform,_agent, _detection, _isTrackingPlayer)));
+        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(_feetTransform,_agent, _detection, _playerTransform, _isTrackingPlayer)));
 
         PrioritySelector decision = new PrioritySelector("decision");
         // Added chase sequence to behaviour tree

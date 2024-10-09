@@ -12,6 +12,11 @@ public class SceneChanger : MonoBehaviour
         StartCoroutine(LoadScene(1));
     }
 
+    public void GameWin()
+    {
+        // TODO: create win screen
+    }
+
     public void TryAgain()
     {
         StartCoroutine(LoadScene(0));

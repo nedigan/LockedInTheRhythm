@@ -38,7 +38,7 @@ public class MusicalSafe : Interactable
         _minigame.Play(this);
     }
 
-    public void Unlock()
+    public virtual void Unlock()
     {
         Locked = false;
         // Change the look of the safe??

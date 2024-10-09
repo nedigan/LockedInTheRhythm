@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244060658877587076}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.21643952, y: 0, z: 0, w: 0.97629607}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7806307801736345669}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -25, y: 0, z: 0}
 --- !u!114 &8801804823663690980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   VisionAngle: 90
   VisionObstructingLayer:
     serializedVersion: 2
-    m_Bits: 503
+    m_Bits: 375
   VisionConeResolution: 60
   ShowVisionCone: 1
 --- !u!114 &7452856695799736816
@@ -69,7 +69,7 @@ MonoBehaviour:
   _visionCone: {fileID: 8801804823663690980}
   _obstructionMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3959
   _coneAngle: 90
 --- !u!114 &9011717279112032714
 MonoBehaviour:
