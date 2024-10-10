@@ -28,7 +28,7 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 
     private bool _newAlert = false;
     private bool _investigatingAlert = false;
-    public bool _isTrackingPlayer = false; // TODO : change to private
+    public bool IsTrackingPlayer = false; // TODO : change to private
 
     private float _timeLeftUntilPlayerHidden;
     private OctaviusDetection _detection;
@@ -63,10 +63,10 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
         patrolSequence.AddChild(patrol);
 
         Sequence trackSequence = new Sequence("TrackSequence", 90);
-        trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => _isTrackingPlayer || _detection.DetectingFootprint)));
+        trackSequence.AddChild(new Leaf("IsTracking", new Condition(() => IsTrackingPlayer || _detection.DetectingFootprint)));
         trackSequence.AddChild(new Leaf("SetAlertLevelModerate", new ActionStrategy(() => _agent.speed = _alertSpeedLevel2)));// TODO
-        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(_feetTransform,_agent, _detection, _playerTransform, _isTrackingPlayer)));
-
+        trackSequence.AddChild(new Leaf("TrackPlayer", new TrackStrategy(_feetTransform,_agent, _detection, _playerTransform, this)));
+        
         PrioritySelector decision = new PrioritySelector("decision");
         // Added chase sequence to behaviour tree
         decision.AddChild(chaseSequence);
@@ -149,11 +149,11 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
     {
         if (state == GameState.EndState)
         {
-            _isTrackingPlayer = true;
+            IsTrackingPlayer = true;
         }
         else if (state == GameState.MainState)
         {
-            _isTrackingPlayer = false;
+            IsTrackingPlayer = false;
         }
     }
 }

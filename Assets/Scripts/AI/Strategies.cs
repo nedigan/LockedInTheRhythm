@@ -109,21 +109,19 @@ public class RandomPatrolStrategy : PatrolStrategy
 
 public class TrackStrategy : IStrategy
 {
-    readonly Transform octaviusTransform;
     readonly NavMeshAgent agent;
     readonly OctaviusDetection detection;
-    readonly bool trackingPlayer;
     readonly Transform playerTransform;
+    readonly OctaviusBehaviour behaviour;
 
     private FootprintFade _targetFootprint = null;
     private bool isPathCalculated = false;
-    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, Transform playerTransform, bool trackingPlayer)
+    public TrackStrategy(Transform octaviusTransform,NavMeshAgent agent, OctaviusDetection detection, Transform playerTransform, OctaviusBehaviour behaviour)
     {
-        this.octaviusTransform = octaviusTransform;
         this.agent = agent;
         this.detection = detection;
-        this.trackingPlayer = trackingPlayer;
         this.playerTransform = playerTransform;
+        this.behaviour = behaviour;
     }
 
     public Node.Status Process()
@@ -138,7 +136,7 @@ public class TrackStrategy : IStrategy
                 agent.SetDestination(_targetFootprint.transform.position);
             }
         }
-        else if (trackingPlayer) // TODO: null reference when there is no footprints at all
+        else if (behaviour.IsTrackingPlayer) 
         {
             _targetFootprint = GetOldestFootprint();
 
@@ -154,6 +152,7 @@ public class TrackStrategy : IStrategy
         }
         else
         {
+            Debug.Log("Returned success!!!!!!!");
             return Node.Status.Success;
         }
 
