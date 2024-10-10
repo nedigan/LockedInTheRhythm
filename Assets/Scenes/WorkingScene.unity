@@ -18683,9 +18683,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
         type: 3}
+      propertyPath: _coneAngle
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _coneRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _coneResolution
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _obstructionMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
       propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 393726661}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 393726661}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: GameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameStateManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6817793363284813156, guid: c3a991aebad518143b98d4ecfaff5124,
+        type: 3}
+      propertyPath: _onPlayerCaught.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8620214971328340158, guid: c3a991aebad518143b98d4ecfaff5124,
         type: 3}
       propertyPath: m_Name

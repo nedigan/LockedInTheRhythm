@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CatchPlayer : MonoBehaviour
+public class CatchPlayer : ConeDetection
 {
     [SerializeField] private UnityEvent _onPlayerCaught;
-    private void OnTriggerEnter(Collider other)
+    private bool _caught = false;
+    public override void Update()
     {
-        if (other.CompareTag("Player"))
+        base.Update();
+
+        if (DetectingPlayer && !_caught)
         {
             _onPlayerCaught.Invoke();
+            _caught = true;
         }
     }
 }

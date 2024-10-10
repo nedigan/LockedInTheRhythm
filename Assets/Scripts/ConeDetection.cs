@@ -8,8 +8,8 @@ public class ConeDetection : MonoBehaviour
     [SerializeField] private VisionCone _visionCone;
     [SerializeField] private LayerMask _obstructionMask;
 
-    private float _coneResolution;
-    private float _coneRange;
+    [SerializeField]private float _coneResolution;
+    [SerializeField]private float _coneRange;
     [SerializeField] private float _coneAngle; // should be the same as the vision code most of the time
 
     public bool DetectingPlayer { get; protected set; }
@@ -18,8 +18,12 @@ public class ConeDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _coneResolution = _visionCone.VisionConeResolution;
-        _coneRange = _visionCone.VisionRange;
+        if (_visionCone != null)
+        {
+            _coneResolution = _visionCone.VisionConeResolution;
+            _coneRange = _visionCone.VisionRange;
+        }
+        
         _coneAngle *= Mathf.Deg2Rad;
     }
 
