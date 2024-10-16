@@ -54,6 +54,7 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 
         Sequence alertSequence = new Sequence("Alert", 75);
         alertSequence.AddChild(new Leaf("IsAlertPresent", new Condition(() => _newAlert || _investigatingAlert)));
+        alertSequence.AddChild(new Leaf("SetAlertLevelHigh", new ActionStrategy(() => _agent.speed = _alertSpeedLevel3)));// TODO
         alertSequence.AddChild(stopInvestigation);
         alertSequence.AddChild(new Leaf("InvestigateAlert", new ActionStrategy(() => GoToAlert())));
 
