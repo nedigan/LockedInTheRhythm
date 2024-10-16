@@ -78,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: saxophone
       objectReference: {fileID: 0}
+    - target: {fileID: 6877888039417030253, guid: f53f590c0ccf1a6438ae04681789c5a5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db18a2481d009d341b01a382b568b51d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: f53f590c0ccf1a6438ae04681789c5a5, type: 3}

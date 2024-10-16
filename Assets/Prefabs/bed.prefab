@@ -73,11 +73,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5001607719747556200, guid: 54b6219a051d8f144b0f4676e58c2760,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21719effeed52d54499f4af4273397f3, type: 2}
     - target: {fileID: 919132149155446097, guid: 54b6219a051d8f144b0f4676e58c2760,
         type: 3}
       propertyPath: m_Name
       value: bed
       objectReference: {fileID: 0}
+    - target: {fileID: 973806390205614261, guid: 54b6219a051d8f144b0f4676e58c2760,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82ff2991104965440bb6f3db67e986e2, type: 2}
+    - target: {fileID: 5409000350114439445, guid: 54b6219a051d8f144b0f4676e58c2760,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f4063cc2b0319e4096e097929d8fec2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 54b6219a051d8f144b0f4676e58c2760, type: 3}

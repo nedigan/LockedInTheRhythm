@@ -73,11 +73,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5572531348177305075, guid: 8d2422233694f514098f94ac1c0e47ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a6315a771dfa884099d38a89f97e646, type: 2}
+    - target: {fileID: -2177552496247992527, guid: 8d2422233694f514098f94ac1c0e47ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 52c61c013a152224aaf492c26fb71dab, type: 2}
     - target: {fileID: 919132149155446097, guid: 8d2422233694f514098f94ac1c0e47ad,
         type: 3}
       propertyPath: m_Name
       value: hallway table
       objectReference: {fileID: 0}
+    - target: {fileID: 2831065782900121813, guid: 8d2422233694f514098f94ac1c0e47ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c2019af8cd15e3a4291a14028024940a, type: 2}
+    - target: {fileID: 4464808398254460494, guid: 8d2422233694f514098f94ac1c0e47ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4de056d3659e5754c92c5f6c97a4ca86, type: 2}
+    - target: {fileID: 7694174927032574981, guid: 8d2422233694f514098f94ac1c0e47ad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49ad517ea1f9f3144a4f3f663a3e0cc6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 8d2422233694f514098f94ac1c0e47ad, type: 3}

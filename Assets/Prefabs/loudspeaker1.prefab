@@ -10,13 +10,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 27649c5a4bc33644c83036704ba9bfd7,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.67242
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 27649c5a4bc33644c83036704ba9bfd7,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27649c5a4bc33644c83036704ba9bfd7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.091
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 27649c5a4bc33644c83036704ba9bfd7,
         type: 3}
@@ -58,11 +63,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8433752935245545667, guid: 27649c5a4bc33644c83036704ba9bfd7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21b7234b0e8cd3c4988951c72d8bc05d, type: 2}
+    - target: {fileID: -4080423963888585680, guid: 27649c5a4bc33644c83036704ba9bfd7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ed3b82135fcc2740be8c07abaad49b4, type: 2}
     - target: {fileID: 919132149155446097, guid: 27649c5a4bc33644c83036704ba9bfd7,
         type: 3}
       propertyPath: m_Name
       value: loudspeaker1
       objectReference: {fileID: 0}
+    - target: {fileID: 1701301799562459933, guid: 27649c5a4bc33644c83036704ba9bfd7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 03b2744c21a45d64cb4157fcaa2af767, type: 2}
+    - target: {fileID: 7298085627204239474, guid: 27649c5a4bc33644c83036704ba9bfd7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 21f32738dd4c2a241adcb5337c1ea752, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 27649c5a4bc33644c83036704ba9bfd7, type: 3}

@@ -73,11 +73,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7759829813846920696, guid: 8ced6b0463a223b469add8428e30e507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ccf5345b1444f74db3427d943ad5ed7, type: 2}
+    - target: {fileID: -450435477336378351, guid: 8ced6b0463a223b469add8428e30e507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78694c39a205e9741bf6e45d4ee18328, type: 2}
     - target: {fileID: 919132149155446097, guid: 8ced6b0463a223b469add8428e30e507,
         type: 3}
       propertyPath: m_Name
       value: book shelf
       objectReference: {fileID: 0}
+    - target: {fileID: 7276048487733848785, guid: 8ced6b0463a223b469add8428e30e507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b39f50ed3244a104c8f52f053b508cd4, type: 2}
+    - target: {fileID: 8111049217817070966, guid: 8ced6b0463a223b469add8428e30e507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 028c6d8bdba188748899a5d068d472bf, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 8ced6b0463a223b469add8428e30e507, type: 3}

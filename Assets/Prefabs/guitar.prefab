@@ -58,11 +58,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6725322253847424938, guid: 06781cce28607a94c823927798f74701,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: acdaeb88b1a55a045acd9ec6a94fbe75, type: 2}
+    - target: {fileID: -340984812246418954, guid: 06781cce28607a94c823927798f74701,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 11b0200c0ac1694488c66d1f3c46347d, type: 2}
     - target: {fileID: 919132149155446097, guid: 06781cce28607a94c823927798f74701,
         type: 3}
       propertyPath: m_Name
       value: guitar
       objectReference: {fileID: 0}
+    - target: {fileID: 973806390205614261, guid: 06781cce28607a94c823927798f74701,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bbdf9066efde96d4e9ace082835074fb, type: 2}
+    - target: {fileID: 8449996119470504636, guid: 06781cce28607a94c823927798f74701,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3dcc6fdc39660594a8fc71ffb42c47e6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 06781cce28607a94c823927798f74701, type: 3}

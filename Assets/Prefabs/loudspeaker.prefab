@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8879391126077866720, guid: e46af5f2f8c631a4da4fe81bafd85710,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 76e354ad26cec764a802b60691089daf, type: 2}
     - target: {fileID: -8679921383154817045, guid: e46af5f2f8c631a4da4fe81bafd85710,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16,7 +21,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e46af5f2f8c631a4da4fe81bafd85710,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.055
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e46af5f2f8c631a4da4fe81bafd85710,
         type: 3}
@@ -58,11 +63,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4080423963888585680, guid: e46af5f2f8c631a4da4fe81bafd85710,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 876e801c0a17854499921cc5255fcbac, type: 2}
     - target: {fileID: 919132149155446097, guid: e46af5f2f8c631a4da4fe81bafd85710,
         type: 3}
       propertyPath: m_Name
       value: loudspeaker
       objectReference: {fileID: 0}
+    - target: {fileID: 1701301799562459933, guid: e46af5f2f8c631a4da4fe81bafd85710,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: acb9cb9956d5b804eb3fe84bdd10e90a, type: 2}
+    - target: {fileID: 7298085627204239474, guid: e46af5f2f8c631a4da4fe81bafd85710,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16054aa114a3e254594a69d2c9d6bbcb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: e46af5f2f8c631a4da4fe81bafd85710, type: 3}
