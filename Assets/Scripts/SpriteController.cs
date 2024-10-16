@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpriteController : MonoBehaviour
 {
     [SerializeField] private Transform _movementTransform;
-    private SpriteRenderer _spriteRenderer;
+    protected SpriteRenderer _spriteRenderer;
 
     [Header("Testing")]
     [SerializeField] private Sprite[] _sprites = new Sprite[4];
@@ -16,7 +16,7 @@ public class SpriteController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         SetDirection(); // test 
     }

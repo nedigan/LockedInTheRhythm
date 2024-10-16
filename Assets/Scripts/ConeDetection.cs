@@ -14,6 +14,10 @@ public class ConeDetection : MonoBehaviour
 
     public bool DetectingPlayer { get; protected set; }
 
+    // Used to check if anything is detecting
+    private static ConeDetection _anyDetection = null;
+    public static bool AnythingDetecting { get; private set; }
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +27,7 @@ public class ConeDetection : MonoBehaviour
             _coneResolution = _visionCone.VisionConeResolution;
             _coneRange = _visionCone.VisionRange;
         }
-        
+
         _coneAngle *= Mathf.Deg2Rad;
     }
 
@@ -31,6 +35,15 @@ public class ConeDetection : MonoBehaviour
     public virtual void Update()
     {
         DetectPlayer();
+
+        if (DetectingPlayer && _anyDetection != this)
+        {
+            _anyDetection = this;
+        }
+        else if (!DetectingPlayer && _anyDetection == this)
+            _anyDetection = null;
+
+        AnythingDetecting = _anyDetection != null;
     }
 
     private void DetectPlayer()
