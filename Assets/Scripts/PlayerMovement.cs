@@ -70,6 +70,12 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
             Quaternion targetRotation = Quaternion.LookRotation(direction);
             transform.rotation = targetRotation;
 
+            if (_stamina < 0.01f)
+            {
+                Debug.Log("Sprint BUTTON UP");
+                SprintButtonUp();
+            }
+
             // Move the character
             float speedMultipler;
             if (_sprinting && _stamina > 0f)

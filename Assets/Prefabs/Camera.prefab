@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisionConeMaterial: {fileID: 2100000, guid: a30ad053ef5731847b3f5a7fb2c12a22, type: 2}
-  VisionRange: 3
+  VisionRange: 3.5
   VisionAngle: 90
   VisionObstructingLayer:
     serializedVersion: 2
@@ -70,6 +70,8 @@ MonoBehaviour:
   _obstructionMask:
     serializedVersion: 2
     m_Bits: 3959
+  _coneResolution: 0
+  _coneRange: 0
   _coneAngle: 90
 --- !u!114 &9011717279112032714
 MonoBehaviour:
