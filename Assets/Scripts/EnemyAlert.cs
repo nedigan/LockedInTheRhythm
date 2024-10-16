@@ -6,4 +6,5 @@ using UnityEngine.Events;
 public class EnemyAlert
 {
     public static UnityEvent NewAlert = new UnityEvent();
+    public static UnityEvent CameraDetecting = new UnityEvent();
 }

@@ -20,6 +20,11 @@ public class CameraDetection : ConeDetection
         else if (!DetectingPlayer && _cameraDetecting == this)
             _cameraDetecting = null;
 
+        if (DetectingPlayer)
+        {
+            EnemyAlert.CameraDetecting.Invoke();
+        }
+
        // Debug.Log(CameraDetecting);
     }
 }

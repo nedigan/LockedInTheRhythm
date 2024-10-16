@@ -38,6 +38,7 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
         _detection = GetComponent<OctaviusDetection>();
 
         EnemyAlert.NewAlert.AddListener(NewAlertOccurred);
+        EnemyAlert.CameraDetecting.AddListener(CameraDetectingPlayer); // Gross implementation but cant be fucked
 
         _tree = new BehaviourTree("Octavius");
 
@@ -128,6 +129,11 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
     void NewAlertOccurred()
     {
         _newAlert = true;
+    }
+
+    void CameraDetectingPlayer() 
+    {
+        _timeLeftUntilPlayerHidden = _timeUntilPlayerHidden; // resets timer when runs through camera when getting chased
     }
 
     public void SetAlertLevel(AlertLevel level)
