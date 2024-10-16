@@ -23,6 +23,6 @@ public class TempoSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Value = _highLowDiff + (_slider.value * (1f - _highLowDiff)); //maps the value to 0.1 to 1 so 0 doesnt stop time
+        Value = _highLowDiff + (_slider.value * (1f - _highLowDiff)); //maps the value to 0.4 to 1 so 0 doesnt stop time
     }
 }

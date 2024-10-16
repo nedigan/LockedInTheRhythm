@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.Events;
 
 public class CameraDetection : ConeDetection
 {
     private static CameraDetection _cameraDetecting = null;
+
+    public static bool AnyCameraDetecting { get; private set; }
 
     public override void Update()
     {
@@ -20,11 +23,13 @@ public class CameraDetection : ConeDetection
         else if (!DetectingPlayer && _cameraDetecting == this)
             _cameraDetecting = null;
 
-        if (DetectingPlayer)
+
+        AnyCameraDetecting = _cameraDetecting != null;
+
+        if (DetectingPlayer) // CHANGE THIS MAYBE
         {
             EnemyAlert.CameraDetecting.Invoke();
         }
-
        // Debug.Log(CameraDetecting);
     }
 }

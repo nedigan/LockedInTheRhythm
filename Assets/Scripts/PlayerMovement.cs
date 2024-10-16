@@ -17,12 +17,18 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
     [SerializeField] private float _maxStamina = 10f;
     [SerializeField] private Slider _sprintMeter;
     [SerializeField] private GameObject _footprintPrefab;
+    [SerializeField] private GameObject _redFootprintPrefab;
 
     public bool BeingTracked = false;
 
     private float _stamina;
     public float StaminaPercentage { get { return _stamina / _maxStamina; }}
     private bool _sprinting = false;
+
+    private float _redFootprintTime = 0f;
+    [SerializeField] private float _redFootprintTimeMax = 3f;
+    private bool _isRedFootprintTime = false;
+
 
     private void Awake()
     {
@@ -42,6 +48,8 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
     // Update is called once per frame
     void Update()
     {
+        HandleRedFootprintTime();
+
         //float horizontal = Input.GetAxisRaw("Horizontal");
         //float vertical = Input.GetAxisRaw("Vertical");
         Vector2 inputDirection = _moveAction.ReadValue<Vector2>();
@@ -96,6 +104,25 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
         _sprintMeter.value = _stamina / _maxStamina;
     }
 
+    void HandleRedFootprintTime()
+    {
+        if (CameraDetection.AnyCameraDetecting)
+        {
+            _redFootprintTime = 0f;
+            _isRedFootprintTime = true;
+        }
+
+        if (_isRedFootprintTime)
+        {
+            _redFootprintTime += Time.deltaTime;
+        }
+
+        if (_redFootprintTime > _redFootprintTimeMax && _isRedFootprintTime)
+        {
+            _isRedFootprintTime = false;
+        }
+    }
+
     private Transform _lastFootprint;
     [SerializeField] private LayerMask _groundLayerMask;
     [SerializeField] private float _footprintStepDistance = 1.5f;
@@ -118,7 +145,12 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, _groundLayerMask))
         {
-            _lastFootprint = Instantiate(_footprintPrefab, hit.point + Vector3.up * 0.01f, transform.rotation).transform;
+            if (_isRedFootprintTime)
+            {
+                _lastFootprint = Instantiate(_redFootprintPrefab, hit.point + Vector3.up * 0.01f, transform.rotation).transform;
+            }
+            else
+                _lastFootprint = Instantiate(_footprintPrefab, hit.point + Vector3.up * 0.01f, transform.rotation).transform;
         }
     }
 

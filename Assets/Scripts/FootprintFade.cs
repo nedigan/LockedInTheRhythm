@@ -7,6 +7,7 @@ using UnityEngine;
 public class FootprintFade : MonoBehaviour, IComparable<FootprintFade>
 {
     [SerializeField] private float _fadeTime = 2f; // fade time when at max tempo
+
     private Material _material;
     private Color _color;
 

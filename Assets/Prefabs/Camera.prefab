@@ -52,7 +52,7 @@ MonoBehaviour:
   VisionObstructingLayer:
     serializedVersion: 2
     m_Bits: 375
-  VisionConeResolution: 60
+  VisionConeResolution: 40
   ShowVisionCone: 1
 --- !u!114 &7452856695799736816
 MonoBehaviour:
@@ -100,7 +100,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.63
+      value: -9.251
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.42
+      value: -3.97
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4844a05aab3d9a346a5a69a8402265fa,
         type: 3}
