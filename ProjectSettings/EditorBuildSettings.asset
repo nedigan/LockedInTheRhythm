@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HouseLayouts/TrinitysLayout.unity
-    guid: cb59104346728b646a7035b0a4aca527
+    path: Assets/Scenes/MainMenu.unity
+    guid: fd4127992b998dc4ab4d8d237dc493c9
+  - enabled: 1
+    path: Assets/Scenes/WorkingScene.unity
+    guid: 4437c2312a78b8a4cbcec675016459ea
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 7583525706faa594a9558cc7bb1a8c46
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: 2c20d29abffeac7408f58a75f18348f6
   m_configObjects: {}

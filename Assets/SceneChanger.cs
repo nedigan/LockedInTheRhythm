@@ -9,17 +9,23 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] private float _transitionTime = 1f;
     public void GameOver()
     {
-        StartCoroutine(LoadScene(1));
+        StartCoroutine(LoadScene(2));
     }
 
     public void GameWin()
     {
         // TODO: create win screen
+        StartCoroutine(LoadScene(3));
+    }
+
+    public void MainScreen()
+    {
+        StartCoroutine(LoadScene(0));
     }
 
     public void TryAgain()
     {
-        StartCoroutine(LoadScene(0));
+        StartCoroutine(LoadScene(1));
     }
 
     IEnumerator LoadScene(int sceneIndex)

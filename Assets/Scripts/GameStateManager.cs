@@ -38,7 +38,7 @@ public class GameStateManager : MonoBehaviour
     public void GameWin()
     {
         Debug.Log("WINNER!");
-        // _changer.GameWin(); TODO
+        _changer.GameWin(); 
     }
 
     private void Update()
