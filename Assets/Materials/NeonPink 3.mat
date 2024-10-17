@@ -194,10 +194,10 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BASE_COLOR: {r: 1, g: 0, b: 0.938499, a: 1}
-    - _BaseColor: {r: 0.15283155, g: 1, b: 0.015686274, a: 1}
-    - _Color: {r: 0.15283152, g: 1, b: 0.015686274, a: 1}
+    - _BaseColor: {r: 1, g: 0.015686274, b: 0.29249963, a: 1}
+    - _Color: {r: 1, g: 0.015686274, b: 0.2924996, a: 1}
     - _EMISSION_COLOR: {r: 1, g: 0.5641509, b: 0.91915905, a: 0}
-    - _EmissionColor: {r: 1.7851914, g: 13.543629, b: 0, a: 1}
+    - _EmissionColor: {r: 13.543628, g: 0, b: 5.682835, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _REFLECTIONS_COLOR: {r: 1, g: 0, b: 0.697525, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
