@@ -58,11 +58,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7343331172465130696, guid: 31ba3560fc395af4bacb09258063e312,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f421aa6de81aeca408265351b3f83cce, type: 2}
     - target: {fileID: 919132149155446097, guid: 31ba3560fc395af4bacb09258063e312,
         type: 3}
       propertyPath: m_Name
       value: neon light2
       objectReference: {fileID: 0}
+    - target: {fileID: 5039687269024256309, guid: 31ba3560fc395af4bacb09258063e312,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e1210d30f24e0fe47b79415769e443d1, type: 2}
+    - target: {fileID: 6289776048922875581, guid: 31ba3560fc395af4bacb09258063e312,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 38ba61542638dfb49914dc8a864af190, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -8454106927955108345, guid: 31ba3560fc395af4bacb09258063e312, type: 3}
