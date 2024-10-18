@@ -12595,6 +12595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bath 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7013892412526516075, guid: 071c4851a4eefac47a675354ece85fb3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0bc8444bdf8815046b7c314da1c82aaa, type: 2}
     - target: {fileID: 7150752660317356195, guid: 071c4851a4eefac47a675354ece85fb3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -36125,11 +36130,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.3066038, g: 0.47754514, b: 1, a: 1}
+  m_Color: {r: 0.764151, g: 0.5376779, b: 0.37126204, a: 1}
   m_Intensity: 50
   m_Range: 10
-  m_SpotAngle: 141.88199
-  m_InnerSpotAngle: 96.17101
+  m_SpotAngle: 122.99729
+  m_InnerSpotAngle: 77.286316
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -36185,7 +36190,7 @@ Transform:
   m_GameObject: {fileID: 2145767841}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -12.977723, y: 8.898665, z: 32.31}
+  m_LocalPosition: {x: -13.6, y: 8.898665, z: 32.62}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1.75}
   m_ConstrainProportionsScale: 0
   m_Children: []
