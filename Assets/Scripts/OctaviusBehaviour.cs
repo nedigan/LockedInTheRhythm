@@ -15,6 +15,8 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 
     [SerializeField] private Transform _feetTransform;
 
+    [SerializeField] private AlertText _alertText;
+
     [SerializeField] private Animator _animator;
     [SerializeField] private NavMeshAgent _agent;
 
@@ -128,6 +130,7 @@ public class OctaviusBehaviour : MonoBehaviour, IHandleGameState
 
     void NewAlertOccurred()
     {
+        _alertText.NewAlert(transform.position);
         _newAlert = true;
     }
 
