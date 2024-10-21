@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private Image[] _images = new Image[3];
+    [SerializeField] private TextMeshProUGUI[] _crosses = new TextMeshProUGUI[3];
     private int _maxHealth = 3;
     [Range(0, 3)][SerializeField] private int _currentHealth;
     public int CurrentHealth => _currentHealth;
@@ -20,14 +20,14 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < _images.Length; i++)
+        for (int i = 0; i < _crosses.Length; i++)
         {
             if (i < _currentHealth)
             {
-                _images[i].enabled = true;
+                _crosses[i].enabled = true;
             }
             else
-                _images[i].enabled = false;
+                _crosses[i].enabled = false;
         }
     }
 

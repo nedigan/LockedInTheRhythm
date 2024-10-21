@@ -37,6 +37,8 @@ public class Minigame : MonoBehaviour
     [SerializeField] private Health _health;
     [SerializeField] private OctaviusBehaviour _octaviusBehaviour; // for setting alert level and alerting him to player location
     [SerializeField] private PlayerMovement _playerMovement; // for refilling stamina
+    [SerializeField] private GameObject _pauseButton;
+    [SerializeField] private Animator _lockAnimator;
 
     [SerializeField] private Image[] _trackIndicators = new Image[4]; // lines on the minigame to indicate which track is selected
     private int _currentTrackIndex = 0;
@@ -90,8 +92,8 @@ public class Minigame : MonoBehaviour
         else
             _currentTrackIndex = 0; // player is selecting top track
 
-        if (_currentNotes.Count == 0) // TODO: this will be called if there is a long break
-            EndMinigame(false);
+        //if (_currentNotes.Count == 0) // TODO: this will be called if there is a long break
+        //    EndMinigame(false);
 
         _trackIndicators[_currentTrackIndex].color = Color.gray; // set players track to black - prolly change to something prettier
 
@@ -133,15 +135,13 @@ public class Minigame : MonoBehaviour
         int numSafesUnlocked = _safes.Count((safe) => !safe.Locked);
         _songManager.Pause();
 
-        //if (_safes.Length > _songs.Length)
-            numSafesUnlocked = 0;
         Song song =  _songs[numSafesUnlocked];
 
         if (_musics[0] == null)
         {
             Debug.Log("Music is null");
         }
-        _audioSource.clip = _musics[0];
+        _audioSource.clip = _musics[numSafesUnlocked];
         _audioSource.Play();
 
         _notes = song.LoadSong();
@@ -153,9 +153,10 @@ public class Minigame : MonoBehaviour
         }
         _playing = true;
 
+        _pauseButton.SetActive(false);
         StartCoroutine(SpawnNote(0));
     }
-
+    private int _angryIndex;
     IEnumerator SpawnNote(int index)
     {
         if ((int)_notes[index].Key.Value > 0) // if note is not a rest
@@ -172,7 +173,11 @@ public class Minigame : MonoBehaviour
 
         index++;
         if (index < _notes.Count)
-            StartCoroutine(SpawnNote(index)); 
+            StartCoroutine(SpawnNote(index));
+        else
+        {
+            EndMinigame(false);
+        }
     }
 
     private void DestroyNotes() // used in on disable to remove all notes for reset
@@ -234,6 +239,8 @@ public class Minigame : MonoBehaviour
             // If didnt fail the minigame, unlock the safe
         {
             _currentSafe.Unlock();
+            _lockAnimator.gameObject.SetActive(true);
+            _lockAnimator.SetTrigger("Unlock");
         }
 
         // Calculate Stamina
@@ -241,6 +248,7 @@ public class Minigame : MonoBehaviour
         _playerMovement.SetStamina(staminaPercentage);
 
         _songManager.UnPause();
+        _pauseButton.SetActive(true);
         gameObject.SetActive(false);
     }
 

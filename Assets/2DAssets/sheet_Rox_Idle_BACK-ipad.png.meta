@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: b71471d98af714946aaafbdf9e84189f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_0
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 4117
+        width: 744
+        height: 791
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf0b792b920bca4f954fa82c67f8cf9
+      internalID: -48241134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_1
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 4115
+        width: 740
+        height: 801
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12294e85a10ed184fa127d70b58661f6
+      internalID: 642829519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_2
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 4115
+        width: 740
+        height: 801
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a18b151934a3c40b65783e57a8c341
+      internalID: 1224379168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_3
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 4113
+        width: 737
+        height: 812
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19eebbb7c3449845914503da333a8b6
+      internalID: 523442754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_4
+      rect:
+        serializedVersion: 2
+        x: 3749
+        y: 4113
+        width: 737
+        height: 812
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547070bb529703441b865c2008c272cd
+      internalID: -1822746079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3221
+        width: 733
+        height: 821
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a328976d474c5ac458212a590c4ff8a6
+      internalID: -2014828401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_6
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3219
+        width: 732
+        height: 825
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7135198dcb995d41b7c295bc313251f
+      internalID: 89237818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_7
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 3219
+        width: 730
+        height: 832
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1a4a5d116e13d4b9e1046ce7f0e1f8
+      internalID: -1256958406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_8
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 3219
+        width: 728
+        height: 832
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eb3b225cc36514b96f135b602c5a3d
+      internalID: -1988109489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_9
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 3217
+        width: 725
+        height: 844
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce450f8304247a54abb36cb8918408c7
+      internalID: 1437264039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_10
+      rect:
+        serializedVersion: 2
+        x: 3763
+        y: 3217
+        width: 726
+        height: 839
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77327b323d02744ab28e676cf38ef6d
+      internalID: 1328102170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2321
+        width: 718
+        height: 854
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753db602cd4cd7047a89925a1b7108bc
+      internalID: -329224115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_12
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 2321
+        width: 723
+        height: 849
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f0042b9cf2e34ea666f2a6f02d186
+      internalID: 1620293945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_13
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 2321
+        width: 701
+        height: 888
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04d967506ee9674296f47fe45964964
+      internalID: -702595960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_14
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 2321
+        width: 705
+        height: 881
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae1f561e8388ad4fbb6a29f0234ce5c
+      internalID: 321328824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_15
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 2321
+        width: 706
+        height: 878
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc866b91f51cad4e86414a58208d48a
+      internalID: 1335412076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_16
+      rect:
+        serializedVersion: 2
+        x: 3776
+        y: 2321
+        width: 708
+        height: 874
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b595683e8399b44f89bda8171bc3eab
+      internalID: -701104758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_17
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1422
+        width: 710
+        height: 872
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d086686be907a42864049aaa867d54
+      internalID: -2088650675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_18
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1422
+        width: 712
+        height: 868
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c429f796a5590e7419f194c08089df23
+      internalID: 2040025435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_19
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1416
+        width: 716
+        height: 864
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f8ae6ba17ace94cbc853cd89ab9e66
+      internalID: 1990622077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_20
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 1422
+        width: 715
+        height: 859
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e365a7d193c88745bfd36c15ec55add
+      internalID: 1622185290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_21
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 1422
+        width: 700
+        height: 889
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca12e7146ea97a64e8c5df8691ff8d51
+      internalID: 1335094389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_22
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 1417
+        width: 696
+        height: 894
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a33b78330653c43995035831a68ceb
+      internalID: 1111673838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_23
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 509
+        width: 694
+        height: 898
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d01c19f57a0c841b818cfbae9b8f19
+      internalID: 752283819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_24
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 504
+        width: 691
+        height: 903
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9886f837834fb42a45f1776aad208a
+      internalID: -42622811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_25
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 502
+        width: 691
+        height: 905
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236a0a17f0a15ad49bd6ff1241aa6298
+      internalID: 1340486796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_26
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 497
+        width: 688
+        height: 910
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada57a669a4b797449a9ded0c17b1f05
+      internalID: 467166195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_27
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 495
+        width: 690
+        height: 910
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b7069c0b8afbd4b927a237de6b6809
+      internalID: 1467877946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK-ipad_28
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 490
+        width: 686
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b269efd013bebe6409224d2145d17c41
+      internalID: -806237238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57466ec83e1cd764f843bdbc2670880e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sheet_Rox_Idle_BACK-ipad_0: -48241134
+      sheet_Rox_Idle_BACK-ipad_1: 642829519
+      sheet_Rox_Idle_BACK-ipad_10: 1328102170
+      sheet_Rox_Idle_BACK-ipad_11: -329224115
+      sheet_Rox_Idle_BACK-ipad_12: 1620293945
+      sheet_Rox_Idle_BACK-ipad_13: -702595960
+      sheet_Rox_Idle_BACK-ipad_14: 321328824
+      sheet_Rox_Idle_BACK-ipad_15: 1335412076
+      sheet_Rox_Idle_BACK-ipad_16: -701104758
+      sheet_Rox_Idle_BACK-ipad_17: -2088650675
+      sheet_Rox_Idle_BACK-ipad_18: 2040025435
+      sheet_Rox_Idle_BACK-ipad_19: 1990622077
+      sheet_Rox_Idle_BACK-ipad_2: 1224379168
+      sheet_Rox_Idle_BACK-ipad_20: 1622185290
+      sheet_Rox_Idle_BACK-ipad_21: 1335094389
+      sheet_Rox_Idle_BACK-ipad_22: 1111673838
+      sheet_Rox_Idle_BACK-ipad_23: 752283819
+      sheet_Rox_Idle_BACK-ipad_24: -42622811
+      sheet_Rox_Idle_BACK-ipad_25: 1340486796
+      sheet_Rox_Idle_BACK-ipad_26: 467166195
+      sheet_Rox_Idle_BACK-ipad_27: 1467877946
+      sheet_Rox_Idle_BACK-ipad_28: -806237238
+      sheet_Rox_Idle_BACK-ipad_3: 523442754
+      sheet_Rox_Idle_BACK-ipad_4: -1822746079
+      sheet_Rox_Idle_BACK-ipad_5: -2014828401
+      sheet_Rox_Idle_BACK-ipad_6: 89237818
+      sheet_Rox_Idle_BACK-ipad_7: -1256958406
+      sheet_Rox_Idle_BACK-ipad_8: -1988109489
+      sheet_Rox_Idle_BACK-ipad_9: 1437264039
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

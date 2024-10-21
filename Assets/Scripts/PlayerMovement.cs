@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
     [SerializeField] private GameObject _footprintPrefab;
     [SerializeField] private GameObject _redFootprintPrefab;
 
+    [SerializeField] private List<GameObject> _animations;
+
     public bool BeingTracked = false;
 
     private float _stamina;
@@ -71,6 +73,7 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
         // If the direction is not zero
         if (direction != Vector3.zero)
         {
+            SetDirection(true);
             // Normalize the direction to avoid scaling the movement
             direction.Normalize();
 
@@ -99,6 +102,10 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
 
             if (BeingTracked && !_sprinting) 
                 ManageFootprints();
+        }
+        else
+        {
+            SetDirection(false);
         }
 
         _sprintMeter.value = _stamina / _maxStamina;
@@ -151,6 +158,115 @@ public class PlayerMovement : MonoBehaviour, IHandleGameState
             }
             else
                 _lastFootprint = Instantiate(_footprintPrefab, hit.point + Vector3.up * 0.01f, transform.rotation).transform;
+        }
+    }
+
+    void SetAnimation(int index, bool flip)
+    {
+        for (int i = 0; i < _animations.Count; i++)
+        {
+            if (i == index)
+            {
+                _animations[i].SetActive(true);
+
+                if (flip)
+                {
+                    _animations[i].transform.localScale = new Vector3(_animations[i].transform.localScale.x * -1, _animations[i].transform.localScale.y, _animations[i].transform.localScale.z);
+                }
+            }
+            else
+            {
+                _animations[i].SetActive(false);
+            }
+        }
+    }
+    void SetDirection(bool moving)
+    {
+        Vector3 forward = transform.forward;
+
+        if (Mathf.Abs(forward.z) > Mathf.Abs(forward.x))
+        {
+            if (forward.z > 0)
+            {
+                int activeIndex = 0;
+                // forward sprite
+                if (moving)
+                {
+                    activeIndex = 1;
+                    
+                }
+                else
+                {
+                    activeIndex = 0;
+                }
+
+                bool flip = false;
+                if (Mathf.Sign(_animations[activeIndex].transform.localScale.x) == -1)
+                    flip = true;
+                SetAnimation(activeIndex, flip);
+            }
+            else
+            {
+                // backward sprite
+                int activeIndex = 0;
+
+                if (moving)
+                {
+                    activeIndex = 3;
+                }
+                else
+                {
+                    activeIndex = 2;
+                }
+
+                bool flip = false;
+                if (Mathf.Sign(_animations[activeIndex].transform.localScale.x) == 1)
+                    flip = true;
+                SetAnimation(activeIndex, flip);
+            }
+        }
+        else
+        {
+            if (forward.x > 0)
+            {
+                // right sprite
+                int activeIndex = 0;
+
+                if (moving)
+                {
+                    activeIndex = 3;
+
+                }
+                else
+                {
+                    activeIndex = 2;
+                }
+
+                bool flip = false;
+                if (Mathf.Sign(_animations[activeIndex].transform.localScale.x) == -1)
+                    flip = true;
+                SetAnimation(activeIndex, flip);
+            }
+            else
+            {
+                // left sprite
+                int activeIndex = 0;
+
+                if (moving)
+                {
+                    activeIndex = 1;
+
+                }
+                else
+                {
+                    activeIndex = 0;
+                }
+
+                bool flip = false;
+                if (Mathf.Sign(_animations[activeIndex].transform.localScale.x) == 1)
+                    flip = true;
+                SetAnimation(activeIndex, flip);
+            }
         }
     }
 

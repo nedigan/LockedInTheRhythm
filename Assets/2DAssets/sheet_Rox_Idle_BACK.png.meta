@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 185f9e3bb6b5f6c4d8e02c386f120006
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f7879894d1e0e4ba64b1f5d93f29cb
+      internalID: 1613595695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8243b71e85ccc4e9363609a5ec0c9b
+      internalID: 629544604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00acf6e0fb0448f4992ad1e6f14a95f1
+      internalID: -317668419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f76db4e76b3504e88cfa125a641d29
+      internalID: -58683606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_4
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa0839eb9a87c5459c298693fc53a67
+      internalID: -1926850175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951dd0b97be415a499191ebecf93a6e0
+      internalID: 12993035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_6
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516cc0c69b614ab4faa235bbd2ecd0f5
+      internalID: 316850390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_7
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83004917b86f5df478e610751611ac0a
+      internalID: -703999727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_8
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a4c4f439518674186cfb5468e59acf
+      internalID: 2140256662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e164da940277d842be686ba30f345e2
+      internalID: -1683038578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2632
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6590479672437499b1b445b9159ea7
+      internalID: -32912363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2632
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d116df256d40bee498841f9b74e93db4
+      internalID: -446658779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2632
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5294ed401cfa44ca638129e0281921
+      internalID: -679404569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_13
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2632
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4fe2d407b2d584fb11dd1bcca71518
+      internalID: -1397427910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2632
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d19616d44f7bb942a02f8703bf66320
+      internalID: 1607502864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2032
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbd79776deaa5c4091d2b84e0b6898e
+      internalID: -642970509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_16
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2032
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb83ecd70329bfd4f884489c55c1b216
+      internalID: 948759881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2032
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9810ac4eac1fdd4889cd81905400c4c
+      internalID: 864437005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_18
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2032
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6434fd93894e6408d934fe288b5674
+      internalID: 2005585119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2032
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb4bf4e3d93c5d42a6bc8b20692fa63
+      internalID: 1752384819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1432
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc9284748b5b5a47954ce5ef5226566
+      internalID: 1285906921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_21
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1432
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0ee6cae8212ef4a95551b1a53d00a1
+      internalID: -1702437133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_22
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1432
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cc60e09fb49764981a302a832bcc8b
+      internalID: -2078074030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_23
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1432
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d64a0939d7bf24db3cedc0d6f49a56
+      internalID: -2020467943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_24
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1432
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f44d09cf68740e479e9dda92df6f7bd
+      internalID: -1131812593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b150c50679d2ddf4ebc2775c3cff76c4
+      internalID: 1352724445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_26
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7322bdcbfb3f28948af08709b403327c
+      internalID: -564444905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e613c2445840a4abb53f3cf37297aa
+      internalID: 1795492860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_28
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac47e9d1cc6687749a7d4bdc29fe19bb
+      internalID: -328123135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 832
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1c985dd40ec6d44a512f6dba090467
+      internalID: 1100324203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd49f91f4795a474584b713732aff21b
+      internalID: -41366177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6137ac93ae5d6542a6b929e91538ca8
+      internalID: 1971953689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_32
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4b2e61deb786b42935b0a517ef7a3c
+      internalID: -1459620437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_33
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2aa8c8c63529649be67cadf9b9711f
+      internalID: 772796943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_Rox_Idle_BACK_34
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 232
+        width: 750
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8fd3c3b3ac1f54d8901e090bc37f12
+      internalID: 1084018002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 35db8fdc45e2da84592dfb06802bd544
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      sheet_Rox_Idle_BACK_0: 1613595695
+      sheet_Rox_Idle_BACK_1: 629544604
+      sheet_Rox_Idle_BACK_10: -32912363
+      sheet_Rox_Idle_BACK_11: -446658779
+      sheet_Rox_Idle_BACK_12: -679404569
+      sheet_Rox_Idle_BACK_13: -1397427910
+      sheet_Rox_Idle_BACK_14: 1607502864
+      sheet_Rox_Idle_BACK_15: -642970509
+      sheet_Rox_Idle_BACK_16: 948759881
+      sheet_Rox_Idle_BACK_17: 864437005
+      sheet_Rox_Idle_BACK_18: 2005585119
+      sheet_Rox_Idle_BACK_19: 1752384819
+      sheet_Rox_Idle_BACK_2: -317668419
+      sheet_Rox_Idle_BACK_20: 1285906921
+      sheet_Rox_Idle_BACK_21: -1702437133
+      sheet_Rox_Idle_BACK_22: -2078074030
+      sheet_Rox_Idle_BACK_23: -2020467943
+      sheet_Rox_Idle_BACK_24: -1131812593
+      sheet_Rox_Idle_BACK_25: 1352724445
+      sheet_Rox_Idle_BACK_26: -564444905
+      sheet_Rox_Idle_BACK_27: 1795492860
+      sheet_Rox_Idle_BACK_28: -328123135
+      sheet_Rox_Idle_BACK_29: 1100324203
+      sheet_Rox_Idle_BACK_3: -58683606
+      sheet_Rox_Idle_BACK_30: -41366177
+      sheet_Rox_Idle_BACK_31: 1971953689
+      sheet_Rox_Idle_BACK_32: -1459620437
+      sheet_Rox_Idle_BACK_33: 772796943
+      sheet_Rox_Idle_BACK_34: 1084018002
+      sheet_Rox_Idle_BACK_4: -1926850175
+      sheet_Rox_Idle_BACK_5: 12993035
+      sheet_Rox_Idle_BACK_6: 316850390
+      sheet_Rox_Idle_BACK_7: -703999727
+      sheet_Rox_Idle_BACK_8: 2140256662
+      sheet_Rox_Idle_BACK_9: -1683038578
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
