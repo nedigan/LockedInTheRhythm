@@ -1,0 +1,28 @@
+{
+    "name": "SlyDemo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f1b8880803e6a77448bf04ac0c73a8da",
+        "GUID:88f14d179e7c91c4eac28302d69f32e1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.2d.animation",
+            "expression": "0.0.1",
+            "define": "ENABLE_UNITY_2D_ANIMATION"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "0.0.1",
+            "define": "ENABLE_UNITY_COLLECTIONS"
+        }
+    ],
+    "noEngineReferences": false
+}

@@ -1,0 +1,43 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Peg_4_default" spritesheet="sheet_Rox_Lil_GuyAnimation">
+  <drawing name="TAIL" node="TAIL" drwId="1">
+   <drw skinId="0" name="TAIL_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="REMIXER" node="REMIXER" drwId="2">
+   <drw skinId="0" name="REMIXER_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="HAND_LEFT" node="HAND_LEFT" drwId="3">
+   <drw skinId="0" name="HAND_LEFT_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="FOOT_LEFT" node="FOOT_LEFT" drwId="4">
+   <drw skinId="0" name="FOOT_LEFT_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="CROTCH" node="CROTCH" drwId="5">
+   <drw skinId="0" name="CROTCH_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="FOOT_RIGHT" node="FOOT_RIGHT" drwId="6">
+   <drw skinId="0" name="FOOT_RIGHT_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="BODY" node="BODY" drwId="7">
+   <drw skinId="0" name="BODY_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="HAND_RIGHT" node="HAND_RIGHT" drwId="8">
+   <drw skinId="0" name="HAND_RIGHT_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="HEADPHONES_BACK" node="HEADPHONES_BACK" drwId="9">
+   <drw skinId="0" name="HEADPHONES_BACK_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="EAR_BACK" node="EAR_BACK" drwId="10">
+   <drw skinId="0" name="EAR_BACK_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="hEAD" node="hEAD" drwId="11">
+   <drw skinId="0" name="hEAD_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="EAR_FRONT" node="EAR_FRONT" drwId="12">
+   <drw skinId="0" name="EAR_FRONT_0.png" frame="1" repeat="30"/>
+  </drawing>
+  <drawing name="HEADPHONES" node="HEADPHONES" drwId="13">
+   <drw skinId="0" name="HEADPHONES_0.png" frame="1" repeat="30"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

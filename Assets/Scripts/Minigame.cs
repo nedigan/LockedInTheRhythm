@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class Minigame : MonoBehaviour
 {
     [Header("Variables")]
-    [SerializeField] private Song _song; // testing - play method will take song from safe
+    [SerializeField] private Song[] _songs;
+    [SerializeField] private AudioClip[] _musics;
+    [SerializeField] private MusicalSafe[] _safes;
     [SerializeField] private float _speed = 5f; // testing
     [SerializeField] private float _hitNoteOffset = 10f;
+    [SerializeField] private SongManager _songManager;
+    [SerializeField]private AudioSource _audioSource;
 
     private float _hitPositionX;
     private int _combo = 0;
@@ -121,15 +126,31 @@ public class Minigame : MonoBehaviour
         }
     }
 
-    public void Play(MusicalSafe safe, Song song = null)
+    public void Play(MusicalSafe safe)
     {
         if (_playing) return;
 
-        if (song == null)
-            song = _song;
+        int numSafesUnlocked = _safes.Count((safe) => !safe.Locked);
+        _songManager.Pause();
+
+        //if (_safes.Length > _songs.Length)
+            numSafesUnlocked = 0;
+        Song song =  _songs[numSafesUnlocked];
+
+        if (_musics[0] == null)
+        {
+            Debug.Log("Music is null");
+        }
+        _audioSource.clip = _musics[0];
+        _audioSource.Play();
 
         _notes = song.LoadSong();
         _currentSafe = safe;
+
+        if (_currentSafe == null)
+        {
+            Debug.Log("Current Safe is null");
+        }
         _playing = true;
 
         StartCoroutine(SpawnNote(0));
@@ -219,6 +240,7 @@ public class Minigame : MonoBehaviour
         float staminaPercentage = (float)_highestCombo / (float)_amountOfNotes; // stamina in range 0 to 1. For slider
         _playerMovement.SetStamina(staminaPercentage);
 
+        _songManager.UnPause();
         gameObject.SetActive(false);
     }
 

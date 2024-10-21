@@ -47,11 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VisionConeMaterial: {fileID: 2100000, guid: a30ad053ef5731847b3f5a7fb2c12a22, type: 2}
-  VisionRange: 3.5
+  VisionRange: 3
   VisionAngle: 90
   VisionObstructingLayer:
     serializedVersion: 2
-    m_Bits: 375
+    m_Bits: 119
   VisionConeResolution: 40
   ShowVisionCone: 1
 --- !u!114 &7452856695799736816

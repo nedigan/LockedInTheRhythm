@@ -1,0 +1,46 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Peg_default" spritesheet="sheet_Octavius_BigBoy">
+  <drawing name="BACK_Lapels" node="BACK_Lapels" drwId="1">
+   <drw skinId="0" name="BACK_Lapels_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Right_Arm" node="BACK_Right_Arm" drwId="2">
+   <drw skinId="0" name="BACK_Right_Arm_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Right_Leg_TOP" node="BACK_Right_Leg_TOP" drwId="3">
+   <drw skinId="0" name="BACK_Right_Leg_TOP_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Right_Leg_BOTTOM" node="BACK_Right_Leg_BOTTOM" drwId="4">
+   <drw skinId="0" name="BACK_Right_Leg_BOTTOM_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Left_Leg_TOP" node="BACK_Left_Leg_TOP" drwId="5">
+   <drw skinId="0" name="BACK_Left_Leg_TOP_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Left_Leg_BOTTOM" node="BACK_Left_Leg_BOTTOM" drwId="6">
+   <drw skinId="0" name="BACK_Left_Leg_BOTTOM_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Body" node="BACK_Body" drwId="7">
+   <drw skinId="0" name="BACK_Body_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Left_Arm" node="BACK_Left_Arm" drwId="8">
+   <drw skinId="0" name="BACK_Left_Arm_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Collar" node="BACK_Collar" drwId="9">
+   <drw skinId="0" name="BACK_Collar_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Head" node="BACK_Head" drwId="10">
+   <drw skinId="0" name="BACK_Head_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Back_Ear" node="BACK_Back_Ear" drwId="11">
+   <drw skinId="0" name="BACK_Back_Ear_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Front_Ear" node="BACK_Front_Ear" drwId="12">
+   <drw skinId="0" name="BACK_Front_Ear_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Hair" node="BACK_Hair" drwId="13">
+   <drw skinId="0" name="BACK_Hair_0.png" frame="1" repeat="60"/>
+  </drawing>
+  <drawing name="BACK_Horns" node="BACK_Horns" drwId="14">
+   <drw skinId="0" name="BACK_Horns_0.png" frame="1" repeat="60"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf9e7458b00081548843e02456cd4afe, type: 3}
+  m_Name: StringsMinigame
+  m_EditorClassIdentifier: 
+  Numerator: 4
+  Denominator: 4
+  BPM: 120.5
+  Notes:
+  - Value: 4
+    Index: 2
+  - Value: 4
+    Index: 1
+  - Value: 4
+    Index: 2
+  - Value: 4
+    Index: 1
+  - Value: 4
+    Index: 0
+  - Value: 4
+    Index: 1
+  - Value: 4
+    Index: 2
+  - Value: 4
+    Index: 1
+  - Value: 4
+    Index: 2
+  - Value: 4
+    Index: 3

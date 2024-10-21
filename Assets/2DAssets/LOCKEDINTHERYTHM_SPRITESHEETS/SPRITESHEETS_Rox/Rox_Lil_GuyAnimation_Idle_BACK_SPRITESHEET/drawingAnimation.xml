@@ -1,0 +1,43 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Peg_7_default" spritesheet="sheet_Rox_Lil_GuyAnimation">
+  <drawing name="BACK_Left_Leg" node="BACK_Left_Leg" drwId="1">
+   <drw skinId="0" name="BACK_Left_Leg_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Left_Arm" node="BACK_Left_Arm" drwId="2">
+   <drw skinId="0" name="BACK_Left_Arm_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Crotch" node="BACK_Crotch" drwId="3">
+   <drw skinId="0" name="BACK_Crotch_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Right_Leg" node="BACK_Right_Leg" drwId="4">
+   <drw skinId="0" name="BACK_Right_Leg_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_body" node="BACK_body" drwId="5">
+   <drw skinId="0" name="BACK_body_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Right_Arm" node="BACK_Right_Arm" drwId="6">
+   <drw skinId="0" name="BACK_Right_Arm_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Tail" node="BACK_Tail" drwId="7">
+   <drw skinId="0" name="BACK_Tail_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Headphone_Back" node="BACK_Headphone_Back" drwId="8">
+   <drw skinId="0" name="BACK_Headphone_Back_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Left_Ear" node="BACK_Left_Ear" drwId="9">
+   <drw skinId="0" name="BACK_Left_Ear_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Head" node="BACK_Head" drwId="10">
+   <drw skinId="0" name="BACK_Head_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Right_Ear" node="BACK_Right_Ear" drwId="11">
+   <drw skinId="0" name="BACK_Right_Ear_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Headphone_Front" node="BACK_Headphone_Front" drwId="12">
+   <drw skinId="0" name="BACK_Headphone_Front_0.png" frame="1" repeat="29"/>
+  </drawing>
+  <drawing name="BACK_Mixer" node="BACK_Mixer" drwId="13">
+   <drw skinId="0" name="BACK_Mixer_0.png" frame="1" repeat="29"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

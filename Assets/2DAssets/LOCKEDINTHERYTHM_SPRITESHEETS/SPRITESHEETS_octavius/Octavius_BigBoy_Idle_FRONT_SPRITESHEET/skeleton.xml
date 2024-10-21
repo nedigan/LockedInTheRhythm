@@ -1,0 +1,58 @@
+<skeletons version="1">
+ <skeleton name="Peg_6">
+  <nodes>
+   <peg id="0" name="Peg_6"/>
+   <read id="1" name="Leg_Right_TOP" visible="true"/>
+   <peg id="2" name="Peg"/>
+   <read id="3" name="Body_" visible="true"/>
+   <peg id="4" name="Peg_3"/>
+   <read id="5" name="TheHead" visible="true"/>
+   <peg id="6" name="Peg_4"/>
+   <read id="7" name="Nose_Ring" visible="true"/>
+   <read id="8" name="Front_Ear" visible="true"/>
+   <read id="9" name="Back_Hair" visible="true"/>
+   <peg id="10" name="Peg_5"/>
+   <read id="11" name="Front_Hair" visible="true"/>
+   <peg id="12" name="Peg_4"/>
+   <read id="13" name="Back_Hair" visible="true"/>
+   <read id="14" name="Back_Ear" visible="true"/>
+   <read id="15" name="Collar" visible="true"/>
+   <read id="16" name="Lapels" visible="true"/>
+   <read id="17" name="Arm_Right" visible="true"/>
+   <peg id="18" name="Peg_3"/>
+   <read id="19" name="Arm_Left" visible="true"/>
+   <peg id="20" name="Peg_1"/>
+   <read id="21" name="Leg_Right_BOTTOM" visible="true"/>
+   <read id="22" name="Leg_Left_TOP" visible="true"/>
+   <peg id="23" name="Peg_2"/>
+   <read id="24" name="Leg_Left_BOTTOM" visible="true"/>
+  </nodes>
+  <links>
+   <link in="Top" out="0" port="0"/>
+   <link in="0" out="1" port="0"/>
+   <link in="1" out="2" port="0"/>
+   <link in="2" out="3" port="0"/>
+   <link in="3" out="4" port="0"/>
+   <link in="4" out="5" port="0"/>
+   <link in="5" out="6" port="0"/>
+   <link in="6" out="7" port="0"/>
+   <link in="6" out="8" port="0"/>
+   <link in="6" out="9" port="0"/>
+   <link in="9" out="10" port="0"/>
+   <link in="10" out="11" port="0"/>
+   <link in="5" out="12" port="0"/>
+   <link in="12" out="13" port="0"/>
+   <link in="12" out="14" port="0"/>
+   <link in="4" out="15" port="0"/>
+   <link in="4" out="16" port="0"/>
+   <link in="4" out="17" port="0"/>
+   <link in="3" out="18" port="0"/>
+   <link in="18" out="19" port="0"/>
+   <link in="1" out="20" port="0"/>
+   <link in="20" out="21" port="0"/>
+   <link in="0" out="22" port="0"/>
+   <link in="22" out="23" port="0"/>
+   <link in="23" out="24" port="0"/>
+  </links>
+ </skeleton>
+</skeletons>

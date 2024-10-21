@@ -1,0 +1,49 @@
+<drawingAnimations version="1">
+ <drawingAnimation name="Peg_6_default" spritesheet="sheet_Octavius_BigBoy">
+  <drawing name="Leg_Left_BOTTOM" node="Leg_Left_BOTTOM" drwId="1">
+   <drw skinId="0" name="Leg_Left_BOTTOM_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Leg_Left_TOP" node="Leg_Left_TOP" drwId="2">
+   <drw skinId="0" name="Leg_Left_TOP_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Leg_Right_BOTTOM" node="Leg_Right_BOTTOM" drwId="3">
+   <drw skinId="0" name="Leg_Right_BOTTOM_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Leg_Right_TOP" node="Leg_Right_TOP" drwId="4">
+   <drw skinId="0" name="Leg_Right_TOP_1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Arm_Left" node="Arm_Left" drwId="5">
+   <drw skinId="0" name="Arm_Left_1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Body_" node="Body_" drwId="6">
+   <drw skinId="0" name="Body__1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Arm_Right" node="Arm_Right" drwId="7">
+   <drw skinId="0" name="Arm_Right_1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Lapels" node="Lapels" drwId="8">
+   <drw skinId="0" name="Lapels_1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Collar" node="Collar" drwId="9">
+   <drw skinId="0" name="Collar_1.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Back_Ear" node="Back_Ear" drwId="10">
+   <drw skinId="0" name="Back_Ear_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Back_Hair" node="Back_Hair" drwId="11">
+   <drw skinId="0" name="Back_Hair_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="TheHead" node="TheHead" drwId="12">
+   <drw skinId="0" name="TheHead_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Front_Hair" node="Front_Hair" drwId="13">
+   <drw skinId="0" name="Front_Hair_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Front_Ear" node="Front_Ear" drwId="14">
+   <drw skinId="0" name="Front_Ear_0.png" frame="1" repeat="59"/>
+  </drawing>
+  <drawing name="Nose_Ring" node="Nose_Ring" drwId="15">
+   <drw skinId="0" name="Nose_Ring_0.png" frame="1" repeat="59"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

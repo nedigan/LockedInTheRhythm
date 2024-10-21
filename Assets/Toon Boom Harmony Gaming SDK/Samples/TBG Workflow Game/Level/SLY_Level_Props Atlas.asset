@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SLY_Level_Props Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 0
+      compressionQuality: 0
+      maxTextureSize: 0
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 8192
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 0
+      blockOffset: 0
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -4652310998117063320, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 3546858140099866102, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -1562399595563402745, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -5782913350162691140, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 7044478368597472841, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -3982874029649869141, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -8636826767457837926, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 6770561239606444611, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 5538380317063895015, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 1380538749749433767, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 5619095247813313546, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -2930269832025552523, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -4263576336281350088, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 3223103027896017470, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -6740812379839584672, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -977818685564363733, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -3850238524172225948, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 994613345003612999, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 6191794539459688348, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 5563445782978149142, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 2874944560644983154, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: 3619534065238092177, guid: 75a69acd2a556484698146159521237b, type: 3}
+    - {fileID: -7978244875300370691, guid: 75a69acd2a556484698146159521237b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys: []
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -3982874029649869141, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 6191794539459688348, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -977818685564363733, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 3546858140099866102, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -6740812379839584672, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 6770561239606444611, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 5619095247813313546, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 5538380317063895015, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 3619534065238092177, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 3223103027896017470, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -1562399595563402745, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -2930269832025552523, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 994613345003612999, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 7044478368597472841, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -4263576336281350088, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -8636826767457837926, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 2874944560644983154, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -3850238524172225948, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 5563445782978149142, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -5782913350162691140, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -7978244875300370691, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: 1380538749749433767, guid: 75a69acd2a556484698146159521237b, type: 3}
+  - {fileID: -4652310998117063320, guid: 75a69acd2a556484698146159521237b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Pan_Item_Glow_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_Low_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Grill_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Frying_Pan_Glow_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Goal_FRNT_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Cloud1_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Football_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Cloud2_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_Mid_1.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Goal_BK_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Glow_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Frying_Pan_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_High_1.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Glow_2.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Frying_Pan_Item_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Watermelon_Glow_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_Mid_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_High_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Target_Low_1.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Glow_1.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Watermelon_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-Cloud3_0.png
+  - HD-Target-Grill-Pan-Goal-Clouds-Frying_Pan-Watermelon-Football-bake_Football_Glow_0.png
+  m_RenderDataMap: {}
+  m_Tag: SLY_Level_Props Atlas
+  m_IsVariant: 0

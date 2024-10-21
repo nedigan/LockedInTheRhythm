@@ -1,0 +1,19 @@
+<stages version="1">
+ <stage name="Peg_4_default" unitWidth="199.99999" unitHeight="199.99999" resolutionWidth="200" resolutionHeight="200">
+  <skin skinId="0" name="none"/>
+  <node drwId="1" name="REMIXER" groupId="0" skinId="0"/>
+  <node drwId="2" name="TAIL" groupId="0" skinId="0"/>
+  <node drwId="3" name="HAND_LEFT" groupId="0" skinId="0"/>
+  <node drwId="4" name="FOOT_LEFT" groupId="0" skinId="0"/>
+  <node drwId="5" name="CROTCH" groupId="0" skinId="0"/>
+  <node drwId="6" name="FOOT_RIGHT" groupId="0" skinId="0"/>
+  <node drwId="7" name="BODY" groupId="0" skinId="0"/>
+  <node drwId="8" name="HAND_RIGHT" groupId="0" skinId="0"/>
+  <node drwId="9" name="HEADPHONES_BACK" groupId="0" skinId="0"/>
+  <node drwId="10" name="EAR_BACK" groupId="0" skinId="0"/>
+  <node drwId="11" name="hEAD" groupId="0" skinId="0"/>
+  <node drwId="12" name="EAR_FRONT" groupId="0" skinId="0"/>
+  <node drwId="13" name="HEADPHONES" groupId="0" skinId="0"/>
+  <play name="Peg_4_default" skeleton="Peg_4" animation="Peg_4_default" drawingAnimation="Peg_4_default" framerate="24"/>
+ </stage>
+</stages>

@@ -1,0 +1,278 @@
+<stages version="1">
+ <stage name="PerryPoireau_idle">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_idle" skeleton="PerryPoireau" animation="PerryPoireau_idle" drawingAnimation="PerryPoireau_idle" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-3"/>
+ </stage>
+ <stage name="PerryPoireau_walk">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_walk" skeleton="PerryPoireau" animation="PerryPoireau_walk" drawingAnimation="PerryPoireau_walk" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-78"/>
+ </stage>
+ <stage name="PerryPoireau_pickup_item">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_pickup_item" skeleton="PerryPoireau" animation="PerryPoireau_pickup_item" drawingAnimation="PerryPoireau_pickup_item" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-107"/>
+ </stage>
+ <stage name="PerryPoireau_idle_item">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_idle_item" skeleton="PerryPoireau" animation="PerryPoireau_idle_item" drawingAnimation="PerryPoireau_idle_item" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-135"/>
+ </stage>
+ <stage name="PerryPoireau_walk_item">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_walk_item" skeleton="PerryPoireau" animation="PerryPoireau_walk_item" drawingAnimation="PerryPoireau_walk_item" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-210"/>
+ </stage>
+ <stage name="PerryPoireau_drop_item">
+  <skin skinId="0" name="none"/>
+  <skin skinId="1" name="Glasses"/>
+  <skin skinId="2" name="Sunglasses"/>
+  <skin skinId="3" name="DotEyes"/>
+  <skin skinId="4" name="FullEyes"/>
+  <skin skinId="5" name="Headband"/>
+  <group groupId="1" name="Glasses"/>
+  <group groupId="2" name="Eyes"/>
+  <group groupId="3" name="Headband"/>
+  <anchor node="Perry-G_Hand_Back_Anchor" play="PerryPoireau"/>
+  <node drwId="1" name="Perry-G_Shoe_Back" groupId="0" skinId="0"/>
+  <node drwId="2" name="Perry-G_Leg_Back" groupId="0" skinId="0"/>
+  <node drwId="3" name="Perry-G_Torso" groupId="0" skinId="0"/>
+  <node drwId="4" name="Perry-G_Shoe_Front" groupId="0" skinId="0"/>
+  <node drwId="5" name="Perry-G_Leg_Front" groupId="0" skinId="0"/>
+  <node drwId="6" name="Perry-G_Leek_TopInside2" groupId="0" skinId="0"/>
+  <node drwId="7" name="Perry-G_Leek_TopInside1" groupId="0" skinId="0"/>
+  <node drwId="8" name="Perry-G_Leek_Head" groupId="0" skinId="0"/>
+  <node drwId="9" name="Perry-G_Headband" groupId="3" skinId="0,5"/>
+  <node drwId="10" name="Perry-G_Leek_TopLeft" groupId="0" skinId="0"/>
+  <node drwId="11" name="Perry-G_Leek_TopRight" groupId="0" skinId="0"/>
+  <node drwId="12" name="Perry-G_Hair_Front" groupId="0" skinId="0"/>
+  <node drwId="13" name="Perry-G_HairFront_Overlay" groupId="0" skinId="0"/>
+  <node drwId="14" name="Perry-G_Arm_Back" groupId="0" skinId="0"/>
+  <node drwId="15" name="Perry-G_Hand_Back" groupId="0" skinId="0"/>
+  <node drwId="16" name="Perry-G_Hand_Back_Anchor" groupId="0" skinId="0"/>
+  <node drwId="17" name="Perry-G_Arm_Front" groupId="0" skinId="0"/>
+  <node drwId="18" name="Perry-G_Hand_Front" groupId="0" skinId="0"/>
+  <node drwId="19" name="Perry-G_Scarf" groupId="0" skinId="0"/>
+  <node drwId="20" name="Perry-G_Scarf_Overlay" groupId="0" skinId="0"/>
+  <node drwId="21" name="Perry-G_BackpackStrap_Back" groupId="0" skinId="0"/>
+  <node drwId="22" name="Perry-G_Backpack" groupId="0" skinId="0"/>
+  <node drwId="23" name="Perry-G_BackpackStrap_Underlay" groupId="0" skinId="0"/>
+  <node drwId="24" name="Perry-G_BackpackStrap_Front" groupId="0" skinId="0"/>
+  <node drwId="25" name="Perry-G_Mouth" groupId="0" skinId="0"/>
+  <node drwId="26" name="Perry-G_Eyebrow_Right" groupId="0" skinId="0"/>
+  <node drwId="27" name="Perry-G_Eye_Right" groupId="2" skinId="0,3,4"/>
+  <node drwId="28" name="Perry-G_Eyebrow_Left" groupId="0" skinId="0"/>
+  <node drwId="29" name="Perry-G_Eye_Left" groupId="2" skinId="0,3,4"/>
+  <node drwId="30" name="Perry-G_Glasses_BackArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="31" name="Perry-G_Glasses_FrontArm" groupId="1" skinId="0,1,2"/>
+  <node drwId="32" name="Perry-G_bake_Glasses" groupId="1" skinId="0,1,2"/>
+  <play name="PerryPoireau_drop_item" skeleton="PerryPoireau" animation="PerryPoireau_drop_item" drawingAnimation="PerryPoireau_drop_item" framerate="30"/>
+  <sound name="PerrySoundsRough.wav" time="-237"/>
+ </stage>
+</stages>

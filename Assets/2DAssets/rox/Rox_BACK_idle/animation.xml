@@ -1,0 +1,486 @@
+<animations version="1">
+ <animation name="Default">
+  <attrlinks>
+   <attrlink node="Peg_7" attr="position.x" timedvalue="ATV-0C552785AA070659_X"/>
+   <attrlink node="Peg_7" attr="position.y" timedvalue="ATV-0C552785AA070659_Y"/>
+   <attrlink node="Peg_7" attr="position.z" timedvalue="ATV-0C552785AA070659_Z"/>
+   <attrlink node="Peg_7" attr="scale.x" timedvalue="ATV-0C552785AA07065B"/>
+   <attrlink node="Peg_7" attr="scale.y" timedvalue="ATV-0C552785AA07065C"/>
+   <attrlink node="BACK_Crotch" attr="pivot" timedvalue="BACK_Crotch_Pivot"/>
+   <attrlink node="BACK_Crotch" attr="offset.x" timedvalue="ATV-0C552785AA0280D8"/>
+   <attrlink node="BACK_Crotch" attr="offset.y" timedvalue="ATV-0C552785AA0280D9"/>
+   <attrlink node="BACK_Crotch" attr="rotation.anglez" timedvalue="ATV-0C552785AA0280DD"/>
+   <attrlink node="BACK_body" attr="pivot" timedvalue="BACK_body_Pivot"/>
+   <attrlink node="BACK_body" attr="offset.x" timedvalue="ATV-0C552785AA028117"/>
+   <attrlink node="BACK_body" attr="offset.y" timedvalue="ATV-0C552785AA028118"/>
+   <attrlink node="BACK_Mixer" attr="pivot" timedvalue="BACK_Mixer_Pivot"/>
+   <attrlink node="BACK_Mixer" attr="skew" timedvalue="ATV-0C552785AA0280D7"/>
+   <attrlink node="BACK_Mixer" attr="offset.x" timedvalue="ATV-0C552785AA0280D1"/>
+   <attrlink node="BACK_Mixer" attr="offset.y" timedvalue="ATV-0C552785AA0280D2"/>
+   <attrlink node="BACK_Mixer" attr="scale.x" timedvalue="ATV-0C552785AA0280D4"/>
+   <attrlink node="BACK_Mixer" attr="scale.y" timedvalue="ATV-0C552785AA0280D5"/>
+   <attrlink node="BACK_Mixer" attr="rotation.anglez" timedvalue="ATV-0C552785AA0280D6"/>
+   <attrlink node="BACK_Head" attr="pivot" timedvalue="BACK_Head_Pivot"/>
+   <attrlink node="BACK_Head" attr="skew" timedvalue="ATV-0C552785AA028124"/>
+   <attrlink node="BACK_Head" attr="offset.x" timedvalue="ATV-0C552785AA02811E"/>
+   <attrlink node="BACK_Head" attr="offset.y" timedvalue="ATV-0C552785AA02811F"/>
+   <attrlink node="BACK_Head" attr="scale.x" timedvalue="ATV-0C552785AA028121"/>
+   <attrlink node="BACK_Head" attr="scale.y" timedvalue="ATV-0C552785AA028122"/>
+   <attrlink node="BACK_Head" attr="rotation.anglez" timedvalue="ATV-0C552785AA028123"/>
+   <attrlink node="BACK_Headphone_Front" attr="pivot" timedvalue="BACK_Headphone_Front_Pivot"/>
+   <attrlink node="BACK_Headphone_Front" attr="skew" timedvalue="ATV-0C552785AA0280EC"/>
+   <attrlink node="BACK_Headphone_Front" attr="offset.x" timedvalue="ATV-0C552785AA0280E6"/>
+   <attrlink node="BACK_Headphone_Front" attr="offset.y" timedvalue="ATV-0C552785AA0280E7"/>
+   <attrlink node="BACK_Headphone_Front" attr="scale.x" timedvalue="ATV-0C552785AA0280E9"/>
+   <attrlink node="BACK_Headphone_Front" attr="scale.y" timedvalue="ATV-0C552785AA0280EA"/>
+   <attrlink node="BACK_Headphone_Front" attr="rotation.anglez" timedvalue="ATV-0C552785AA0280EB"/>
+   <attrlink node="BACK_Right_Ear" attr="pivot" timedvalue="BACK_Right_Ear_Pivot"/>
+   <attrlink node="BACK_Right_Ear" attr="skew" timedvalue="ATV-0C552785AA028108"/>
+   <attrlink node="BACK_Right_Ear" attr="offset.x" timedvalue="ATV-0C552785AA028102"/>
+   <attrlink node="BACK_Right_Ear" attr="offset.y" timedvalue="ATV-0C552785AA028103"/>
+   <attrlink node="BACK_Right_Ear" attr="scale.x" timedvalue="ATV-0C552785AA028105"/>
+   <attrlink node="BACK_Right_Ear" attr="scale.y" timedvalue="ATV-0C552785AA028106"/>
+   <attrlink node="BACK_Right_Ear" attr="rotation.anglez" timedvalue="ATV-0C552785AA028107"/>
+   <attrlink node="BACK_Left_Ear" attr="pivot" timedvalue="BACK_Left_Ear_Pivot"/>
+   <attrlink node="BACK_Left_Ear" attr="skew" timedvalue="ATV-0C552785AA02810F"/>
+   <attrlink node="BACK_Left_Ear" attr="offset.x" timedvalue="ATV-0C552785AA028109"/>
+   <attrlink node="BACK_Left_Ear" attr="offset.y" timedvalue="ATV-0C552785AA02810A"/>
+   <attrlink node="BACK_Left_Ear" attr="scale.x" timedvalue="ATV-0C552785AA02810C"/>
+   <attrlink node="BACK_Left_Ear" attr="scale.y" timedvalue="ATV-0C552785AA02810D"/>
+   <attrlink node="BACK_Left_Ear" attr="rotation.anglez" timedvalue="ATV-0C552785AA02810E"/>
+   <attrlink node="BACK_Headphone_Back" attr="pivot" timedvalue="BACK_Headphone_Back_Pivot"/>
+   <attrlink node="BACK_Headphone_Back" attr="skew" timedvalue="ATV-0C552785AA0280D0"/>
+   <attrlink node="BACK_Headphone_Back" attr="offset.x" timedvalue="ATV-0C552785AA0280CA"/>
+   <attrlink node="BACK_Headphone_Back" attr="offset.y" timedvalue="ATV-0C552785AA0280CB"/>
+   <attrlink node="BACK_Headphone_Back" attr="scale.x" timedvalue="ATV-0C552785AA0280CD"/>
+   <attrlink node="BACK_Headphone_Back" attr="scale.y" timedvalue="ATV-0C552785AA0280CE"/>
+   <attrlink node="BACK_Headphone_Back" attr="rotation.anglez" timedvalue="ATV-0C552785AA0280CF"/>
+   <attrlink node="BACK_Tail" attr="pivot" timedvalue="BACK_Tail_Pivot"/>
+   <attrlink node="BACK_Tail" attr="skew" timedvalue="ATV-0C552785AA028116"/>
+   <attrlink node="BACK_Tail" attr="offset.x" timedvalue="ATV-0C552785AA028110"/>
+   <attrlink node="BACK_Tail" attr="offset.y" timedvalue="ATV-0C552785AA028111"/>
+   <attrlink node="BACK_Tail" attr="scale.x" timedvalue="ATV-0C552785AA028113"/>
+   <attrlink node="BACK_Tail" attr="scale.y" timedvalue="ATV-0C552785AA028114"/>
+   <attrlink node="BACK_Tail" attr="rotation.anglez" timedvalue="ATV-0C552785AA028115"/>
+   <attrlink node="BACK_body" attr="pivot" timedvalue="BACK_body_Pivot"/>
+   <attrlink node="BACK_body" attr="offset.x" timedvalue="ATV-0C552785AA028117"/>
+   <attrlink node="BACK_body" attr="offset.y" timedvalue="ATV-0C552785AA028118"/>
+   <attrlink node="BACK_Right_Arm" attr="pivot" timedvalue="BACK_Right_Arm_Pivot"/>
+   <attrlink node="BACK_Right_Arm" attr="skew" timedvalue="ATV-0C552785AA028101"/>
+   <attrlink node="BACK_Right_Arm" attr="offset.x" timedvalue="ATV-0C552785AA0280FB"/>
+   <attrlink node="BACK_Right_Arm" attr="offset.y" timedvalue="ATV-0C552785AA0280FC"/>
+   <attrlink node="BACK_Right_Arm" attr="scale.x" timedvalue="ATV-0C552785AA0280FE"/>
+   <attrlink node="BACK_Right_Arm" attr="scale.y" timedvalue="ATV-0C552785AA0280FF"/>
+   <attrlink node="BACK_Right_Arm" attr="rotation.anglez" timedvalue="ATV-0C552785AA028100"/>
+   <attrlink node="BACK_Right_Leg" attr="pivot" timedvalue="BACK_Right_Leg_Pivot"/>
+   <attrlink node="BACK_Right_Leg" attr="offset.x" timedvalue="ATV-0C552785AA0280ED"/>
+   <attrlink node="BACK_Right_Leg" attr="offset.y" timedvalue="ATV-0C552785AA0280EE"/>
+   <attrlink node="BACK_body" attr="pivot" timedvalue="BACK_body_Pivot"/>
+   <attrlink node="BACK_body" attr="offset.x" timedvalue="ATV-0C552785AA028117"/>
+   <attrlink node="BACK_body" attr="offset.y" timedvalue="ATV-0C552785AA028118"/>
+   <attrlink node="BACK_Left_Arm" attr="pivot" timedvalue="BACK_Left_Arm_Pivot"/>
+   <attrlink node="BACK_Left_Arm" attr="skew" timedvalue="ATV-0C552785AA0280FA"/>
+   <attrlink node="BACK_Left_Arm" attr="offset.x" timedvalue="ATV-0C552785AA0280F4"/>
+   <attrlink node="BACK_Left_Arm" attr="offset.y" timedvalue="ATV-0C552785AA0280F5"/>
+   <attrlink node="BACK_Left_Arm" attr="scale.x" timedvalue="ATV-0C552785AA0280F7"/>
+   <attrlink node="BACK_Left_Arm" attr="scale.y" timedvalue="ATV-0C552785AA0280F8"/>
+   <attrlink node="BACK_Left_Arm" attr="rotation.anglez" timedvalue="ATV-0C552785AA0280F9"/>
+   <attrlink node="BACK_Left_Leg" attr="pivot" timedvalue="BACK_Left_Leg_Pivot"/>
+   <attrlink node="BACK_Left_Leg" attr="offset.x" timedvalue="ATV-0C552785AA0280DF"/>
+   <attrlink node="BACK_Left_Leg" attr="offset.y" timedvalue="ATV-0C552785AA0280E0"/>
+  </attrlinks>
+  <timedvalues>
+   <linear name="ATV-0C552785AA070659_X">
+    <pt x="1" y="3.999999839999999"/>
+    <pt x="29" y="3.999999839999999"/>
+   </linear>
+   <linear name="ATV-0C552785AA070659_Y">
+    <pt x="1" y="0.9999999599999999"/>
+    <pt x="29" y="0.9999999599999999"/>
+   </linear>
+   <linear name="ATV-0C552785AA070659_Z">
+    <pt x="1" y="0"/>
+    <pt x="29" y="0"/>
+   </linear>
+   <bezier name="ATV-0C552785AA07065B">
+    <pt x="1" y="1.2700110914103109" lx="1" ly="1.2700110914103109" rx="1" ry="1.2700110914103109" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA07065C">
+    <pt x="1" y="1.2700110914103109" lx="1" ly="1.2700110914103109" rx="1" ry="1.2700110914103109" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Crotch_Pivot">
+    <pt x="72.24316015566053" y="-38.484087699093756" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280D8">
+    <pt x="1" y="-70.71467898770732" lx="1" ly="-70.71467898770732" rx="1" ry="-70.71467898770732" constSeg="false"/>
+    <pt x="30" y="-70.71467898770732" lx="30" ly="-70.71467898770732" rx="30" ry="-70.71467898770732" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D9">
+    <pt x="1" y="-0.897950087060344" lx="1" ly="-0.897950087060344" rx="1" ry="-0.897950087060344" constSeg="false"/>
+    <pt x="30" y="-0.897950087060344" lx="30" ly="-0.897950087060344" rx="30" ry="-0.897950087060344" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280DD">
+    <pt x="1" y="-0.001449257162139155" lx="1" ly="-0.001449257162139155" rx="1" ry="-0.001449257162139155" constSeg="false"/>
+    <pt x="30" y="-0.001449257162139155" lx="30" ly="-0.001449257162139155" rx="30" ry="-0.001449257162139155" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_body_Pivot">
+    <pt x="146.9658630624379" y="-37.11037117491966" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028117">
+    <pt x="1" y="-75.67767265712038" lx="1" ly="-75.67767265712038" rx="1" ry="-75.67767265712038" constSeg="false"/>
+    <pt x="15" y="-75.4872784669121" lx="15" ly="-75.4872784669121" rx="15" ry="-75.4872784669121" constSeg="false"/>
+    <pt x="30" y="-75.67767265712038" lx="30" ly="-75.67767265712038" rx="30" ry="-75.67767265712038" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028118">
+    <pt x="1" y="2.1319184626630436" lx="1" ly="2.1319184626630436" rx="1" ry="2.1319184626630436" constSeg="false"/>
+    <pt x="15" y="-0.2788208138353257" lx="15" ly="-0.2788208138353257" rx="15" ry="-0.2788208138353257" constSeg="false"/>
+    <pt x="30" y="2.1319184626630436" lx="30" ly="2.1319184626630436" rx="30" ry="2.1319184626630436" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Mixer_Pivot">
+    <pt x="149.8192062282961" y="-30.081588376302744" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280D7">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="7.951386703658793e-16" lx="15" ly="7.951386703658793e-16" rx="15" ry="7.951386703658793e-16" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D1">
+    <pt x="1" y="-5.231886219604603" lx="1" ly="-5.231886219604603" rx="1" ry="-5.231886219604603" constSeg="false"/>
+    <pt x="15" y="-5.23188621960467" lx="15" ly="-5.23188621960467" rx="15" ry="-5.23188621960467" constSeg="false"/>
+    <pt x="30" y="-5.231886219604603" lx="30" ly="-5.231886219604603" rx="30" ry="-5.231886219604603" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D2">
+    <pt x="1" y="-0.5771047275464218" lx="1" ly="-0.5771047275464218" rx="1" ry="-0.5771047275464218" constSeg="false"/>
+    <pt x="15" y="-0.5771047275464404" lx="15" ly="-0.5771047275464404" rx="15" ry="-0.5771047275464404" constSeg="false"/>
+    <pt x="30" y="-0.5771047275464218" lx="30" ly="-0.5771047275464218" rx="30" ry="-0.5771047275464218" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D4">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999994" lx="15" ly="0.9999999999999994" rx="15" ry="0.9999999999999994" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D5">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999999" lx="15" ly="0.9999999999999999" rx="15" ry="0.9999999999999999" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280D6">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-0.1198154834308842" lx="15" ly="-0.1198154834308842" rx="15" ry="-0.1198154834308842" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Head_Pivot">
+    <pt x="71.03112142461163" y="-24.777645816363783" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028124">
+    <pt x="1" y="5.5659706925611575e-15" lx="1" ly="5.5659706925611575e-15" rx="1" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="15" y="-4.770832022195262e-15" lx="15" ly="-4.770832022195262e-15" rx="15" ry="-4.770832022195262e-15" constSeg="false"/>
+    <pt x="30" y="5.5659706925611575e-15" lx="30" ly="5.5659706925611575e-15" rx="30" ry="5.5659706925611575e-15" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02811E">
+    <pt x="1" y="78.2492599184808" lx="1" ly="78.2492599184808" rx="1" ry="78.2492599184808" constSeg="false"/>
+    <pt x="15" y="78.33974773568754" lx="15" ly="78.33974773568754" rx="15" ry="78.33974773568754" constSeg="false"/>
+    <pt x="30" y="78.2492599184808" lx="30" ly="78.2492599184808" rx="30" ry="78.2492599184808" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02811F">
+    <pt x="1" y="4.729602904796583" lx="1" ly="4.729602904796583" rx="1" ry="4.729602904796583" constSeg="false"/>
+    <pt x="15" y="2.474914175382873" lx="15" ly="2.474914175382873" rx="15" ry="2.474914175382873" constSeg="false"/>
+    <pt x="30" y="4.729602904796583" lx="30" ly="4.729602904796583" rx="30" ry="4.729602904796583" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028121">
+    <pt x="1" y="0.9999999999999964" lx="1" ly="0.9999999999999964" rx="1" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="15" y="0.9999999999999944" lx="15" ly="0.9999999999999944" rx="15" ry="0.9999999999999944" constSeg="false"/>
+    <pt x="30" y="0.9999999999999964" lx="30" ly="0.9999999999999964" rx="30" ry="0.9999999999999964" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028122">
+    <pt x="1" y="0.9999999999999996" lx="1" ly="0.9999999999999996" rx="1" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="15" y="1.0000000000000027" lx="15" ly="1.0000000000000027" rx="15" ry="1.0000000000000027" constSeg="false"/>
+    <pt x="30" y="0.9999999999999996" lx="30" ly="0.9999999999999996" rx="30" ry="0.9999999999999996" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028123">
+    <pt x="1" y="-0.0658633935164139" lx="1" ly="-0.0658633935164139" rx="1" ry="-0.0658633935164139" constSeg="false"/>
+    <pt x="15" y="-0.07865419604722956" lx="15" ly="-0.07865419604722956" rx="15" ry="-0.07865419604722956" constSeg="false"/>
+    <pt x="30" y="-0.0658633935164139" lx="30" ly="-0.0658633935164139" rx="30" ry="-0.0658633935164139" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Headphone_Front_Pivot">
+    <pt x="165.8167179009701" y="24.91410898920135" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280EC">
+    <pt x="1" y="5.5659706925611575e-15" lx="1" ly="5.5659706925611575e-15" rx="1" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="15" y="5.5659706925611575e-15" lx="15" ly="5.5659706925611575e-15" rx="15" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="30" y="5.5659706925611575e-15" lx="30" ly="5.5659706925611575e-15" rx="30" ry="5.5659706925611575e-15" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280E6">
+    <pt x="1" y="-71.99956678200728" lx="1" ly="-71.99956678200728" rx="1" ry="-71.99956678200728" constSeg="false"/>
+    <pt x="15" y="-72.23245696221935" lx="15" ly="-72.23245696221935" rx="15" ry="-72.23245696221935" constSeg="false"/>
+    <pt x="30" y="-71.99956678200728" lx="30" ly="-71.99956678200728" rx="30" ry="-71.99956678200728" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280E7">
+    <pt x="1" y="2.1476658467948098" lx="1" ly="2.1476658467948098" rx="1" ry="2.1476658467948098" constSeg="false"/>
+    <pt x="15" y="-0.8683739959797387" lx="15" ly="-0.8683739959797387" rx="15" ry="-0.8683739959797387" constSeg="false"/>
+    <pt x="30" y="2.1476658467948098" lx="30" ly="2.1476658467948098" rx="30" ry="2.1476658467948098" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280E9">
+    <pt x="1" y="0.9999999999999964" lx="1" ly="0.9999999999999964" rx="1" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="15" y="0.9999999999999964" lx="15" ly="0.9999999999999964" rx="15" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="30" y="0.9999999999999964" lx="30" ly="0.9999999999999964" rx="30" ry="0.9999999999999964" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280EA">
+    <pt x="1" y="0.9999999999999996" lx="1" ly="0.9999999999999996" rx="1" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="15" y="0.9999999999999996" lx="15" ly="0.9999999999999996" rx="15" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="30" y="0.9999999999999996" lx="30" ly="0.9999999999999996" rx="30" ry="0.9999999999999996" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280EB">
+    <pt x="1" y="-0.06351984203173679" lx="1" ly="-0.06351984203173679" rx="1" ry="-0.06351984203173679" constSeg="false"/>
+    <pt x="15" y="-0.06351984203173679" lx="15" ly="-0.06351984203173679" rx="15" ry="-0.06351984203173679" constSeg="false"/>
+    <pt x="30" y="-0.06351984203173679" lx="30" ly="-0.06351984203173679" rx="30" ry="-0.06351984203173679" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Right_Ear_Pivot">
+    <pt x="156.4840568068758" y="-7.443715293300296" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028108">
+    <pt x="1" y="5.5659706925611575e-15" lx="1" ly="5.5659706925611575e-15" rx="1" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="15" y="-3.8007628443489265e-13" lx="15" ly="-3.8007628443489265e-13" rx="15" ry="-3.8007628443489265e-13" constSeg="false"/>
+    <pt x="30" y="5.5659706925611575e-15" lx="30" ly="5.5659706925611575e-15" rx="30" ry="5.5659706925611575e-15" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028102">
+    <pt x="1" y="-74.05561938416604" lx="1" ly="-74.05561938416604" rx="1" ry="-74.05561938416604" constSeg="false"/>
+    <pt x="15" y="-74.05561938416609" lx="15" ly="-74.05561938416609" rx="15" ry="-74.05561938416609" constSeg="false"/>
+    <pt x="30" y="-74.05561938416604" lx="30" ly="-74.05561938416604" rx="30" ry="-74.05561938416604" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028103">
+    <pt x="1" y="2.832860410867225" lx="1" ly="2.832860410867225" rx="1" ry="2.832860410867225" constSeg="false"/>
+    <pt x="15" y="2.8328604108671445" lx="15" ly="2.8328604108671445" rx="15" ry="2.8328604108671445" constSeg="false"/>
+    <pt x="30" y="2.832860410867225" lx="30" ly="2.832860410867225" rx="30" ry="2.832860410867225" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028105">
+    <pt x="1" y="0.9999999999999964" lx="1" ly="0.9999999999999964" rx="1" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="15" y="1.0000000000000007" lx="15" ly="1.0000000000000007" rx="15" ry="1.0000000000000007" constSeg="false"/>
+    <pt x="30" y="0.9999999999999964" lx="30" ly="0.9999999999999964" rx="30" ry="0.9999999999999964" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028106">
+    <pt x="1" y="0.9999999999999996" lx="1" ly="0.9999999999999996" rx="1" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="15" y="0.9999999999999938" lx="15" ly="0.9999999999999938" rx="15" ry="0.9999999999999938" constSeg="false"/>
+    <pt x="30" y="0.9999999999999996" lx="30" ly="0.9999999999999996" rx="30" ry="0.9999999999999996" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028107">
+    <pt x="1" y="-0.06351984203173679" lx="1" ly="-0.06351984203173679" rx="1" ry="-0.06351984203173679" constSeg="false"/>
+    <pt x="15" y="0.23384906138813794" lx="15" ly="0.23384906138813794" rx="15" ry="0.23384906138813794" constSeg="false"/>
+    <pt x="30" y="-0.06351984203173679" lx="30" ly="-0.06351984203173679" rx="30" ry="-0.06351984203173679" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Left_Ear_Pivot">
+    <pt x="128.4005151158855" y="-1.3729605916744057" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA02810F">
+    <pt x="1" y="5.5659706925611575e-15" lx="1" ly="5.5659706925611575e-15" rx="1" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="15" y="-6.361109362927048e-13" lx="15" ly="-6.361109362927048e-13" rx="15" ry="-6.361109362927048e-13" constSeg="false"/>
+    <pt x="30" y="5.5659706925611575e-15" lx="30" ly="5.5659706925611575e-15" rx="30" ry="5.5659706925611575e-15" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028109">
+    <pt x="1" y="-73.5825628268416" lx="1" ly="-73.5825628268416" rx="1" ry="-73.5825628268416" constSeg="false"/>
+    <pt x="15" y="-73.58256282684172" lx="15" ly="-73.58256282684172" rx="15" ry="-73.58256282684172" constSeg="false"/>
+    <pt x="30" y="-73.5825628268416" lx="30" ly="-73.5825628268416" rx="30" ry="-73.5825628268416" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02810A">
+    <pt x="1" y="4.5313985186277845" lx="1" ly="4.5313985186277845" rx="1" ry="4.5313985186277845" constSeg="false"/>
+    <pt x="15" y="4.531398518627558" lx="15" ly="4.531398518627558" rx="15" ry="4.531398518627558" constSeg="false"/>
+    <pt x="30" y="4.5313985186277845" lx="30" ly="4.5313985186277845" rx="30" ry="4.5313985186277845" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02810C">
+    <pt x="1" y="0.9999999999999964" lx="1" ly="0.9999999999999964" rx="1" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="15" y="0.9999999999999974" lx="15" ly="0.9999999999999974" rx="15" ry="0.9999999999999974" constSeg="false"/>
+    <pt x="30" y="0.9999999999999964" lx="30" ly="0.9999999999999964" rx="30" ry="0.9999999999999964" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02810D">
+    <pt x="1" y="0.9999999999999996" lx="1" ly="0.9999999999999996" rx="1" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="15" y="0.9999999999999978" lx="15" ly="0.9999999999999978" rx="15" ry="0.9999999999999978" constSeg="false"/>
+    <pt x="30" y="0.9999999999999996" lx="30" ly="0.9999999999999996" rx="30" ry="0.9999999999999996" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA02810E">
+    <pt x="1" y="-0.06351984203173679" lx="1" ly="-0.06351984203173679" rx="1" ry="-0.06351984203173679" constSeg="false"/>
+    <pt x="15" y="0.4088601675887273" lx="15" ly="0.4088601675887273" rx="15" ry="0.4088601675887273" constSeg="false"/>
+    <pt x="30" y="-0.06351984203173679" lx="30" ly="-0.06351984203173679" rx="30" ry="-0.06351984203173679" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Headphone_Back_Pivot">
+    <pt x="165.66727968159884" y="25.39567677836626" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280D0">
+    <pt x="1" y="5.5659706925611575e-15" lx="1" ly="5.5659706925611575e-15" rx="1" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="15" y="5.5659706925611575e-15" lx="15" ly="5.5659706925611575e-15" rx="15" ry="5.5659706925611575e-15" constSeg="false"/>
+    <pt x="30" y="5.5659706925611575e-15" lx="30" ly="5.5659706925611575e-15" rx="30" ry="5.5659706925611575e-15" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280CA">
+    <pt x="1" y="-71.99158343636348" lx="1" ly="-71.99158343636348" rx="1" ry="-71.99158343636348" constSeg="false"/>
+    <pt x="15" y="-72.22447361657555" lx="15" ly="-72.22447361657555" rx="15" ry="-72.22447361657555" constSeg="false"/>
+    <pt x="30" y="-71.99158343636348" lx="30" ly="-71.99158343636348" rx="30" ry="-71.99158343636348" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280CB">
+    <pt x="1" y="2.2706681069622525" lx="1" ly="2.2706681069622525" rx="1" ry="2.2706681069622525" constSeg="false"/>
+    <pt x="15" y="-0.7453717358122964" lx="15" ly="-0.7453717358122964" rx="15" ry="-0.7453717358122964" constSeg="false"/>
+    <pt x="30" y="2.2706681069622525" lx="30" ly="2.2706681069622525" rx="30" ry="2.2706681069622525" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280CD">
+    <pt x="1" y="0.9999999999999964" lx="1" ly="0.9999999999999964" rx="1" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="15" y="0.9999999999999964" lx="15" ly="0.9999999999999964" rx="15" ry="0.9999999999999964" constSeg="false"/>
+    <pt x="30" y="0.9999999999999964" lx="30" ly="0.9999999999999964" rx="30" ry="0.9999999999999964" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280CE">
+    <pt x="1" y="0.9999999999999996" lx="1" ly="0.9999999999999996" rx="1" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="15" y="0.9999999999999996" lx="15" ly="0.9999999999999996" rx="15" ry="0.9999999999999996" constSeg="false"/>
+    <pt x="30" y="0.9999999999999996" lx="30" ly="0.9999999999999996" rx="30" ry="0.9999999999999996" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280CF">
+    <pt x="1" y="-0.06327707359375247" lx="1" ly="-0.06327707359375247" rx="1" ry="-0.06327707359375247" constSeg="false"/>
+    <pt x="15" y="-0.06327707359375247" lx="15" ly="-0.06327707359375247" rx="15" ry="-0.06327707359375247" constSeg="false"/>
+    <pt x="30" y="-0.06327707359375247" lx="30" ly="-0.06327707359375247" rx="30" ry="-0.06327707359375247" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Tail_Pivot">
+    <pt x="146.01529830066033" y="-40.39516865470834" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028116">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-1.3358329662146637e-13" lx="15" ly="-1.3358329662146637e-13" rx="15" ry="-1.3358329662146637e-13" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028110">
+    <pt x="1" y="-77.5277355373812" lx="1" ly="-77.5277355373812" rx="1" ry="-77.5277355373812" constSeg="false"/>
+    <pt x="15" y="-77.52773553738159" lx="15" ly="-77.52773553738159" rx="15" ry="-77.52773553738159" constSeg="false"/>
+    <pt x="30" y="-77.5277355373812" lx="30" ly="-77.5277355373812" rx="30" ry="-77.5277355373812" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028111">
+    <pt x="1" y="1.8371501312175629" lx="1" ly="1.8371501312175629" rx="1" ry="1.8371501312175629" constSeg="false"/>
+    <pt x="15" y="1.8371501312172003" lx="15" ly="1.8371501312172003" rx="15" ry="1.8371501312172003" constSeg="false"/>
+    <pt x="30" y="1.8371501312175629" lx="30" ly="1.8371501312175629" rx="30" ry="1.8371501312175629" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028113">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.999999999999999" lx="15" ly="0.999999999999999" rx="15" ry="0.999999999999999" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028114">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="1.00000000000001" lx="15" ly="1.00000000000001" rx="15" ry="1.00000000000001" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028115">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-0.24077563887112272" lx="15" ly="-0.24077563887112272" rx="15" ry="-0.24077563887112272" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_body_Pivot">
+    <pt x="146.9658630624379" y="-37.11037117491966" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028117">
+    <pt x="1" y="-75.67767265712038" lx="1" ly="-75.67767265712038" rx="1" ry="-75.67767265712038" constSeg="false"/>
+    <pt x="15" y="-75.4872784669121" lx="15" ly="-75.4872784669121" rx="15" ry="-75.4872784669121" constSeg="false"/>
+    <pt x="30" y="-75.67767265712038" lx="30" ly="-75.67767265712038" rx="30" ry="-75.67767265712038" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028118">
+    <pt x="1" y="2.1319184626630436" lx="1" ly="2.1319184626630436" rx="1" ry="2.1319184626630436" constSeg="false"/>
+    <pt x="15" y="-0.2788208138353257" lx="15" ly="-0.2788208138353257" rx="15" ry="-0.2788208138353257" constSeg="false"/>
+    <pt x="30" y="2.1319184626630436" lx="30" ly="2.1319184626630436" rx="30" ry="2.1319184626630436" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Right_Arm_Pivot">
+    <pt x="161.40396792237732" y="-28.727102760792697" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028101">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-7.951386703658803e-15" lx="15" ly="-7.951386703658803e-15" rx="15" ry="-7.951386703658803e-15" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280FB">
+    <pt x="1" y="0.6812804029549622" lx="1" ly="0.6812804029549622" rx="1" ry="0.6812804029549622" constSeg="false"/>
+    <pt x="15" y="0.6812804029552595" lx="15" ly="0.6812804029552595" rx="15" ry="0.6812804029552595" constSeg="false"/>
+    <pt x="30" y="0.6812804029549622" lx="30" ly="0.6812804029549622" rx="30" ry="0.6812804029549622" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280FC">
+    <pt x="1" y="2.8528192732634508" lx="1" ly="2.8528192732634508" rx="1" ry="2.8528192732634508" constSeg="false"/>
+    <pt x="15" y="2.85281927326324" lx="15" ly="2.85281927326324" rx="15" ry="2.85281927326324" constSeg="false"/>
+    <pt x="30" y="2.8528192732634508" lx="30" ly="2.8528192732634508" rx="30" ry="2.8528192732634508" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280FE">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999969" lx="15" ly="0.9999999999999969" rx="15" ry="0.9999999999999969" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280FF">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999987" lx="15" ly="0.9999999999999987" rx="15" ry="0.9999999999999987" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028100">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="0.18867850061508476" lx="15" ly="0.18867850061508476" rx="15" ry="0.18867850061508476" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Right_Leg_Pivot">
+    <pt x="156.2465434774025" y="-41.47370828779766" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280ED">
+    <pt x="1" y="-76.6505505510507" lx="1" ly="-76.6505505510507" rx="1" ry="-76.6505505510507" constSeg="false"/>
+    <pt x="30" y="-76.6505505510507" lx="30" ly="-76.6505505510507" rx="30" ry="-76.6505505510507" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280EE">
+    <pt x="1" y="1.0374308319915262" lx="1" ly="1.0374308319915262" rx="1" ry="1.0374308319915262" constSeg="false"/>
+    <pt x="30" y="1.0374308319915262" lx="30" ly="1.0374308319915262" rx="30" ry="1.0374308319915262" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_body_Pivot">
+    <pt x="146.9658630624379" y="-37.11037117491966" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA028117">
+    <pt x="1" y="-75.67767265712038" lx="1" ly="-75.67767265712038" rx="1" ry="-75.67767265712038" constSeg="false"/>
+    <pt x="15" y="-75.4872784669121" lx="15" ly="-75.4872784669121" rx="15" ry="-75.4872784669121" constSeg="false"/>
+    <pt x="30" y="-75.67767265712038" lx="30" ly="-75.67767265712038" rx="30" ry="-75.67767265712038" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA028118">
+    <pt x="1" y="2.1319184626630436" lx="1" ly="2.1319184626630436" rx="1" ry="2.1319184626630436" constSeg="false"/>
+    <pt x="15" y="-0.2788208138353257" lx="15" ly="-0.2788208138353257" rx="15" ry="-0.2788208138353257" constSeg="false"/>
+    <pt x="30" y="2.1319184626630436" lx="30" ly="2.1319184626630436" rx="30" ry="2.1319184626630436" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Left_Arm_Pivot">
+    <pt x="142.44853453170484" y="-24.432368701762062" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280FA">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-6.361109362927034e-15" lx="15" ly="-6.361109362927034e-15" rx="15" ry="-6.361109362927034e-15" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280F4">
+    <pt x="1" y="-2.049954668119932" lx="1" ly="-2.049954668119932" rx="1" ry="-2.049954668119932" constSeg="false"/>
+    <pt x="15" y="-2.049954668119587" lx="15" ly="-2.049954668119587" rx="15" ry="-2.049954668119587" constSeg="false"/>
+    <pt x="30" y="-2.049954668119932" lx="30" ly="-2.049954668119932" rx="30" ry="-2.049954668119932" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280F5">
+    <pt x="1" y="-0.780520812162488" lx="1" ly="-0.780520812162488" rx="1" ry="-0.780520812162488" constSeg="false"/>
+    <pt x="15" y="-0.7805208121626804" lx="15" ly="-0.7805208121626804" rx="15" ry="-0.7805208121626804" constSeg="false"/>
+    <pt x="30" y="-0.780520812162488" lx="30" ly="-0.780520812162488" rx="30" ry="-0.780520812162488" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280F7">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999972" lx="15" ly="0.9999999999999972" rx="15" ry="0.9999999999999972" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280F8">
+    <pt x="1" y="1" lx="1" ly="1" rx="1" ry="1" constSeg="false"/>
+    <pt x="15" y="0.9999999999999999" lx="15" ly="0.9999999999999999" rx="15" ry="0.9999999999999999" constSeg="false"/>
+    <pt x="30" y="1" lx="30" ly="1" rx="30" ry="1" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280F9">
+    <pt x="1" y="0" lx="1" ly="0" rx="1" ry="0" constSeg="false"/>
+    <pt x="15" y="-0.19356052245305366" lx="15" ly="-0.19356052245305366" rx="15" ry="-0.19356052245305366" constSeg="false"/>
+    <pt x="30" y="0" lx="30" ly="0" rx="30" ry="0" constSeg="false"/>
+   </bezier>
+   <pivot name="BACK_Left_Leg_Pivot">
+    <pt x="145.7063115372507" y="-42.129785201963315" z="0" start="1"/>
+   </pivot>
+   <bezier name="ATV-0C552785AA0280DF">
+    <pt x="1" y="-77.5277355373812" lx="1" ly="-77.5277355373812" rx="1" ry="-77.5277355373812" constSeg="false"/>
+    <pt x="30" y="-77.5277355373812" lx="30" ly="-77.5277355373812" rx="30" ry="-77.5277355373812" constSeg="false"/>
+   </bezier>
+   <bezier name="ATV-0C552785AA0280E0">
+    <pt x="1" y="1.8371501312175629" lx="1" ly="1.8371501312175629" rx="1" ry="1.8371501312175629" constSeg="false"/>
+    <pt x="30" y="1.8371501312175629" lx="30" ly="1.8371501312175629" rx="30" ry="1.8371501312175629" constSeg="false"/>
+   </bezier>
+  </timedvalues>
+ </animation>
+</animations>

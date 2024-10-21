@@ -1,0 +1,47 @@
+<spritesheets>
+ <spritesheet filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-HD-ROX_CLEANUP.png" width="3840" resolution="HD-ROX_CLEANUP" height="512" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="773.01318" angleDegrees="0" offsetY="124.81612" name="BACK_Left_Ear_1.png" rect="3509,0,279,467"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="940.08801" angleDegrees="0" offsetY="109.8337" name="BACK_Right_Ear_1.png" rect="3251,0,258,422"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="874.27551" angleDegrees="0" offsetY="100.66115" name="BACK_Headphone_Back_1.png" rect="2767,0,484,352"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="1107.6221" angleDegrees="0" offsetY="-303.66733" name="BACK_Right_Arm_1.png" rect="2510,0,257,320"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="467.66138" angleDegrees="0" offsetY="-47.217392" name="BACK_Head_1.png" rect="1944,0,566,305"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="821.33923" angleDegrees="0" offsetY="-263.90494" name="BACK_Left_Arm_1.png" rect="1721,0,223,290"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="1058.473" angleDegrees="0" offsetY="37.05415" name="BACK_Headphone_Front_1.png" rect="1504,0,217,274"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="993.82263" angleDegrees="0" offsetY="-341.2233" name="BACK_Right_Leg_1.png" rect="1310,0,194,249"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="901.18439" angleDegrees="0" offsetY="-199.51167" name="BACK_Mixer_1.png" rect="974,0,336,229"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="767.12665" angleDegrees="0" offsetY="-335.46637" name="BACK_Tail_1.png" rect="579,0,395,225"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="933.6662" angleDegrees="0" offsetY="-314.3786" name="BACK_Left_Leg_1.png" rect="418,0,161,219"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="957.4599" angleDegrees="0" offsetY="-196.27377" name="BACK_body_1.png" rect="201,0,217,180"/>
+  <sprite scaleY="0.15625" scaleX="0.15625" offsetX="470.67834" angleDegrees="0" offsetY="-237.23035" name="BACK_Crotch_1.png" rect="0,0,201,146"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-FullHD-ROX_CLEANUP.png" width="3840" resolution="FullHD-ROX_CLEANUP" height="2048" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1159.5198" angleDegrees="0" offsetY="187.2242" name="BACK_Left_Ear_1.png" rect="3261,338,413,695"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1410.132" angleDegrees="0" offsetY="164.75055" name="BACK_Right_Ear_1.png" rect="2879,338,382,627"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1311.4132" angleDegrees="0" offsetY="150.99173" name="BACK_Headphone_Back_1.png" rect="2158,338,721,522"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1661.4331" angleDegrees="0" offsetY="-455.50098" name="BACK_Right_Arm_1.png" rect="1778,338,380,474"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="701.49207" angleDegrees="0" offsetY="-70.826088" name="BACK_Head_1.png" rect="935,338,843,452"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1232.0088" angleDegrees="0" offsetY="-395.85742" name="BACK_Left_Arm_1.png" rect="606,338,329,429"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1587.7095" angleDegrees="0" offsetY="55.581223" name="BACK_Headphone_Front_1.png" rect="286,338,320,405"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1490.7339" angleDegrees="0" offsetY="-511.83496" name="BACK_Right_Leg_1.png" rect="0,338,286,367"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1351.7766" angleDegrees="0" offsetY="-299.26752" name="BACK_Mixer_1.png" rect="3176,0,498,338"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1150.6899" angleDegrees="0" offsetY="-503.19955" name="BACK_Tail_1.png" rect="2589,0,587,332"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1400.4994" angleDegrees="0" offsetY="-471.5679" name="BACK_Left_Leg_1.png" rect="2354,0,235,323"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="1436.1898" angleDegrees="0" offsetY="-294.41068" name="BACK_body_1.png" rect="2034,0,320,264"/>
+  <sprite scaleY="0.10416666" scaleX="0.10416666" offsetX="706.01752" angleDegrees="0" offsetY="-355.84552" name="BACK_Crotch_1.png" rect="1739,0,295,213"/>
+ </spritesheet>
+ <spritesheet filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-QuadHD-ROX_CLEANUP.png" width="3840" resolution="QuadHD-ROX_CLEANUP" height="2048" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1546.0264" angleDegrees="0" offsetY="249.63225" name="BACK_Left_Ear_1.png" rect="3250,569,546,923"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1880.176" angleDegrees="0" offsetY="219.6674" name="BACK_Right_Ear_1.png" rect="2745,569,505,832"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1748.551" angleDegrees="0" offsetY="201.3223" name="BACK_Headphone_Back_1.png" rect="1788,569,957,693"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="2215.2441" angleDegrees="0" offsetY="-607.33466" name="BACK_Right_Arm_1.png" rect="1286,569,502,628"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="935.32275" angleDegrees="0" offsetY="-94.434784" name="BACK_Head_1.png" rect="166,569,1120,599"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1642.6785" angleDegrees="0" offsetY="-527.80988" name="BACK_Left_Arm_1.png" rect="3361,0,435,569"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="2116.946" angleDegrees="0" offsetY="74.108299" name="BACK_Headphone_Front_1.png" rect="2939,0,422,536"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1987.6453" angleDegrees="0" offsetY="-682.44659" name="BACK_Right_Leg_1.png" rect="2562,0,377,486"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1802.3688" angleDegrees="0" offsetY="-399.02335" name="BACK_Mixer_1.png" rect="1902,0,660,447"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1534.2533" angleDegrees="0" offsetY="-670.93274" name="BACK_Tail_1.png" rect="1123,0,779,439"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1867.3324" angleDegrees="0" offsetY="-628.7572" name="BACK_Left_Leg_1.png" rect="813,0,310,427"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="1914.9198" angleDegrees="0" offsetY="-392.54755" name="BACK_body_1.png" rect="390,0,423,348"/>
+  <sprite scaleY="0.078125" scaleX="0.078125" offsetX="941.35669" angleDegrees="0" offsetY="-474.46069" name="BACK_Crotch_1.png" rect="0,0,390,280"/>
+ </spritesheet>
+</spritesheets>

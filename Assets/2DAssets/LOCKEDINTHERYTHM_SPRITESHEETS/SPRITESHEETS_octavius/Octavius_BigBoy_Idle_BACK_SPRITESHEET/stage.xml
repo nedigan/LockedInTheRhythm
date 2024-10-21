@@ -1,0 +1,20 @@
+<stages version="1">
+ <stage name="Peg_default" unitWidth="199.99999" unitHeight="199.99999" resolutionWidth="200" resolutionHeight="200">
+  <skin skinId="0" name="none"/>
+  <node drwId="1" name="BACK_Lapels" groupId="0" skinId="0"/>
+  <node drwId="2" name="BACK_Right_Arm" groupId="0" skinId="0"/>
+  <node drwId="3" name="BACK_Right_Leg_TOP" groupId="0" skinId="0"/>
+  <node drwId="4" name="BACK_Right_Leg_BOTTOM" groupId="0" skinId="0"/>
+  <node drwId="5" name="BACK_Left_Leg_TOP" groupId="0" skinId="0"/>
+  <node drwId="6" name="BACK_Left_Leg_BOTTOM" groupId="0" skinId="0"/>
+  <node drwId="7" name="BACK_Body" groupId="0" skinId="0"/>
+  <node drwId="8" name="BACK_Left_Arm" groupId="0" skinId="0"/>
+  <node drwId="9" name="BACK_Collar" groupId="0" skinId="0"/>
+  <node drwId="10" name="BACK_Head" groupId="0" skinId="0"/>
+  <node drwId="11" name="BACK_Back_Ear" groupId="0" skinId="0"/>
+  <node drwId="12" name="BACK_Front_Ear" groupId="0" skinId="0"/>
+  <node drwId="13" name="BACK_Hair" groupId="0" skinId="0"/>
+  <node drwId="14" name="BACK_Horns" groupId="0" skinId="0"/>
+  <play name="Peg_default" skeleton="Peg" animation="Peg_default" drawingAnimation="Peg_default" framerate="24"/>
+ </stage>
+</stages>

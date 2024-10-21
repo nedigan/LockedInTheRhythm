@@ -1,0 +1,47 @@
+<spritesheets>
+ <spritesheet resolution="HD-ROX_CLEANUP" width="4096" height="512" filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-HD-ROX_CLEANUP.png" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite angleDegrees="0" rect="3419,0,445,455" offsetX="-57.196354" offsetY="117.98503" scaleX="0.15625" scaleY="0.15625" name="HEADPHONES_0.png"/>
+  <sprite angleDegrees="0" rect="3143,0,276,421" offsetX="47.842667" offsetY="171.84322" scaleX="0.15625" scaleY="0.15625" name="EAR_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="2819,0,324,419" offsetX="-172.52008" offsetY="115.48405" scaleX="0.15625" scaleY="0.15625" name="EAR_FRONT_0.png"/>
+  <sprite angleDegrees="0" rect="2559,0,260,322" offsetX="-110.96207" offsetY="-297.60464" scaleX="0.15625" scaleY="0.15625" name="HAND_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="1995,0,564,308" offsetX="41.996201" offsetY="-44.686188" scaleX="0.15625" scaleY="0.15625" name="hEAD_0.png"/>
+  <sprite angleDegrees="0" rect="1799,0,196,284" offsetX="140.77696" offsetY="145.39197" scaleX="0.15625" scaleY="0.15625" name="HEADPHONES_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="1547,0,252,259" offsetX="197.80017" offsetY="-249.13313" scaleX="0.15625" scaleY="0.15625" name="HAND_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="1355,0,192,241" offsetX="9.7323666" offsetY="-341.83942" scaleX="0.15625" scaleY="0.15625" name="FOOT_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="1194,0,161,219" offsetX="84.779579" offsetY="-306.97058" scaleX="0.15625" scaleY="0.15625" name="FOOT_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="860,0,334,206" offsetX="-35.117641" offsetY="-194.72157" scaleX="0.15625" scaleY="0.15625" name="REMIXER_0.png"/>
+  <sprite angleDegrees="0" rect="606,0,254,193" offsetX="54.100735" offsetY="-181.27295" scaleX="0.15625" scaleY="0.15625" name="BODY_0.png"/>
+  <sprite angleDegrees="0" rect="195,0,411,189" offsetX="-194.2637" offsetY="-224.92796" scaleX="0.15625" scaleY="0.15625" name="TAIL_0.png"/>
+  <sprite angleDegrees="0" rect="0,0,195,142" offsetX="37.414337" offsetY="-245.34566" scaleX="0.15625" scaleY="0.15625" name="CROTCH_0.png"/>
+ </spritesheet>
+ <spritesheet resolution="FullHD-ROX_CLEANUP" width="5000" height="1024" filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-FullHD-ROX_CLEANUP.png" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite angleDegrees="0" rect="4161,278,662,677" offsetX="-85.794533" offsetY="176.97754" scaleX="0.10416666" scaleY="0.10416666" name="HEADPHONES_0.png"/>
+  <sprite angleDegrees="0" rect="3752,278,409,625" offsetX="71.764" offsetY="257.76483" scaleX="0.10416666" scaleY="0.10416666" name="EAR_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="3272,278,480,623" offsetX="-258.78012" offsetY="173.22606" scaleX="0.10416666" scaleY="0.10416666" name="EAR_FRONT_0.png"/>
+  <sprite angleDegrees="0" rect="2888,278,384,477" offsetX="-166.44312" offsetY="-446.40695" scaleX="0.10416666" scaleY="0.10416666" name="HAND_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="2048,278,840,456" offsetX="62.994297" offsetY="-67.029282" scaleX="0.10416666" scaleY="0.10416666" name="hEAD_0.png"/>
+  <sprite angleDegrees="0" rect="1760,278,288,420" offsetX="211.16544" offsetY="218.08797" scaleX="0.10416666" scaleY="0.10416666" name="HEADPHONES_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="1388,278,372,383" offsetX="296.70026" offsetY="-373.69968" scaleX="0.10416666" scaleY="0.10416666" name="HAND_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="1106,278,282,355" offsetX="14.59855" offsetY="-512.75916" scaleX="0.10416666" scaleY="0.10416666" name="FOOT_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="871,278,235,323" offsetX="127.16936" offsetY="-460.4559" scaleX="0.10416666" scaleY="0.10416666" name="FOOT_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="375,278,496,304" offsetX="-52.676464" offsetY="-292.08237" scaleX="0.10416666" scaleY="0.10416666" name="REMIXER_0.png"/>
+  <sprite angleDegrees="0" rect="0,278,375,284" offsetX="81.1511" offsetY="-271.90942" scaleX="0.10416666" scaleY="0.10416666" name="BODY_0.png"/>
+  <sprite angleDegrees="0" rect="4212,0,611,278" offsetX="-291.39554" offsetY="-337.39194" scaleX="0.10416666" scaleY="0.10416666" name="TAIL_0.png"/>
+  <sprite angleDegrees="0" rect="3926,0,286,207" offsetX="56.121506" offsetY="-368.01849" scaleX="0.10416666" scaleY="0.10416666" name="CROTCH_0.png"/>
+ </spritesheet>
+ <spritesheet resolution="QuadHD-ROX_CLEANUP" width="5000" height="2048" filename="spriteSheets/sheet_Rox_Lil_GuyAnimation-QuadHD-ROX_CLEANUP.png" name="sheet_Rox_Lil_GuyAnimation">
+  <sprite angleDegrees="0" rect="4045,427,879,899" offsetX="-114.39271" offsetY="235.97006" scaleX="0.078125" scaleY="0.078125" name="HEADPHONES_0.png"/>
+  <sprite angleDegrees="0" rect="3504,427,541,830" offsetX="95.685333" offsetY="343.68643" scaleX="0.078125" scaleY="0.078125" name="EAR_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="2868,427,636,827" offsetX="-345.04016" offsetY="230.96809" scaleX="0.078125" scaleY="0.078125" name="EAR_FRONT_0.png"/>
+  <sprite angleDegrees="0" rect="2360,427,508,633" offsetX="-221.92415" offsetY="-595.20929" scaleX="0.078125" scaleY="0.078125" name="HAND_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="1244,427,1116,604" offsetX="83.992401" offsetY="-89.372375" scaleX="0.078125" scaleY="0.078125" name="hEAD_0.png"/>
+  <sprite angleDegrees="0" rect="864,427,380,556" offsetX="281.55392" offsetY="290.78394" scaleX="0.078125" scaleY="0.078125" name="HEADPHONES_BACK_0.png"/>
+  <sprite angleDegrees="0" rect="372,427,492,506" offsetX="395.60034" offsetY="-498.26627" scaleX="0.078125" scaleY="0.078125" name="HAND_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="0,427,372,470" offsetX="19.464733" offsetY="-683.67883" scaleX="0.078125" scaleY="0.078125" name="FOOT_RIGHT_0.png"/>
+  <sprite angleDegrees="0" rect="4614,0,310,427" offsetX="169.55916" offsetY="-613.94116" scaleX="0.078125" scaleY="0.078125" name="FOOT_LEFT_0.png"/>
+  <sprite angleDegrees="0" rect="3957,0,657,401" offsetX="-70.235283" offsetY="-389.44315" scaleX="0.078125" scaleY="0.078125" name="REMIXER_0.png"/>
+  <sprite angleDegrees="0" rect="3460,0,497,375" offsetX="108.20147" offsetY="-362.5459" scaleX="0.078125" scaleY="0.078125" name="BODY_0.png"/>
+  <sprite angleDegrees="0" rect="2649,0,811,367" offsetX="-388.5274" offsetY="-449.85593" scaleX="0.078125" scaleY="0.078125" name="TAIL_0.png"/>
+  <sprite angleDegrees="0" rect="2271,0,378,273" offsetX="74.828674" offsetY="-490.69131" scaleX="0.078125" scaleY="0.078125" name="CROTCH_0.png"/>
+ </spritesheet>
+</spritesheets>

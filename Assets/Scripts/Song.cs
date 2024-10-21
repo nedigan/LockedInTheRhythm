@@ -12,7 +12,7 @@ public class Song : ScriptableObject
     public int Denominator = 4;
 
     [Header("Tempo")]
-    public int BPM = 120;
+    public float BPM = 120;
 
     [Header("Notes")]
     public List<Note> Notes = new List<Note>();

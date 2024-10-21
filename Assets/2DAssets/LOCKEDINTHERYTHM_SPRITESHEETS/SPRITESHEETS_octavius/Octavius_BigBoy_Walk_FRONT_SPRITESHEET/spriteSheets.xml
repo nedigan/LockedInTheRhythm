@@ -1,0 +1,53 @@
+<spritesheets>
+ <spritesheet name="sheet_Octavius_BigBoy" resolution="HD-OCTAVIUS_CLEANUP" width="5000" filename="spriteSheets/sheet_Octavius_BigBoy-HD-OCTAVIUS_CLEANUP.png" height="1024">
+  <sprite name="Body__1.png" offsetY="-85.322289" scaleX="0.15625" scaleY="0.15625" offsetX="32.60677" angleDegrees="0" rect="3663,0,566,583"/>
+  <sprite name="TheHead_0.png" offsetY="227.34433" scaleX="0.15625" scaleY="0.15625" offsetX="22.138083" angleDegrees="0" rect="3281,0,382,554"/>
+  <sprite name="Lapels_1.png" offsetY="-123.18707" scaleX="0.15625" scaleY="0.15625" offsetX="75.529335" angleDegrees="0" rect="2819,0,462,512"/>
+  <sprite name="Arm_Right_1.png" offsetY="-234.14442" scaleX="0.15625" scaleY="0.15625" offsetX="-192.13756" angleDegrees="0" rect="2532,0,287,471"/>
+  <sprite name="Arm_Left_1.png" offsetY="-62.406921" scaleX="0.15625" scaleY="0.15625" offsetX="246.88037" angleDegrees="0" rect="2302,0,230,442"/>
+  <sprite name="Collar_1.png" offsetY="77.554291" scaleX="0.15625" scaleY="0.15625" offsetX="19.022684" angleDegrees="0" rect="1550,0,752,428"/>
+  <sprite name="Back_Hair_0.png" offsetY="109.64357" scaleX="0.15625" scaleY="0.15625" offsetX="5.0973625" angleDegrees="0" rect="1202,0,348,254"/>
+  <sprite name="Leg_Left_TOP_0.png" offsetY="-264.55911" scaleX="0.15625" scaleY="0.15625" offsetX="115.232" angleDegrees="0" rect="1003,0,199,244"/>
+  <sprite name="Leg_Right_TOP_1.png" offsetY="-325.04443" scaleX="0.15625" scaleY="0.15625" offsetX="-5.9893332" angleDegrees="0" rect="804,0,199,242"/>
+  <sprite name="Leg_Right_BOTTOM_0.png" offsetY="-372.72061" scaleX="0.15625" scaleY="0.15625" offsetX="-48.484001" angleDegrees="0" rect="647,0,157,195"/>
+  <sprite name="Leg_Left_BOTTOM_0.png" offsetY="-319.25385" scaleX="0.15625" scaleY="0.15625" offsetX="75.360504" angleDegrees="0" rect="492,0,155,193"/>
+  <sprite name="Front_Ear_0.png" offsetY="52.67786" scaleX="0.15625" scaleY="0.15625" offsetX="-69.247475" angleDegrees="0" rect="348,0,144,121"/>
+  <sprite name="Back_Ear_0.png" offsetY="132.14667" scaleX="0.15625" scaleY="0.15625" offsetX="155.10431" angleDegrees="0" rect="201,0,147,117"/>
+  <sprite name="Nose_Ring_0.png" offsetY="-16.896893" scaleX="0.15625" scaleY="0.15625" offsetX="172.37096" angleDegrees="0" rect="85,0,116,98"/>
+  <sprite name="Front_Hair_0.png" offsetY="27.948195" scaleX="0.15625" scaleY="0.15625" offsetX="-21.534399" angleDegrees="0" rect="0,0,85,86"/>
+ </spritesheet>
+ <spritesheet name="sheet_Octavius_BigBoy" resolution="FullHD-OCTAVIUS_CLEANUP" width="5000" filename="spriteSheets/sheet_Octavius_BigBoy-FullHD-OCTAVIUS_CLEANUP.png" height="2048">
+  <sprite name="Body__1.png" offsetY="-127.98344" scaleX="0.10416666" scaleY="0.10416666" offsetX="48.910156" angleDegrees="0" rect="4120,357,843,869"/>
+  <sprite name="TheHead_0.png" offsetY="341.01651" scaleX="0.10416666" scaleY="0.10416666" offsetX="33.207127" angleDegrees="0" rect="3553,357,567,825"/>
+  <sprite name="Lapels_1.png" offsetY="-184.78059" scaleX="0.10416666" scaleY="0.10416666" offsetX="113.294" angleDegrees="0" rect="2866,357,687,762"/>
+  <sprite name="Arm_Right_1.png" offsetY="-351.21664" scaleX="0.10416666" scaleY="0.10416666" offsetX="-288.20633" angleDegrees="0" rect="2441,357,425,701"/>
+  <sprite name="Arm_Left_1.png" offsetY="-93.610382" scaleX="0.10416666" scaleY="0.10416666" offsetX="370.32056" angleDegrees="0" rect="2101,357,340,657"/>
+  <sprite name="Collar_1.png" offsetY="116.33144" scaleX="0.10416666" scaleY="0.10416666" offsetX="28.534027" angleDegrees="0" rect="979,357,1122,637"/>
+  <sprite name="Back_Hair_0.png" offsetY="164.46536" scaleX="0.10416666" scaleY="0.10416666" offsetX="7.6460433" angleDegrees="0" rect="462,357,517,375"/>
+  <sprite name="Leg_Left_TOP_0.png" offsetY="-396.83865" scaleX="0.10416666" scaleY="0.10416666" offsetX="172.84801" angleDegrees="0" rect="169,357,293,360"/>
+  <sprite name="Nose_Ring_0.png" offsetY="-25.345337" scaleX="0.10416666" scaleY="0.10416666" offsetX="258.55643" angleDegrees="0" rect="0,357,169,141"/>
+  <sprite name="Leg_Right_TOP_1.png" offsetY="-487.56665" scaleX="0.10416666" scaleY="0.10416666" offsetX="-8.9840002" angleDegrees="0" rect="4670,0,293,357"/>
+  <sprite name="Leg_Right_BOTTOM_0.png" offsetY="-559.08093" scaleX="0.10416666" scaleY="0.10416666" offsetX="-72.725998" angleDegrees="0" rect="4441,0,229,286"/>
+  <sprite name="Leg_Left_BOTTOM_0.png" offsetY="-478.88077" scaleX="0.10416666" scaleY="0.10416666" offsetX="113.04076" angleDegrees="0" rect="4214,0,227,284"/>
+  <sprite name="Front_Ear_0.png" offsetY="79.016792" scaleX="0.10416666" scaleY="0.10416666" offsetX="-103.87121" angleDegrees="0" rect="4003,0,211,175"/>
+  <sprite name="Back_Ear_0.png" offsetY="198.22" scaleX="0.10416666" scaleY="0.10416666" offsetX="232.65646" angleDegrees="0" rect="3789,0,214,170"/>
+  <sprite name="Front_Hair_0.png" offsetY="41.922291" scaleX="0.10416666" scaleY="0.10416666" offsetX="-32.301598" angleDegrees="0" rect="3668,0,121,123"/>
+ </spritesheet>
+ <spritesheet name="sheet_Octavius_BigBoy" resolution="QuadHD-OCTAVIUS_CLEANUP" width="5000" filename="spriteSheets/sheet_Octavius_BigBoy-QuadHD-OCTAVIUS_CLEANUP.png" height="2048">
+  <sprite name="Body__1.png" offsetY="-170.64458" scaleX="0.078125" scaleY="0.078125" offsetX="65.213539" angleDegrees="0" rect="3748,845,1120,1155"/>
+  <sprite name="TheHead_0.png" offsetY="454.68866" scaleX="0.078125" scaleY="0.078125" offsetX="44.276165" angleDegrees="0" rect="2996,845,752,1096"/>
+  <sprite name="Lapels_1.png" offsetY="-246.37413" scaleX="0.078125" scaleY="0.078125" offsetX="151.05867" angleDegrees="0" rect="2084,845,912,1012"/>
+  <sprite name="Arm_Right_1.png" offsetY="-468.28885" scaleX="0.078125" scaleY="0.078125" offsetX="-384.27512" angleDegrees="0" rect="1521,845,563,930"/>
+  <sprite name="Arm_Left_1.png" offsetY="-124.81384" scaleX="0.078125" scaleY="0.078125" offsetX="493.76074" angleDegrees="0" rect="1072,845,449,873"/>
+  <sprite name="Back_Hair_0.png" offsetY="219.28714" scaleX="0.078125" scaleY="0.078125" offsetX="10.194725" angleDegrees="0" rect="387,845,685,496"/>
+  <sprite name="Leg_Left_TOP_0.png" offsetY="-529.11823" scaleX="0.078125" scaleY="0.078125" offsetX="230.464" angleDegrees="0" rect="0,845,387,476"/>
+  <sprite name="Collar_1.png" offsetY="155.10858" scaleX="0.078125" scaleY="0.078125" offsetX="38.045368" angleDegrees="0" rect="3376,0,1492,845"/>
+  <sprite name="Leg_Right_TOP_1.png" offsetY="-650.08887" scaleX="0.078125" scaleY="0.078125" offsetX="-11.978666" angleDegrees="0" rect="2989,0,387,472"/>
+  <sprite name="Leg_Right_BOTTOM_0.png" offsetY="-745.44122" scaleX="0.078125" scaleY="0.078125" offsetX="-96.968002" angleDegrees="0" rect="2687,0,302,378"/>
+  <sprite name="Leg_Left_BOTTOM_0.png" offsetY="-638.50769" scaleX="0.078125" scaleY="0.078125" offsetX="150.72101" angleDegrees="0" rect="2388,0,299,375"/>
+  <sprite name="Front_Ear_0.png" offsetY="105.35572" scaleX="0.078125" scaleY="0.078125" offsetX="-138.49495" angleDegrees="0" rect="2111,0,277,230"/>
+  <sprite name="Back_Ear_0.png" offsetY="264.29333" scaleX="0.078125" scaleY="0.078125" offsetX="310.20862" angleDegrees="0" rect="1829,0,282,223"/>
+  <sprite name="Nose_Ring_0.png" offsetY="-33.793785" scaleX="0.078125" scaleY="0.078125" offsetX="344.74191" angleDegrees="0" rect="1608,0,221,184"/>
+  <sprite name="Front_Hair_0.png" offsetY="55.896389" scaleX="0.078125" scaleY="0.078125" offsetX="-43.068798" angleDegrees="0" rect="1450,0,158,160"/>
+ </spritesheet>
+</spritesheets>

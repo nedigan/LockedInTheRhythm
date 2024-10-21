@@ -1,0 +1,40 @@
+<skeletons version="1">
+ <skeleton name="Peg_4">
+  <nodes>
+   <peg id="0" name="Peg_4"/>
+   <read id="1" name="HEADPHONES" visible="true"/>
+   <read id="2" name="EAR_FRONT" visible="true"/>
+   <read id="3" name="hEAD" visible="true"/>
+   <peg id="4" name="Peg_2"/>
+   <read id="5" name="EAR_BACK" visible="true"/>
+   <read id="6" name="HEADPHONES_BACK" visible="true"/>
+   <read id="7" name="HAND_RIGHT" visible="true"/>
+   <read id="8" name="BODY" visible="true"/>
+   <read id="9" name="FOOT_RIGHT" visible="true"/>
+   <read id="10" name="CROTCH" visible="true"/>
+   <peg id="11" name="Peg"/>
+   <read id="12" name="FOOT_LEFT" visible="true"/>
+   <read id="13" name="HAND_LEFT" visible="true"/>
+   <read id="14" name="REMIXER" visible="true"/>
+   <read id="15" name="TAIL" visible="true"/>
+  </nodes>
+  <links>
+   <link in="Top" out="0" port="0"/>
+   <link in="0" out="1" port="0"/>
+   <link in="0" out="2" port="0"/>
+   <link in="0" out="3" port="0"/>
+   <link in="3" out="4" port="0"/>
+   <link in="4" out="5" port="0"/>
+   <link in="4" out="6" port="0"/>
+   <link in="0" out="7" port="0"/>
+   <link in="0" out="8" port="0"/>
+   <link in="0" out="9" port="0"/>
+   <link in="0" out="10" port="0"/>
+   <link in="10" out="11" port="0"/>
+   <link in="11" out="12" port="0"/>
+   <link in="11" out="13" port="0"/>
+   <link in="11" out="14" port="0"/>
+   <link in="11" out="15" port="0"/>
+  </links>
+ </skeleton>
+</skeletons>

@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SLY_Character_Arms_And_Head
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Sly_Fox-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_eye_02-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_eye_02-P/Sly_Fox_SLY_eyebrow-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_eye_02-P/Sly_Fox_SLY_eyebrow-P/Sly_Fox_SLY_eyebrow
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_eye_02-P/Sly_Fox_SLY_eyeshape-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_eye_02-P/Sly_Fox_SLY_eyeshape-P/Sly_Fox_SLY_eyeshape
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_mouth-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_face_full-P/Sly_Fox_SLY_mouth-P/Sly_Fox_SLY_mouth
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_head-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_head-P/Sly_Fox_SLY_head
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_Sly_Fox_SLY_hairtuft_small_SLY_hairtuft_small
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1_Sly_Fox_SLY_hairtuft_small_SLY_hairtuft_small
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1_End
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_small-P/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone/Sly_Fox_SLY_hairtuft_small_Deformation-SLY_hairtuft_small_GameBone_1/Sly_Fox_SLY_hairtuft_small_SLY_hairtuft_small
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_Sly_Fox_SLY_hairtuft_long_SLY_hairtuft_long
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1_Sly_Fox_SLY_hairtuft_long_SLY_hairtuft_long
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1_End
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_hairtuft_full-P/Sly_Fox_SLY_hairtuft_long-P/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone/Sly_Fox_SLY_hairtuft_long_Deformation-SLY_hairtuft_long_GameBone_1/Sly_Fox_SLY_hairtuft_long_SLY_hairtuft_long
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_ears-master-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_ears-master-P/Sly_Fox_SLY_f_ear-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_ears-master-P/Sly_Fox_SLY_f_ear-P/Sly_Fox_SLY_f_ear
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_ears-master-P/Sly_Fox_SLY_b_ear-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_head-full-P/Sly_Fox_SLY_head-full-P_SkewBase/Sly_Fox_SLY_head-full-P_SkewCounter/Sly_Fox_SLY_ears-master-P/Sly_Fox_SLY_b_ear-P/Sly_Fox_SLY_b_ear
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_line-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_line-P/Sly_Fox_SLY_F_apron_line-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_line-P/Sly_Fox_SLY_F_apron_line-P_SkewBase/Sly_Fox_SLY_F_apron_line-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_line-P/Sly_Fox_SLY_F_apron_line-P_SkewBase/Sly_Fox_SLY_F_apron_line-P_SkewCounter/Sly_Fox_SLY_F_apron_line
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_line-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_line-P/Sly_Fox_SLY_B_apron_line-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_line-P/Sly_Fox_SLY_B_apron_line-P_SkewBase/Sly_Fox_SLY_B_apron_line-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_line-P/Sly_Fox_SLY_B_apron_line-P_SkewBase/Sly_Fox_SLY_B_apron_line-P_SkewCounter/Sly_Fox_SLY_B_apron_line
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_fold-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_fold-P/Sly_Fox_SLY_F_apron_fold-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_fold-P/Sly_Fox_SLY_F_apron_fold-P_SkewBase/Sly_Fox_SLY_F_apron_fold-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_F_apron_fold-P/Sly_Fox_SLY_F_apron_fold-P_SkewBase/Sly_Fox_SLY_F_apron_fold-P_SkewCounter/Sly_Fox_SLY_F_apron_fold
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_fold-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_fold-P/Sly_Fox_SLY_B_apron_fold-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_fold-P/Sly_Fox_SLY_B_apron_fold-P_SkewBase/Sly_Fox_SLY_B_apron_fold-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_B_apron_fold-P/Sly_Fox_SLY_B_apron_fold-P_SkewBase/Sly_Fox_SLY_B_apron_fold-P_SkewCounter/Sly_Fox_SLY_B_apron_fold
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_apron_top-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_apron_top-P/Sly_Fox_SLY_apron_top-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_apron_top-P/Sly_Fox_SLY_apron_top-P_SkewBase/Sly_Fox_SLY_apron_top-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_apron_top-P/Sly_Fox_SLY_apron_top-P_SkewBase/Sly_Fox_SLY_apron_top-P_SkewCounter/Sly_Fox_bake_SLY_apron_top
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_F_appron-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_F_appron-P/Sly_Fox_SLY_F_appron-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_F_appron-P/Sly_Fox_SLY_F_appron-P_SkewBase/Sly_Fox_SLY_F_appron-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_F_appron-P/Sly_Fox_SLY_F_appron-P_SkewBase/Sly_Fox_SLY_F_appron-P_SkewCounter/Sly_Fox_bake_SLY_F_appron
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_B_appron-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_B_appron-P/Sly_Fox_SLY_B_appron-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_B_appron-P/Sly_Fox_SLY_B_appron-P_SkewBase/Sly_Fox_SLY_B_appron-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_top_master/Sly_Fox_SLY_B_appron-P/Sly_Fox_SLY_B_appron-P_SkewBase/Sly_Fox_SLY_B_appron-P_SkewCounter/Sly_Fox_bake_SLY_B_appron
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_bot-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_bot-P/Sly_Fox_SLY_apron_bot-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_bot-P/Sly_Fox_SLY_apron_bot-P_SkewBase/Sly_Fox_SLY_apron_bot-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_apron_bot-P/Sly_Fox_SLY_apron_bot-P_SkewBase/Sly_Fox_SLY_apron_bot-P_SkewCounter/Sly_Fox_bake_SLY_apron_bot
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot_side_1-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot_side_1-P/Sly_Fox_SLY_knot_side_1-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot_side_1-P/Sly_Fox_SLY_knot_side_1-P_SkewBase/Sly_Fox_SLY_knot_side_1-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot_side_1-P/Sly_Fox_SLY_knot_side_1-P_SkewBase/Sly_Fox_SLY_knot_side_1-P_SkewCounter/Sly_Fox_SLY_knot_side_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot-P/Sly_Fox_SLY_knot-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot-P/Sly_Fox_SLY_knot-P_SkewBase/Sly_Fox_SLY_knot-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_knot-P/Sly_Fox_SLY_knot-P_SkewBase/Sly_Fox_SLY_knot-P_SkewCounter/Sly_Fox_SLY_knot
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_belt-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_apron_FULL-P/Sly_Fox_SLY_belt_full-P/Sly_Fox_SLY_belt_full-P_SkewBase/Sly_Fox_SLY_belt_full-P_SkewCounter/Sly_Fox_SLY_belt-P/Sly_Fox_bake_SLY_belt
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_neck-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_neck-P/Sly_Fox_SLY_neck-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_neck-P/Sly_Fox_SLY_neck-P_SkewBase/Sly_Fox_SLY_neck-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_neck-P/Sly_Fox_SLY_neck-P_SkewBase/Sly_Fox_SLY_neck-P_SkewCounter/Sly_Fox_bake_SLY_Neck
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_f_collar-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_f_collar-P/Sly_Fox_SLY_f_collar-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_f_collar-P/Sly_Fox_SLY_f_collar-P_SkewBase/Sly_Fox_SLY_f_collar-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_f_collar-P/Sly_Fox_SLY_f_collar-P_SkewBase/Sly_Fox_SLY_f_collar-P_SkewCounter/Sly_Fox_SLY_f_collar
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_b_collar-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_b_collar-P/Sly_Fox_SLY_b_collar-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_b_collar-P/Sly_Fox_SLY_b_collar-P_SkewBase/Sly_Fox_SLY_b_collar-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_b_collar-P/Sly_Fox_SLY_b_collar-P_SkewBase/Sly_Fox_SLY_b_collar-P_SkewCounter/Sly_Fox_SLY_b_collar
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_body-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_body-full-P/Sly_Fox_SLY_shirtNneck-P/Sly_Fox_SLY_shirt-P/Sly_Fox_SLY_body-P/Sly_Fox_bake_SLY_body
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_Sly_Fox_SLY_f_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_Deformation-SLY_f_arm_GameBone_1_Sly_Fox_SLY_f_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_Deformation-SLY_f_arm_GameBone_1_End
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P/Sly_Fox_SLY_f_hand-P_SkewBase
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P/Sly_Fox_SLY_f_hand-P_SkewBase/Sly_Fox_SLY_f_hand-P_SkewCounter
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P/Sly_Fox_SLY_f_hand-P_SkewBase/Sly_Fox_SLY_f_hand-P_SkewCounter/Sly_Fox_Hand_Back_Anchor-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P/Sly_Fox_SLY_f_hand-P_SkewBase/Sly_Fox_SLY_f_hand-P_SkewCounter/Sly_Fox_Hand_Back_Anchor-P/Sly_Fox_Hand_Back_Anchor_Pivot
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_KinematicOutput/Sly_Fox_SLY_f_hand-P/Sly_Fox_SLY_f_hand-P_SkewBase/Sly_Fox_SLY_f_hand-P_SkewCounter/Sly_Fox_Hand_Back_Anchor-P/Sly_Fox_Hand_Back_Anchor_Pivot/Sly_Fox_Hand_Back_Anchor
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_f_arm-P/Sly_Fox_Deformation-SLY_f_arm_GameBone/Sly_Fox_Deformation-SLY_f_arm_GameBone_1/Sly_Fox_SLY_f_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_Sly_Fox_SLY_b_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_Deformation-SLY_b_arm_GameBone_1_Sly_Fox_SLY_b_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_Deformation-SLY_b_arm_GameBone_1_End
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_KinematicOutput_1
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_KinematicOutput_1/Sly_Fox_SLY_b_hand-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_KinematicOutput_1/Sly_Fox_SLY_b_hand-P/Sly_Fox_SLY_b_hand
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_TOP-P/Sly_Fox_SLY_torso-master-P/Sly_Fox_SLY_b_arm-P/Sly_Fox_Deformation-SLY_b_arm_GameBone/Sly_Fox_Deformation-SLY_b_arm_GameBone_1/Sly_Fox_SLY_b_arm
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P
+    m_Weight: 1
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_waist-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_waist-P/Sly_Fox_bake_SLY_waist
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_Sly_Fox_SLY_F_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1_Sly_Fox_SLY_F_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1_End
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_leg_cuff-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_leg_cuff-P/Sly_Fox_SLY_f_leg_cuff
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone/Sly_Fox_Deformation-SLY_f_foot_GameBone_Sly_Fox_SLY_f_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone/Sly_Fox_Deformation-SLY_f_foot_GameBone_1
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone/Sly_Fox_Deformation-SLY_f_foot_GameBone_1/Sly_Fox_Deformation-SLY_f_foot_GameBone_1_Sly_Fox_SLY_f_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone/Sly_Fox_Deformation-SLY_f_foot_GameBone_1/Sly_Fox_Deformation-SLY_f_foot_GameBone_1_End
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_KinematicOutput_2/Sly_Fox_SLY_f_foot-P/Sly_Fox_Deformation-SLY_f_foot_GameBone/Sly_Fox_Deformation-SLY_f_foot_GameBone_1/Sly_Fox_SLY_f_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_F_Leg-P/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone/Sly_Fox_Deformation-SLY_f_leg_cuff_GameBone_1/Sly_Fox_SLY_F_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_Sly_Fox_SLY_B_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1_Sly_Fox_SLY_B_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1_End
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_b_leg_cuff-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_b_leg_cuff-P/Sly_Fox_SLY_b_leg_cuff
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_Sly_Fox_SLY_B_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1_Sly_Fox_SLY_B_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1_End
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_KinematicOutput_3/Sly_Fox_SLY_B_foot-P/Sly_Fox_Deformation-SLY_B_foot-P_GameBone/Sly_Fox_Deformation-SLY_B_foot-P_GameBone_1/Sly_Fox_SLY_B_foot
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_B_leg-P/Sly_Fox_Deformation-SLY_B_Leg_GameBone/Sly_Fox_Deformation-SLY_B_Leg_GameBone_1/Sly_Fox_SLY_B_Leg
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_tail-P
+    m_Weight: 0
+  - m_Path: Sly_Fox-P/Sly_Fox_SLY_Full/Sly_Fox_SLY_BOT-P/Sly_Fox_SLY_tail-P/Sly_Fox_bake_SLY_tail
+    m_Weight: 0
+  - m_Path: DrawingChannels
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_0-5
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_6-11
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_12-17
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_18-23
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_24-29
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_30-35
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_36-41
+    m_Weight: 0
+  - m_Path: DrawingChannels/DrawingChannels_42-42
+    m_Weight: 0
